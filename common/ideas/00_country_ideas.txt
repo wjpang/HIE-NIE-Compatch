@@ -1665,6 +1665,7 @@ BYZ_ideas = {
 	
 	trigger = {
 		tag = BYZ
+		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes
 	
@@ -2413,6 +2414,7 @@ SAX_ideas = {
 	
 	trigger = {
 		tag = SAX
+		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes		#will be added at load.
 	

@@ -51,6 +51,7 @@ colonial_ideas = {
 	
 	trigger = {
 		is_colonial_nation = yes
+		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes
 	
@@ -142,6 +143,7 @@ pirate_ideas = {
 			tag = TOR
 			tag = LIB
 		}
+		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes
 	
