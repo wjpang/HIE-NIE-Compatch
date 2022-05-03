@@ -12,7 +12,7 @@ HLR_ideas = {
 	
 	bonus = {
 		administrative_efficiency = 0.05
-	}	
+	}
 
 	trigger = {
 		tag = HLR
@@ -54,6 +54,7 @@ ENG_ideas = {
 	
 	trigger = {
 		tag = ENG
+		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes		#will be added at load.
 	
@@ -245,7 +246,7 @@ RUS_ideas = {
 	table_of_ranks = {
 		advisor_cost = -0.10
 		army_tradition = 0.25
-	}	
+	}
 	curriculum_of_the_cadet_corps = {
 		land_morale = 0.05
 		fire_damage_received = -0.1
@@ -428,7 +429,7 @@ FRA_ideas = {
 	
 	bonus = {
 		discipline = 0.05
-	}	
+	}
 
 	trigger = {
 		tag = FRA
@@ -481,16 +482,16 @@ TUR_ideas = {
 	millets = {
 		core_creation = -0.20
 		num_accepted_cultures = 1
-	}	
+	}
 	ghazi = {
 		manpower_recovery_speed = 0.2
-	}		
+	}
 	timariot_system = {
 		cavalry_power = 0.15
 	}
 	autonmous_pashas = {
 		war_exhaustion_cost = -0.10
-	}		
+	}
 	lawcode_of_suleiman_01 = {
 		global_tax_modifier = 0.1
 	}
@@ -853,7 +854,7 @@ PRU_ideas = {
 	}
 	army_professionalism = {
 		land_morale = 0.20
-	}	
+	}
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.10
 	}
@@ -965,7 +966,10 @@ POL_ideas = {
 	}
 	
 	trigger = {
-		tag = POL
+		OR = {
+			tag = POL
+			tag = PLC
+		}
 		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes		#will be added at load.
@@ -1189,7 +1193,7 @@ GEN_Ideas = {
 	}
 	lessons_of_chiogga = {
 		naval_morale = 0.20
-	}	
+	}
 	genoese_trade = {
 		global_foreign_trade_power = 0.10
 		global_sailors_modifier = 0.20
@@ -2055,7 +2059,7 @@ MCH_ideas = {
 	the_later_jin = {
 		horde_unity = 1
 		legitimacy = 1
-	}	
+	}
 	link_with_the_mongol_dynasty = {
 		cavalry_power = 0.15
 	}
@@ -3645,17 +3649,17 @@ KUR_ideas = {
 	
 	legacy_of_sword_brethren = {
 		defensiveness = 0.20
-	}	
+	}
 	privilegium_gotthardinum = {
 		global_unrest = -1
-	}		
+	}
 	duchy_of_mercantilism = {
 		global_foreign_trade_power = 0.1
 	}
 	booming_manufacture = {
 		production_efficiency = 0.1
 		global_ship_recruit_speed = -0.10
-	}		
+	}
 	couronian_colonization = {
 		range = 0.15
 		naval_forcelimit_modifier = 0.25
@@ -4725,7 +4729,7 @@ FIN_ideas = {
 	}
 	hakkapelitta_fin = {
  		cavalry_power = 0.15
-	}	
+	}
 	the_fourth_estate = {
 		production_efficiency = 0.1
 	}
@@ -5166,7 +5170,7 @@ NAX_ideas = {
 	}
 	latin_roots = {
 		technology_cost = -0.05
-	}	
+	}
 	naxian_ambitions = {
 		core_creation = -0.1
 	}
@@ -5515,10 +5519,10 @@ LXA_ideas = {
 	
 	lao_ethnic_diversity = {
 		num_accepted_cultures = 1
-	}	
+	}
 	lxa_elephant_cavalry = {
 		cavalry_power = 0.15
-	}	
+	}
 	court_history_of_lang_xang = {
 		ae_impact = -0.1
 		improve_relation_modifier = 0.15		
@@ -5711,7 +5715,7 @@ HAM_ideas = {
 	
 	hanseatic_city = {
 		global_trade_power = 0.15
-	}		
+	}
 	hamburg_republic = {
 		republican_tradition = 0.3
 	}
@@ -5870,7 +5874,7 @@ CAN_ideas = {
 		
 	singing_lumberjacks = {
 		production_efficiency = 0.10
-	}	
+	}
 	the_hudson_bay_company = {
 		merchants = 1
 	}
@@ -5909,7 +5913,7 @@ QUE_ideas = {
 		
 	coureurs_des_bois = {
 		global_trade_goods_size_modifier = 0.1
-	}	
+	}
 	the_seigneurial_system = {
 		global_tax_modifier = 0.15
 	}
@@ -6092,7 +6096,7 @@ BRZ_ideas = {
 	}
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
-	}	
+	}
 	trigger = {
 		tag = BRZ
 	}
@@ -7405,7 +7409,7 @@ JMN_ideas = {
 
 	of_noble_bearing = {
 		prestige = 1
-	}	
+	}
 	the_right_to_bear_arms = {
 		infantry_power = 0.2
 	}
@@ -9067,7 +9071,7 @@ STK_ideas = {
 	}
 	stk_eastern_coalitions = {
 		diplomatic_upkeep = 1
-	}	
+	}
 	stk_mito_castle = {
 		development_cost = -0.1
 	}
@@ -11876,7 +11880,7 @@ LIE_ideas = {
 	}
 	lie_rights_of_man = {
 		global_unrest = -1
-	}	
+	}
 }
 
 GEL_ideas = {
@@ -12440,7 +12444,7 @@ RIG_ideas = {
 	}
 	rig_free_city = {
 		diplomatic_reputation = 1
-	}	
+	}
 	rig_fortify_riga = {
 		defensiveness = 0.2
 	}
@@ -13184,7 +13188,7 @@ TTL_ideas = {
 	
 	bonus = {
 		infantry_power = 0.15
-	}	
+	}
 
 	trigger = {
 		tag = TTL
@@ -13223,7 +13227,7 @@ GNV_ideas = {
 	
 	bonus = {
 		heavy_ship_power = 0.1
-	}	
+	}
 
 	trigger = {
 		tag = GNV
