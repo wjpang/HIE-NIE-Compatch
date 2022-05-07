@@ -1,0 +1,4213 @@
+#########		BALKANS		#########
+#########		BALKANS		#########
+#########		BALKANS		#########
+HNI_BYZ_ideas = {
+	start = {
+		idea_cost = -0.20
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		diplomatic_reputation = 2
+	}
+	
+	trigger = {
+		tag = BYZ
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_byz_byzantine_renaissance = {
+		technology_cost = -0.05
+		advisor_cost = -0.10
+	}
+	hni_byz_repopulate_countryside = {
+		global_manpower_modifier = 0.10
+		development_cost = -0.05
+	}
+	hni_byz_administrative_reforms = {
+		global_regiment_cost = -0.10
+	}
+	hni_byz_byzantine_bureaucreacy = {
+		possible_policy = 1
+	}
+	hni_byz_merchant_class = {
+		global_trade_power = 0.15
+	}
+	hni_byz_new_imperial_army = {
+		discipline = 0.05
+		land_forcelimit_modifier = 0.15
+	}
+	hni_byz_ecumenical_patriarch = {
+		global_missionary_strength = 0.02
+		global_unrest = -1
+	}
+}
+HNI_HUN_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		fort_maintenance_modifier = -0.25
+	}
+	
+	bonus = {
+		infantry_power = 0.10
+	}
+	
+	trigger = {
+		tag = HUN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_hun_order_of_the_dragon = {
+		land_morale = 0.10
+	}
+	hni_hun_naszad = {
+		defensiveness = 0.20
+		galley_power = 0.15
+	}
+	hni_hun_memories_siege_belgrade = {
+		global_manpower_modifier = 0.15
+		papal_influence = 2
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.25
+		yearly_patriarch_authority = 0.001
+	}
+	hni_hun_the_black_army = {
+		land_forcelimit_modifier = 0.20
+		infantry_fire = 0.3
+	}
+	hni_hun_extraordinary_tax = {
+		land_maintenance_modifier = -0.1
+	}
+	hni_hun_decretum_maius = {
+		free_adm_policy = 1
+	}
+	hni_hun_bibliotheca_corviniana = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+}
+HNI_TUR_ideas = {
+	start = {
+		army_tradition = 0.5
+		tolerance_heathen = 3
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	trigger = {
+		tag = TUR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_tur_timarli_sipahi = {
+		cavalry_power = 0.20
+		cavalry_cost = -0.20
+	}
+	hni_tur_slaves_of_sublime_porte = {
+		discipline = 0.05
+		yearly_army_professionalism = 0.005
+	}
+	hni_tur_bombardiers = {
+		fire_damage = 0.10
+		artillery_power = 0.10
+	}
+	hni_tur_imperial_council = {
+		possible_policy = 1
+	}
+	hni_tur_osmans_dream = {
+		core_creation = -0.20
+		governing_capacity_modifier = 0.20
+	}
+	hni_tur_indian_ocean_expeditions = {
+		naval_forcelimit_modifier = 0.33
+		global_ship_cost = -0.10
+	}
+	hni_tur_advice_for_the_king = {
+		reform_progress_growth = 0.15
+	}
+}
+
+#########		SCANDINAVIA		#########
+#########		SCANDINAVIA		#########
+#########		SCANDINAVIA		#########
+
+HNI_SWE_ideas = {
+	start = {
+		army_tradition_decay = -0.01
+		mercenary_cost = -0.10
+	}
+
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = SWE
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_swe_protector_of_realm = {
+		legitimacy = 1
+	}
+	hni_swe_reformation = {
+		institution_spread_from_true_faith = 0.15
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+	}
+	hni_swe_instrument_of_government = {
+		possible_policy = 1
+	}
+	hni_swe_indelningsverket = {
+		global_manpower_modifier = 0.20
+		manpower_recovery_speed = 0.20
+	}
+	hni_swe_go_to = {
+		shock_damage = 0.15
+	}
+	hni_swe_caroleans = {
+		discipline = 0.05
+	}
+	hni_swe_dominium_marius_baltici = {
+		galley_power = 0.15
+		global_own_trade_power = 0.20
+	}
+}
+
+HNI_FIN_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		hostile_attrition = 1
+	}
+	
+	bonus = {
+		land_attrition = -0.10
+	}
+	
+	trigger = {
+		tag = FIN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_fin_defend_isthmus = {
+		defensiveness = 0.15
+	}
+	hni_fin_saunas = {
+ 		global_unrest = -2
+	}
+	hni_fin_free_peasants = {
+		global_trade_goods_size_modifier = 0.10
+		republican_tradition = 0.2
+	}
+	hni_fin_hakka_paale = {
+		shock_damage = 0.10
+		cavalry_power = 0.20
+	}
+	hni_fin_turku_university = {
+		idea_cost = -0.10
+	}
+	hni_fin_ruotujakolaitos = {
+		global_manpower_modifier = 0.15
+		manpower_recovery_speed = 0.15
+	}
+	hni_fin_sisu = {
+		land_morale = 0.15
+		stability_cost_modifier = -0.10
+	}
+}
+
+HNI_DAN_ideas = {
+	start = {
+		galley_power = 0.15
+		global_own_trade_power = 0.20
+	}
+	
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = DAN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_dan_kalmar_union = {
+		diplomatic_annexation_cost = -0.15
+	}
+	hni_dan_sound_toll = {
+		trade_steering = 0.25
+		global_ship_trade_power = 0.20
+	}
+	hni_dan_royal_waters = {
+		navy_tradition = 1
+		global_sailors_modifier = 0.25
+	}
+	hni_dan_folk_church = {
+		tolerance_heretic = 2
+		papal_influence = 1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+	}
+	hni_dan_danish_law = {
+		reform_progress_growth = 0.25
+	}
+	hni_dan_sokadetakademie = {
+		leader_naval_fire = 2
+	}
+	hni_dan_stavnsband = {
+		global_manpower_modifier = 0.10
+		production_efficiency = 0.10
+	}
+}
+
+#########		BRITANNIA		#########
+#########		BRITANNIA		#########
+#########		BRITANNIA		#########
+
+HNI_CNN_ideas = {
+	start = {
+		land_attrition = -0.10
+		stability_cost_modifier = -0.10
+	}
+
+	bonus = {
+		legitimacy = 1
+	}
+	
+	trigger = {
+		tag = CNN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_cnn_holy_roman_ties = {
+		discipline = 0.05
+	}
+	hni_cnn_bod_an_balcuigh = {
+		power_projection_from_insults = 1.00
+	}
+	hni_cnn_anglo_irish_inheritance_laws = {
+		prestige = 1
+		heir_chance = 0.5
+	}
+	hni_cnn_force_issue = {
+		siege_ability = 0.10
+	}
+	hni_cnn_true_heirs_connacht = {
+		land_morale = 0.10
+	}
+	hni_cnn_atlantic_port_ireland = {
+		global_trade_power = 0.10
+		range = 0.25
+	}
+	hni_cnn_elevation_earl = {
+		diplomatic_reputation = 1
+	}
+}
+HNI_DMS_ideas = {
+	start = {  
+		global_manpower_modifier = 0.20
+		stability_cost_modifier = -0.10
+	}
+  
+	bonus = {
+		defensiveness = 0.15
+	}
+  
+	trigger = {
+		tag = DMS
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+  
+	hni_dms_port_cork = {
+		development_cost = -0.10
+		center_of_trade_upgrade_cost = -0.20
+	}
+	hni_dms_defend_gaels = {
+		land_morale = 0.10
+	}
+	hni_dms_munster_ambition = {
+		core_creation = -0.10
+		province_warscore_cost = -0.10	  
+	}
+	hni_dms_old_gods = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+	}
+	hni_dms_representative_ireland_abroad = {
+		diplomatic_reputation = 1  
+	}
+	hni_dms_culture_service = {
+		war_exhaustion = -0.02
+		army_tradition_from_battle = 1.00
+	}
+	hni_dms_introduction_potato_ireland = {
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+HNI_KID_ideas = {
+	start = {
+		tolerance_own = 2
+		leader_land_shock = 1
+	}
+
+	bonus = {
+		development_cost = -0.10
+	}
+	
+	trigger = {
+		tag = KID
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_kid_brigid = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_kid_more_than_irish = {
+		global_unrest = -2
+	}
+	hni_kid_lords_deputy = {
+		diplomatic_reputation = 1
+	}
+	hni_kid_silver_tongues = {
+		improve_relation_modifier = 0.20
+	}
+	hni_kid_silken_thomas = {
+		land_morale = 0.10
+	}
+	hni_kid_wizard_earl = {
+		technology_cost = -0.10
+	}
+	hni_kid_franciscan_support = {
+		build_cost = -0.10
+	}
+}
+HNI_FLY_ideas = {
+	start = {
+		fabricate_claims_cost = -0.25
+		global_tax_modifier = 0.10
+	}
+
+	bonus = {
+		land_morale = 0.10
+	}
+	
+	trigger = {
+		tag = FLY
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_fly_clonmacnoise = {
+		tolerance_own = 2
+		institution_spread_from_true_faith = 0.30
+	}
+	hni_fly_irish_hospitalities = {
+		diplomatic_reputation = 1
+	}
+	hni_fly_patronize_irish_music = {
+		prestige = 1
+	}
+	hni_fly_pilgrimages_abroad = {
+		improve_relation_modifier = 0.25
+		papal_influence = 1
+	}
+	hni_fly_buonnacht_system = {
+		global_manpower_modifier = 0.15
+		land_maintenance_modifier = -0.10
+	}
+	hni_fly_tower_churches = {
+		defensiveness = 0.15
+	}
+	hni_fly_river_trade_experties = {
+		global_own_trade_power = 0.20
+	}
+}
+HNI_IRE_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.33
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.20
+	}
+	
+	trigger = {
+		tag = IRE
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_ire_high_kingship = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		liberty_desire = -15
+		reduced_liberty_desire = -15
+	}
+	hni_ire_brendan_ily_brasil = {
+		range = 0.25
+		colonists = 1
+	}
+	hni_ire_more_than_irish = {
+		global_unrest = -2
+	}
+	hni_ire_introduction_potatoes = {
+		development_cost = -0.10
+	}
+	hni_ire_peat_cultivation = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_ire_irish_crofters = {
+		build_cost = -0.10
+ 	}
+	hni_ire_unconquerable_ireland = {
+		war_exhaustion = -0.02
+		global_regiment_cost = -0.10
+	}
+}
+HNI_MCM_ideas = { #Munster
+	start = {
+		build_cost = -0.10
+		global_autonomy = -0.05
+	}
+
+	bonus = {
+		core_creation = -0.15
+	}
+	
+	trigger = {
+		tag = MCM
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_mcm_red_stag = {
+		legitimacy = 1
+	}
+	hni_mcm_blarney_stone = {
+		improve_relation_modifier = 0.25
+		diplomatic_reputation = 1
+	}
+	hni_mcm_norman_frontier = {
+		shock_damage_received = -0.10
+	}
+	hni_mcm_land_castles = {
+		defensiveness = 0.20
+	}
+	hni_mcm_brave_faithful = {
+		war_exhaustion = -0.02
+	}
+	hni_mcm_spanish_ties = {
+		discipline = 0.05
+	}
+	hni_mcm_pirate_heaven = {
+		privateer_efficiency = 0.15
+		own_coast_naval_combat_bonus = 1
+	}
+}
+HNI_MNS_ideas = { #Theomond
+	start = {  
+		shock_damage = 0.10
+		leader_land_shock = 1
+	}
+  
+	bonus = {
+		global_trade_goods_size_modifier = 0.10
+	}
+  
+	trigger = {
+		tag = MNS
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+  
+	hni_mns_dal_gcais_blood = {
+		army_tradition = 0.5
+	}
+	hni_mns_reconquest_ireland = {
+		siege_ability = 0.10
+	}
+	hni_mns_obrien_legacy = {
+		liberty_desire = -15
+		vassal_forcelimit_bonus = 1.00
+	}
+	hni_mns_reclaim_high_kingship = {
+		province_warscore_cost = -0.15
+	}
+	hni_mns_renovate_cashel = {
+		prestige = 1
+	}
+	hni_mns_enforce_cios_dubh = {
+		global_manpower_modifier = 0.10
+		vassal_income = 0.25
+	}
+	hni_mns_refuge_gaelic_defiance = {
+		defensiveness = 0.20
+	}
+}
+HNI_MTH_ideas = { #Meath
+	start = {
+		land_morale = 0.1
+		defensiveness = 0.20
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = MTH
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_mth_book_kells = {
+		tolerance_own = 2
+		prestige = 1
+	}
+	hni_mth_rebuild_tara = {
+		legitimacy = 1
+		fabricate_claims_cost = -0.25
+	}
+	hni_mth_recover_lost_province = {
+		development_cost = -0.10
+	}
+	hni_mth_parliament_ireland = {
+		global_unrest = -1
+		reform_progress_growth = 0.15
+	}
+	hni_mth_irish_castellization = {
+		build_cost = -0.10
+		garrison_size = 0.25
+	}
+	hni_mth_beyond_pale = {
+		stability_cost_modifier = -0.15
+		harsh_treatment_cost = -0.30
+	}
+	hni_mth_welcome_sassenachs = {
+		global_trade_power = 0.15
+	}
+}
+HNI_ORD_ideas = { #Ormond
+	start = {
+		global_autonomy = -0.05
+		diplomatic_reputation = 1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = ORD
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_ord_english_service = {
+		infantry_power = 0.10
+	}
+	hni_ord_patronize_irish_literature = {
+		prestige = 1
+	}
+	hni_ord_resolving_irish_english_feuds = {
+		improve_relation_modifier = 0.25
+	}
+	hni_ord_lessons_war_roses = {
+		army_tradition = 0.5
+		possible_condottieri = 0.50
+	}
+	hni_ord_irish_gentlemanly_virtues = {
+		nobles_loyalty_modifier = 0.10
+		burghers_loyalty_modifier = 0.10
+		church_loyalty_modifier = 0.10
+	}
+	hni_ord_english_court = {
+		advisor_cost = -0.15
+	}
+	hni_ord_wool_earl = {
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+HNI_SLN_ideas = { #Sligo
+	start = {  
+		global_tax_modifier = 0.15
+		build_cost = -0.10
+	}
+  
+	bonus = {
+		global_trade_goods_size_modifier = 0.10
+	}
+  
+	trigger = {
+		tag = SLN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+  
+	hni_sln_free_gaelic_towns = {
+		development_cost = -0.10
+	}
+	hni_sln_kerns = {
+		infantry_fire = 0.20
+	}
+	hni_sln_encourage_dyes_trade = {
+		global_trade_power = 0.15
+	}
+	hni_sln_preserve_irish_culture = {
+		prestige = 1
+		culture_conversion_cost = -0.15	  
+	}
+	hni_sln_tower_houses_gaelic_castles = {
+		defensiveness = 0.20
+	}
+	hni_sln_study_norman_militaries = {
+		mil_tech_cost_modifier = -0.1
+	}
+	hni_sln_hell_connacht = {
+		land_attrition = -0.10
+		hostile_attrition = 1
+	}
+}
+HNI_TYR_ideas = { #Tyrone
+	start = {
+		infantry_power = 0.10
+		prestige = 1
+	}
+
+	bonus = {
+		development_cost = -0.10
+	}
+	
+	trigger = {
+		tag = TYR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_tyr_true_high_king = {
+		liberty_desire = -15
+		legitimacy = 1
+	}
+	hni_tyr_ui_neill_lineage = {
+		monarch_military_power = 1
+	}
+	hni_tyr_taking_hostages = {
+		improve_relation_modifier = 0.20
+	}
+	hni_tyr_tanistry_law = {
+		global_unrest = -2
+		nobles_loyalty_modifier = 0.10
+	}
+	hni_tyr_scottish_brother_kingdom = {
+		leader_land_shock = 1
+	}
+	hni_tyr_arming_people = {
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+	hni_tyr_strength_through_negotiation = {
+		diplomatic_reputation = 1
+	}
+}
+HNI_TRY_ideas = { #Tyrconnell
+	start = {
+		development_cost = -0.10
+		infantry_power = 0.1
+	}
+
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	
+	trigger = {
+		tag = TRY
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_try_last_ancient_kingdoms = {
+		defensiveness = 0.20
+	}
+	hni_try_standardize_gallowglasses = {
+		mercenary_discipline = 0.05
+	}
+	hni_try_st_patrick_cross = {
+		tolerance_own = 2
+	}
+	hni_try_fisher_kings = {
+		global_trade_power = 0.10
+	}
+	hni_try_patrick_purgatory = {
+		missionaries = 1
+	}
+	hni_try_lessons_knockavoe = {
+		leader_land_shock = 1
+	}
+	hni_try_chief_fortress_ireland = {
+		garrison_size = 0.25
+		fort_maintenance_modifier = -0.20
+	}
+}
+
+HNI_ENG_ideas = {
+	start = {
+		infantry_power = 0.10
+		global_tax_modifier = 0.15
+	}
+
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = ENG
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_eng_common_law = {
+		stability_cost_modifier = -0.15
+		global_unrest = -1
+	}
+	hni_eng_royal_navy = {
+		heavy_ship_power = 0.10
+		naval_morale = 0.10
+	}
+	hni_eng_acts_union = {
+		diplomatic_annexation_cost = -0.15
+	}
+	hni_eng_acts_concerning_regulation_trade = {
+		global_trade_power = 0.20
+		mercantilism_cost = -0.20
+	}
+	hni_eng_new_model_army = {
+		discipline = 0.05
+	}
+	hni_eng_admiralty = {
+		naval_forcelimit_modifier = 0.50
+		global_sailors_modifier = 0.25
+	}
+	hni_eng_empiricism = {
+		technology_cost = -0.10
+	}
+}
+HNI_SCO_ideas = {
+	start = {
+		leader_land_shock = 1
+		land_forcelimit_modifier = 0.10
+	}
+	
+	bonus = {
+		development_cost = -0.10
+	}
+	
+	trigger = {
+		tag = SCO
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_sco_declaration_arbroath = {
+		land_morale = 0.10
+	}
+	hni_sco_schiltron = {
+		infantry_shock = 0.2
+	}
+	hni_sco_universal_literacy = {
+		technology_cost = -0.10
+		global_institution_spread = 0.20
+	}
+	hni_sco_reform_highlander_regiments = {
+		discipline = 0.05
+	}
+	hni_sco_scottish_enlightenment = {
+		idea_cost = -0.10
+		reform_progress_growth = 0.15
+	}
+	hni_sco_wealth_nations = {
+		trade_efficiency = 0.15
+	}
+	hni_sco_industrial_revolution = {
+		global_trade_goods_size_modifier = 0.15
+	}
+}
+HNI_GBR_ideas = {
+	start = {
+		navy_tradition = 1
+		naval_forcelimit_modifier = 0.50
+	}
+
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = GBR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_gbr_trade_and_navigation = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	hni_gbr_triangle_trade = {
+		global_colonial_growth = 20
+		trade_efficiency = 0.10
+	}
+	hni_gbr_eic_patronage = {
+		mercantilism_cost = -0.33
+		trade_company_governing_cost = -0.33
+	}
+	hni_gbr_articles_of_war = {
+		ship_durability = 0.10
+		discipline = 0.05
+	}
+	hni_gbr_scientific_gunnery = {
+		heavy_ship_power = 0.20
+		dip_tech_cost_modifier = -0.10
+	}
+	hni_gbr_redcoats = {
+		yearly_army_professionalism = 0.005
+		allowed_marine_fraction = 0.25
+	}
+	hni_gbr_domestic_revolution = {
+		global_trade_goods_size_modifier = 0.15
+	}
+}
+
+#########		FRANCE		#########
+#########		FRANCE		#########
+#########		FRANCE		#########
+
+HNI_FRA_ideas = {
+	start = {
+		cavalry_shock = 0.3
+		global_manpower_modifier = 0.25
+	}
+	
+	bonus = {
+		land_morale = 0.15
+	}
+
+	trigger = {
+		tag = FRA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_fra_compagnies_d_ordonnance = {
+		discipline = 0.05
+	}
+	hni_fra_grands_vieux_corps = {
+		infantry_power = 0.10
+		army_tradition_decay = -0.01
+	}
+	hni_fra_ordinance_villers_cotterets = {
+		state_governing_cost = -0.15
+		same_culture_advisor_cost = -0.20
+	}
+	hni_fra_coureur_des_bois = {
+		native_assimilation = 0.50
+		trade_efficiency = 0.10
+	}
+	hni_fra_dragonnades = {
+		global_heretic_missionary_strength = 0.03
+	}
+	hni_fra_chambres_des_reunions = {
+		administrative_efficiency = 0.05
+	}
+	hni_fra_because_it_is_our_good_pleasure = {
+		max_absolutism = 20
+	}
+}
+
+HNI_BRI_ideas = {
+	start = {
+		cav_to_inf_ratio = 0.25
+		cavalry_fire = 1
+	}
+	
+	bonus = {
+		global_unrest = -2
+	}
+	
+	trigger = {
+		tag = BRI
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_bri_black_riders = {
+		shock_damage = 0.10
+	}
+	hni_bri_arthurian_legends = {
+		prestige = 1
+		legitimacy = 1	
+	}
+	hni_bri_protective_treaties = {
+		diplomatic_reputation = 1
+	}
+	hni_bri_beyond_our_shores = {
+		colonists = 1
+		range = 0.25
+	}
+	hni_bri_cooperative_trade_deals = {
+		trade_efficiency = 0.10
+	}
+	hni_bri_people_sea = {
+		naval_morale = 0.15
+	}
+	hni_bri_catholicon = {
+		num_accepted_cultures = 2
+ 	}
+}
+
+HNI_BUR_ideas = {
+	start = {
+		infantry_fire = 0.25
+		diplomatic_upkeep = 2
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+	
+	trigger = {
+		tag = BUR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_bur_order_of_golden_fleece = {
+		papal_influence = 2
+		prestige = 1
+	}
+	hni_bur_combined_arms = {
+		artillery_power = 0.15
+		mil_tech_cost_modifier = -0.10
+	}
+	hni_bur_compagnies_d_ordinnance = {
+		discipline = 0.05
+	}
+	hni_bur_chambres_des_comptes = {
+		global_tax_modifier = 0.15
+	}
+	hni_bur_estate_general_of_netherlands = {
+		republican_tradition = 0.3
+		trade_efficiency = 0.10
+	}
+	hni_bur_great_council_of_mechilen = {
+		reduced_liberty_desire = 10
+		global_unrest = -2
+	}
+	hni_bur_burgundian_state = {
+		diplomatic_reputation = 1
+		diplomatic_annexation_cost = -0.20
+	}
+}
+#########		GERMANY		#########
+#########		GERMANY		#########
+#########		GERMANY		#########
+
+HNI_BOH_ideas = {
+	start = {
+		imperial_authority = 0.15
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		defensiveness = 0.20
+	}
+	
+	trigger = {
+		tag = BOH
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_boh_wagenbbug = {
+		shock_damage_received = -0.10
+		fire_damage = 0.10
+	}
+	hni_boh_sirotci = {
+		land_morale = 0.10
+	}
+	hni_boh_compacta = {
+		tolerance_heretic = 3
+	}
+	hni_boh_university_of_prague = {
+		papal_influence = 1
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.25
+		technology_cost = -0.05
+	}
+	hni_boh_diplomatic_treatise = {
+		diplomatic_reputation = 1
+		diplomats = 1
+	}
+	hni_boh_bergordnung = {
+		global_trade_goods_size_modifier = 0.10
+		monthly_gold_inflation_modifier = -0.15
+	}
+	hni_boh_zrizene_zemske = {
+		yearly_corruption = -0.1
+	}
+}
+HNI_BRA_ideas = {
+	start = {
+		fabricate_claims_cost= -0.25
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		global_autonomy = -0.05
+	}
+	
+	trigger = {
+		tag = BRA
+		NOT = { has_country_flag =  hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_bra_nordmark = {
+		land_morale = 0.10
+		defensiveness = 0.10
+	}
+	hni_bra_pomeranian_wars = {
+		land_forcelimit_modifier = 0.15
+	}
+	hni_bra_kammergericht = {
+		advisor_pool = 1
+	}
+	hni_bra_hohenzollern_claims = {
+		province_warscore_cost = -0.10
+	}
+	hni_bra_berlin_gymnasium = {
+		adm_tech_cost_modifier = -0.10
+	}
+	hni_bra_jachimica_constitutio = {
+		stability_cost_modifier = -0.10
+	}
+	hni_bra_teuton_influence = {
+		army_tradition_decay = -0.01
+		infantry_power = 0.10
+	}
+}
+HNI_PRU_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.20
+		ae_impact = -0.15
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = PRU
+		NOT = { has_country_flag =  hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_pru_prussian_virtues = {
+		tolerance_heretic = 2
+		land_morale = 0.15
+	}
+	hni_pru_movement_warfare = {
+		leader_land_shock = 1
+		movement_speed = 0.15
+	}
+	hni_pru_kantonsystem = {
+		global_manpower_modifier = 0.25
+	}
+	hni_pru_fall_manoeuvres = {
+		army_tradition = 1
+	}
+	hni_pru_prussian_drill = {
+		fire_damage_received = -0.10
+		drill_gain_modifier = 0.33
+	}
+	hni_pru_goosestep = {
+		discipline = 0.05
+	}
+	hni_pru_schooling_system = {
+		technology_cost = -0.10
+	}
+}
+HNI_SAX_ideas = {
+	start = {
+	   	ae_impact = -0.15
+		prestige = 1
+	}
+	
+	bonus = {
+		core_creation = -0.20
+	}
+	
+	trigger = {
+		tag = SAX
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_sax_sachsenspiege = {
+		global_unrest = -2
+		global_trade_power = 0.15
+	}
+	hni_sax_dual_electorship = {
+		diplomatic_reputation = 1
+	}
+	hni_sax_wise_electors = {
+		monarch_admin_power = 1
+	}
+	hni_sax_meisner_porcelain = {
+	 	global_trade_goods_size_modifier = 0.10
+	}
+	hni_sax_wittenberg_university = {
+		tolerance_heretic = 2
+		tolerance_own = 1
+	}
+	hni_sax_corpus_evangelicorum = {
+		diplomatic_upkeep = 1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+	hni_sax_saxon_circle = {
+		discipline = 0.05
+	}
+}
+HNI_SWI_ideas = {
+	start = {
+		possible_condottieri = 0.50
+		shock_damage_received = -0.10
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = SWI
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes  #will be triggered at load
+	
+	hni_swi_drills_drums = {
+		infantry_power = 0.10
+	}
+	hni_swi_alpine_defensiveness = {
+		defensiveness = 0.25
+		fort_maintenance_modifier = -0.20
+	}
+	hni_swi_swiss_farming_techniques = {
+		development_cost = -0.10
+	}
+	hni_swi_three_languages_one_culture = {
+		num_accepted_cultures = 2
+	}
+	hni_swi_debate_religious_issues = {
+		tolerance_heretic = 3
+	}
+	hni_swi_the_calling = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_swi_universal_conscription = {
+		global_manpower_modifier = 0.20
+	}
+}
+
+#########		IBERIA		#########
+#########		IBERIA		#########
+#########		IBERIA		#########
+
+HNI_ADU_ideas = {
+	start = {
+		land_morale = 0.15 
+		warscore_cost_vs_other_religion = -0.20
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+
+	trigger = {
+		tag = ADU
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	  
+		
+	hni_adu_medical_advancements = {
+		manpower_recovery_speed = 0.20
+	}
+	hni_adu_encourage_al_kimiya = {
+		technology_cost = -0.10
+	}
+	hni_adu_true_successor_caliphate = {
+		legitimacy = 1
+	}
+	hni_adu_taifa_administration = {
+		vassal_forcelimit_bonus = 1.00
+	}
+	hni_adu_propagate_maliki_school = {
+		global_heretic_missionary_strength = 0.02
+		reform_progress_growth = 0.15
+	}
+	hni_adu_import_berber_armies = {
+		cavalry_power = 0.15
+		cavalry_cost = -0.10
+	}
+	hni_adu_secure_african_trade = {
+		trade_steering = 0.20
+	}
+}
+HNI_ARA_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		siege_ability = 0.15
+	}
+	
+	trigger = {
+		tag = ARA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_ara_almogavars = {
+		infantry_power = 0.10
+		fire_damage = 0.10
+	}
+	hni_ara_crown_aragon = {
+		prestige = 1
+	}
+	hni_ara_feuros_aragon = {
+		global_unrest = -1
+		nobles_loyalty_modifier = 0.10
+	}
+	hni_ara_thalassocracy = {
+		galley_power = 0.20
+	}
+	hni_ara_consulate_sea = {
+		trade_efficiency = 0.15
+	}
+	hni_ara_trading_halls = {
+		global_trade_power = 0.15
+	}
+	hni_ara_taula_canvi = {
+		interest = -1
+		inflation_reduction = 0.1
+	}
+}
+HNI_ASU_ideas = {
+	start = {
+		leader_land_shock = 1
+		discipline = 0.05
+	}
+	bonus = {
+		global_manpower_modifier = 0.20
+	}
+	trigger = {
+		tag = ASU
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_asu_reconquista = {
+		warscore_cost_vs_other_religion = -0.30
+	}
+	hni_asu_santiago_matamoros = {
+		land_morale = 0.15
+	}
+	hni_asu_strategic_depopulation = {
+		hostile_attrition = 1
+		defensiveness = 0.20
+	}
+	hni_asu_refuge_mozarabs = {
+		development_cost = -0.10
+	}
+	hni_asu_cruz_victoria = {
+		army_tradition = 0.5
+	}
+	hni_asu_asturian_art = {
+		build_cost = -0.10
+	}
+	hni_asu_first_crusader_kings = {
+		legitimacy = 1
+		papal_influence = 2
+	}
+}
+HNI_CAS_ideas = {
+	start = {
+		land_morale = 0.15
+		defensiveness = 0.20
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = CAS
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_cas_people_war = {
+		global_manpower_modifier = 0.20
+	}
+	hni_cas_toledo_steel = {
+		shock_damage = 0.10
+	}
+	hni_cas_royal_universities = {
+		technology_cost = -0.05
+		institution_spread_from_true_faith = 0.20
+	}
+	hni_cas_inter_caetera = {
+		idea_claim_colonies = yes
+		colonists = 1
+	}
+	hni_cas_encomienda = {
+		global_trade_goods_size_modifier = 0.05
+		global_colonial_growth = 20
+	}
+	hni_cas_imperator_hispaniae = {
+		governing_capacity_modifier = 0.10
+	}
+	hni_cas_castilian_language = {
+		culture_conversion_cost = -0.20
+	}
+}
+HNI_CAT_ideas = {
+	start = {
+		land_morale = 0.10
+		defensiveness = 0.20
+	}
+ 
+	bonus = {
+		diplomatic_reputation = 1
+	}
+ 
+	trigger = {
+		tag = CAT
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+ 
+	hni_cat_generalitat_catalunya = {
+		legitimacy = 1
+		republican_tradition = 0.3
+	}
+	hni_cat_catalan_constitutions = {
+		global_unrest = -2
+		stability_cost_modifier = -0.15
+	}
+	hni_cat_sagramental = {
+		global_manpower_modifier = 0.20
+	}
+	hni_cat_catalan_galleys = {
+		galley_power = 0.20
+	}
+	hni_cat_catalan_company = {
+		mercenary_manpower = 0.25
+		mercenary_discipline = 0.05
+	}
+	hni_cat_consell_cent = {
+		yearly_corruption = -0.1
+		reform_progress_growth = 0.15
+	}
+	hni_cat_remenca_pagesos = {
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+HNI_GAL_ideas = {
+	start = {
+		defensiveness = 0.20
+		fire_damage = 0.10
+	}
+
+	bonus = {
+		global_unrest = -2
+	}
+
+	trigger = {
+		tag = GAL
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+
+	free = yes	  
+
+	hni_gal_always_armed = {
+		shock_damage_received = -0.15
+	}
+	hni_gal_sanctuaria_santiago = {
+		tolerance_own = 2
+		papal_influence = 2
+		church_power_modifier = 0.15
+	}
+	hni_gal_camino_real = {
+		global_tax_modifier = 0.15
+		caravan_power = 0.2
+	}
+	hni_gal_fogar_breogan = {
+		colonists = 1
+	}
+	hni_gal_santiago_cierra = {
+		land_morale = 0.15
+	}
+	hni_gal_maritime_highways = {
+		range = 0.15
+	}
+	hni_gal_irmandinos = {
+		infantry_power = 0.15
+	}
+}
+HNI_GRA_ideas = {
+	start = {
+		global_tax_modifier = 0.15
+		fort_maintenance_modifier = -0.20
+	}
+	
+	bonus = {
+		warscore_cost_vs_other_religion = -0.20
+	}
+	
+	trigger = {
+		tag = GRA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_gra_al_zillij = {
+		prestige = 1
+	}
+	hni_gra_al_andalus = {
+		core_creation = -0.15
+	}
+	hni_gra_volunteers_faith = {
+		global_manpower_modifier = 0.20
+	}
+	hni_gra_strait_fibraltar = {
+		global_own_trade_power = 0.10
+		trade_steering = 0.10
+	}
+	hni_gra_use_old_build_new = {
+		build_cost = -0.15
+	}
+	hni_gra_canals_cisterns_towers = {
+		defensiveness = 0.25
+	}
+	hni_gra_garnata_al_yahud = {
+		advisor_cost = -0.20
+	}
+}
+HNI_LON_ideas = {
+	start = {
+		land_morale = 0.10
+		legitimacy = 1
+	}
+
+	bonus = {
+		diplomatic_annexation_cost = -0.15
+	}
+	
+	trigger = {
+		tag = LON
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_lon_cortes = {
+		reform_progress_growth = 0.15
+		global_unrest = -2
+	}
+	hni_lon_order_santiago = {
+		cavalry_power = 0.20
+	}
+	hni_lon_hidalgos = {
+		discipline = 0.05
+	}
+	hni_lon_concilions_feuros_leyes = {
+		possible_policy = 1
+		prestige = 1
+	}
+	hni_lon_continue_reconquista = {
+		army_tradition = 0.5
+	}
+	hni_lon_school_salamanca = {
+		idea_cost = -0.10
+	}
+	hni_lon_expression_faith = {
+		tolerance_own = 2
+	}
+}
+HNI_MJO_ideas = {
+	start = {
+		naval_morale = 0.10
+		galley_power = 0.20
+	}
+ 
+	bonus = {
+		sunk_ship_morale_hit_recieved = -0.2
+	}
+ 
+	trigger = {
+		tag = MJO
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+ 
+	hni_mjo_privative_kingdom = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+	}
+	hni_mjo_haven_slave_trade = {
+		may_perform_slave_raid = yes
+	}
+	hni_mjo_misquelets = {
+		manpower_recovery_speed = 0.15
+	}
+	hni_mjo_lliures_morts = {
+		land_morale = 0.10
+	}
+	hni_mjo_raid_moros = {
+		privateer_efficiency = 0.15
+	}
+	hni_mjo_island_harbors = {
+		global_trade_power = 0.10
+	}
+	hni_mjo_insular_council = {
+		build_cost = -0.10
+	}
+}
+HNI_NAV_ideas = {
+	start = {
+		fire_damage = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		num_accepted_cultures = 2
+	}
+	trigger = {
+		tag = NAV
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+
+	hni_nav_moros_costa = {
+		defensiveness = 0.20
+	}
+	hni_nav_follow_whale_migrations = {
+		range = 0.33
+		colonists = 1
+	}
+	hni_nav_navarrese_company = {
+		mercenary_cost = -0.15
+	}
+	hni_nav_protective_trade_deals = {
+		trade_efficiency = 0.10
+	}
+	hni_nav_royal_basque_society = {
+		idea_cost = -0.10
+		development_cost = -0.05
+	}
+	hni_nav_beret = {
+		discipline = 0.05
+	}
+	hni_nav_carlism = {
+		land_morale = 0.10
+		legitimacy = 1
+	}
+}
+HNI_POR_ideas = {
+	start = {
+		range = 0.25
+		infantry_fire = 0.15
+	}
+	
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = POR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_por_new_age_sail = {
+		ship_durability = 0.10
+		dip_tech_cost_modifier = -0.10
+	}
+	hni_por_black_swords = {
+		infantry_power = 0.10
+		allowed_marine_fraction = 0.33
+	}
+	hni_por_early_adoption_gunpowder = {
+		mil_tech_cost_modifier = -0.10
+	}
+	hni_por_tordesillas = {
+		idea_claim_colonies = yes
+		colonists = 1
+	}
+	hni_por_feitorias = {
+		global_prov_trade_power_modifier = 0.20
+		trade_company_investment_cost = -0.20
+	}
+	hni_por_cartazes = {
+		global_ship_trade_power = 0.20
+	}
+	hni_por_portalan_charts = {
+		global_naval_engagement_modifier = 0.10
+	}
+}
+HNI_VAL_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.10
+		trade_steering = 0.20
+	}
+ 
+	bonus = {
+		artillery_fire = 1
+	}
+ 
+	trigger = {
+		tag = VAL
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+ 
+	hni_val_heritage_balansiyya = {
+		development_cost = -0.15
+	}
+	hni_val_integrate_mudejar = {
+		global_missionary_strength = 0.02
+	}
+	hni_val_twice_loyal = {
+		defensiveness = 0.20
+	}
+	hni_val_llotja_seda = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	hni_val_valencia_oranges = {
+		naval_attrition = -0.25
+	}
+	hni_val_germanies = {
+		own_coast_naval_combat_bonus = 1
+		global_ship_cost = -0.10
+	}
+	hni_val_cradle_iberia = {
+		culture_conversion_cost = -0.15
+	}
+}
+HNI_SPA_ideas = {
+	start = {
+		land_morale = 0.15
+		artillery_fire = 1
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = SPA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+
+	hni_spa_catholic_monarchs = {
+		papal_influence = 2
+	}
+	hni_spa_casa_contracion = {
+		liberty_desire_from_subject_development = -0.20
+		treasure_fleet_income = 0.50
+	}
+	hni_spa_inter_caetera = {
+		idea_claim_colonies = yes
+		colonists = 1
+	}
+	hni_spa_global_currency = {
+		global_trade_power = 0.20
+	}
+	hni_spa_spanish_inquisition = {
+		missionaries = 1
+	}
+	hni_spa_gregoria_calendar = { 
+		production_efficiency = 0.10
+	}
+	hni_spa_guerrilla_warfare = {
+		hostile_attrition = 1
+	}
+}
+
+#########		NORTH AFRICA		#########
+#########		NORTH AFRICA		#########
+#########		NORTH AFRICA		#########
+
+HNI_MOR_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		land_attrition = -0.10
+	}
+	bonus = {
+		infantry_power = 0.10
+	}
+	trigger = {
+		tag = MOR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_mor_mellahs = {
+		build_cost = -0.15
+		global_prov_trade_power_modifier = 0.10
+	}
+	hni_mor_for_gold = {
+		monthly_gold_inflation_modifier = -0.10
+		caravan_power = 0.20
+	}
+	hni_mor_black_guard = {
+		global_manpower_modifier = 0.15
+		discipline = 0.05
+	}
+	hni_mor_mahdi_new_world = {
+		colonists = 1
+	}
+	hni_mor_atlantic_pursuit = {
+		naval_forcelimit_modifier = 0.25
+		heavy_ship_power = 0.10
+	}
+	hni_mor_sharifate = {
+		legitimacy = 1
+		devotion = 1
+		tolerance_own = 2
+	}
+	hni_mor_makhzen = {
+		global_autonomy = -0.05
+	}
+}
+
+#########		ITALY		#########
+#########		ITALY		#########
+#########		ITALY		#########
+
+HNI_FER_ideas = {
+ 	start = {
+		land_morale = 0.10
+		diplomatic_upkeep = 1
+ 	}
+ 	
+ 	bonus = {
+		fire_damage = 0.10
+ 	}
+ 	
+ 	trigger = {
+		tag = FER
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+ 	}
+ 	free = yes
+ 	
+ 	hni_fer_estensi = {
+		legitimacy = 1
+ 	}
+ 	hni_fer_condotte_militari = {
+		merc_maintenance_modifier = -0.33
+		mercenary_manpower = 0.15
+ 	}
+ 	hni_fer_addizione_erculea = {
+		development_cost = -0.10
+ 	}
+ 	hni_fer_mecenatismo_estense = {
+		advisor_cost = -0.15
+		idea_cost = -0.05
+ 	}
+ 	hni_fer_castello_estense = {
+		defensiveness = 0.15
+ 	}
+ 	hni_fer_corti_imperiali = {
+		prestige = 1
+ 	}
+ 	hni_fer_fonderie_ferraresi = {
+		artillery_cost = -0.10
+		artillery_power = 0.10
+ 	}
+}
+HNI_GEN_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		republican_tradition = 0.5
+	}
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = GEN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_gen_vivaldi_noli_malfante = {
+		may_explore = yes
+		naval_attrition = -0.25
+		range = 0.33
+	}
+	hni_gen_genoese_crossbowmen = {
+		infantry_fire = 0.2
+	}
+	hni_gen_genoese_colonies = {
+		global_trade_power = 0.15
+	}
+	hni_gen_ianuensis_ergo_mercator = {
+		placed_merchant_power = 15
+	}
+	hni_gen_officium_sancti_georgii = {
+		inflation_reduction = 0.10
+		interest = -1.25
+	}
+	hni_gen_gazaria_rules = {
+		galley_cost = -0.15
+		naval_forcelimit_modifier = 0.33
+	}
+	hni_gen_galleys_magistrate = {
+		ship_durability = 0.10
+	}
+}
+HNI_ITA_ideas = {
+	start = {
+		republican_tradition = 0.5
+		legitimacy = 1
+		devotion = 1
+		global_manpower_modifier = 0.33
+	}
+	
+	bonus = {
+		possible_policy = 1
+	}
+	
+	trigger = {
+		tag = ITA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_ita_culla_rinascimento = {
+		technology_cost = -0.075
+		idea_cost = -0.075
+	}
+	hni_ita_milizia = {
+		land_morale	= 0.10
+		infantry_power = 0.15
+	}
+	hni_ita_arsenali_marittimi = {
+		galley_power = 0.15
+		global_trade_power = 0.15
+	}
+	hni_ita_repubbliche_marinare = {
+		global_ship_trade_power = 0.20
+	}
+	hni_ita_corti_imperiali = {
+		improve_relation_modifier = 0.50
+	}
+	hni_ita_catene_montuose = {
+		defensiveness = 0.25
+	}
+	hni_ita_pianure_alluvionali = {
+		development_cost = -0.10
+	}
+}
+HNI_MAN_ideas = {
+	start = {
+		cavalry_cost = -0.20
+		diplomats = 1
+	}
+	
+	bonus = {
+		cavalry_power = 0.15
+	}
+	
+	trigger = {
+		tag = MAN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_man_gonzaga = {
+		improve_relation_modifier = 0.15
+	}
+	hni_man_condotte_military = {
+		merc_maintenance_modifier = -0.33
+		mercenary_manpower = 0.15
+	}
+	hni_man_celeste_galleria = {
+		advisor_cost = -0.10
+		idea_cost = -0.05
+	}
+	hni_man_quattro_laghi_di_mincio = {
+		defensiveness = 0.15
+		development_cost = -0.10
+	}
+	hni_man_cordone_giallo = {
+		tolerance_own = 2
+		papal_influence = 2
+	}
+	hni_man_ghetto_mantovano = {
+		interest = -0.5
+	}
+	hni_man_corti_imperiali = {
+		diplomatic_reputation = 1
+	}
+}
+HNI_MLO_ideas = {
+	start = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		infantry_power = 0.10
+	}
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = MLO
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_mlo_piastra_milanese = {
+		shock_damage_received = -0.15
+	}
+	hni_mlo_camera_mercanti = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_mlo_espansione_viscontea = {
+		core_creation = -0.15
+	}
+	hni_mlo_ufficio_governatore_statuti = {
+		technology_cost = -0.05
+		reform_progress_growth = 0.15
+	}
+	hni_mlo_armata_ducale = {
+		land_forcelimit_modifier = 0.15
+		army_tradition = 0.5
+	}
+	hni_mlo_naviglio_grande = {
+		development_cost = -0.10
+	}
+	hni_mlo_centro_commercio_padano = {
+		caravan_power = 0.15
+		merchants = 1
+	}
+}
+HNI_NAP_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		infantry_power = 0.10 
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.15
+	}
+
+	trigger = {
+		tag = NAP
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+
+	free = yes
+		
+	hni_nap_sicilian_kingship = {
+		diplomatic_reputation = 1
+		legitimacy = 1
+	}
+	hni_nap_repubblica_salerno = {
+		global_ship_cost = -0.15
+		global_ship_trade_power = 0.10
+	}
+	hni_nap_liber_augustalis = {
+		development_cost = -0.10
+	}
+	hni_nap_universita_federico = {
+		technology_cost = -0.10
+	}
+	hni_nap_conquista_ladislao = {
+		province_warscore_cost = -0.15
+	}
+	hni_nap_transumanza = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_nap_castella = {
+		defensiveness = 0.20
+	}
+}
+HNI_SIC_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		infantry_power = 0.10 
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = SIC
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	
+	free = yes
+	
+	hni_sic_sicilian_kingship = {
+		diplomatic_reputation = 1
+		legitimacy = 1
+	}
+	hni_sic_parramentu_sicilianu = {
+		reform_progress_growth = 0.15
+	}
+	hni_sic_bellezza_sicilia = {
+		tolerance_heathen = 1
+		num_accepted_cultures = 1
+	}
+	hni_sic_vespri_siciliani = {
+		land_morale = 0.15
+	}
+	hni_sic_norman_knights = {
+		discipline = 0.05
+	}
+	hni_sic_spanish_heritage = {
+		tolerance_own = 1
+		defensiveness = 0.15
+	}
+	hni_sic_stretto_sicilia = {
+		galley_power = 0.15
+	}
+}
+HNI_TTS_ideas = { 
+	start = {
+		infantry_power = 0.10
+		naval_morale = 0.10
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = TTS
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	
+	free = yes
+	
+	hni_tts_constitutio_amalfitana = {
+		possible_policy = 1
+	}
+	hni_tts_crown_two_sicilies = {
+		legitimacy = 1
+		diplomatic_reputation = 1
+	}
+	hni_tts_arsenali_marittimi = {
+		naval_forcelimit_modifier = 0.15
+	}
+	hni_tts_real_esercito = {
+		land_forcelimit_modifier = 0.20
+		army_tradition = 0.5
+	}
+	hni_tts_pubblica_istruzione = {
+		technology_cost = -0.075
+		yearly_corruption = -0.05
+	}
+	hni_tts_transumanza = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_tts_flotta_commerciale = {
+		leader_naval_manuever = 2
+	}
+}
+HNI_PGA_ideas = {
+	start = {
+		mercenary_manpower = 0.50
+		mercenary_cost = -0.15
+	}
+	
+	bonus = {
+		mercenary_discipline = 0.05
+	}
+	
+	trigger = {
+		tag = PGA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_pga_ercolano_perugia = {
+		tolerance_own = 2
+	}
+	hni_pga_governo_artigiano = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_pga_braccio_montone = {
+		shock_damage = 0.10
+		merc_maintenance_modifier = -0.15
+	}
+	hni_pga_signoria_perugina = {
+		republican_tradition = 0.5
+		reform_progress_growth = 0.15
+	}
+	hni_pga_rinascimento_baglioni = {
+		advisor_cost = -0.10
+	}
+	hni_pga_guerra_sale = {
+		war_exhaustion = -0.03
+		army_tradition_from_battle = 0.75
+	}
+	hni_pga_rocca_paolina = {
+		defensiveness = 0.20
+	}
+}
+HNI_PIS_ideas = {
+	start = {
+		galley_power = 0.15
+		republican_tradition = 0.5
+		devotion = 1
+	}
+	bonus = {
+		trade_efficiency = 0.15
+	}
+	trigger = {
+		tag = PIS
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_pis_crusading_traditions = {
+		land_morale = 0.10
+		tolerance_own = 1
+	}
+	hni_pis_empori_meridionali = {
+		global_prov_trade_power_modifier = 0.15
+		merchants = 1
+	}
+	hni_pis_gesta_triumphalia_pisanos = {
+		naval_morale = 0.10
+	}
+	hni_pis_rinascimento_toscano = {
+		technology_cost = -0.10
+		reform_progress_growth = 0.10
+	}
+	hni_pis_liber_maiolichinus = {
+		naval_forcelimit_modifier = 0.15
+	}
+	hni_pis_foce_arno = {
+		development_cost = -0.10
+	}
+	hni_pis_repubblica_tirrena = {
+		global_trade_power = 0.15
+	}
+}
+HNI_TUS_ideas = {
+	start = {
+		republican_tradition = 0.5
+		improve_relation_modifier = 0.25
+	}
+	
+	bonus = {
+		build_cost = -0.10
+	}
+	
+	trigger = {
+		OR = {
+			tag = TUS
+			tag = LAN 
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_tus_pavese = {
+		fire_damage_received = -0.05
+	}
+	hni_tus_bande_toscane = {
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+	hni_tus_birthplace_renaissance = {
+		all_power_cost = -0.05
+	}
+	hni_tus_uffizi = {
+		advisor_cost = -0.15
+		advisor_pool = 1
+	}
+	hni_tus_riforma_terra = {
+		development_cost = -0.10
+	}
+	hni_tus_fiorino_oro = {
+		interest = -0.75
+	}
+	hni_tus_artigianato_fiorentino = {
+		global_trade_goods_size_modifier = 0.15
+		global_institution_spread = 0.05
+ 	}
+}
+HNI_VEN_ideas = {
+	start = {
+		galley_power = 0.25
+		republican_tradition = 0.5
+	}
+	
+	bonus = {
+		trade_efficiency = 0.15
+	}
+	
+	trigger = {
+		tag = VEN
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_ven_arsenale_veneziano = {
+		naval_forcelimit_modifier = 0.20
+		dip_tech_cost_modifier = -0.10
+	}
+	hni_ven_armada = {
+		naval_morale = 0.15
+		navy_tradition = 1
+	}
+	hni_ven_vetro_murano = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_ven_fanti_mar = {
+		shock_damage = 0.10
+		allowed_marine_fraction = 0.50
+	}
+	hni_ven_aldina = {
+		global_institution_spread = 0.15
+	}
+	hni_ven_galeazza = {
+		leader_naval_fire = 2
+	}
+	hni_ven_riforma_shulenburg = {
+		global_manpower_modifier = 0.10
+		land_forcelimit_modifier = 0.10
+		
+	}
+}
+HNI_SAR_ideas = {
+	start = {
+		defensiveness = 0.25
+		reform_progress_growth = 0.15
+	}
+	
+	bonus = {
+		production_efficiency = 0.10
+	}
+	
+	trigger = {
+		tag = SAR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_sar_nuraghi = {
+		hostile_attrition = 1
+		own_coast_naval_combat_bonus = 1
+	}
+	hni_sar_giudicati_sardi = {
+		development_cost = -0.10
+	}
+	hni_sar_porto_torres = {
+		naval_forcelimit_modifier = 0.20
+	}
+	hni_sar_defensive_tactics = {
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+	hni_sar_arborea = {
+		land_morale = 0.10
+		manpower_recovery_speed = 0.10
+	}
+	hni_sar_miniere_sarde = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_sar_marchesato_oristano = {
+		discipline = 0.05
+	}
+}
+HNI_SAV_ideas = {
+	start = {
+		land_morale = 0.1
+		improve_relation_modifier = 0.25
+	}
+	
+	bonus = {
+		ae_impact = -0.10
+	}
+	
+	trigger = {
+		tag = SAV
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_sav_cittadella = {
+		defensiveness = 0.20
+	}
+	hni_sav_franco_italian_influence = {
+		technology_cost = -0.10
+		advisor_pool = 1
+	}
+	hni_sav_northern_meddling = {
+		diplomatic_reputation = 1
+	}
+	hni_sav_decima = {
+		global_tax_modifier = 0.15
+	}
+	hni_sav_legion_allobroges = {
+		infantry_power = 0.10
+		global_manpower_modifier = 0.15
+	}
+	hni_sav_statuta_sabaudiae = {
+   		state_maintenance_modifier = -0.15
+	}
+	hni_sav_venaria_reale = {
+		legitimacy = 1
+		prestige = 1
+	}
+}
+HNI_SPI_ideas = {
+	start = {
+		global_autonomy = -0.05
+		improve_relation_modifier = 0.20
+	}
+	
+	bonus = {
+		ae_impact = -0.15
+	}
+	
+	trigger = {
+		tag = SPI
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_spi_artistical_resurgence = {
+		build_cost = -0.10
+	}
+	hni_spi_real_esercito = {
+		land_forcelimit_modifier = 0.20
+		land_morale = 0.10
+	}
+	hni_spi_istruzione_gesuita = {
+		idea_cost = -0.10
+		global_institution_spread = 0.10
+	}
+	hni_spi_fusione_perfetta = {
+		num_accepted_cultures = 2
+	}
+	hni_spi_accademia_reale_torino = {
+		discipline = 0.05
+		global_manpower_modifier = 0.15
+	}
+	hni_spi_cassa_ecclesiastica = {
+		papal_influence = 2
+		church_power_modifier = 0.10
+		tolerance_heretic = 1
+	}
+	hni_spi_tentativu_industriare = {
+		production_efficiency = 0.10
+	}
+}
+
+#########		LOW COUNTRIES		#########
+#########		LOW COUNTRIES		#########
+#########		LOW COUNTRIES		#########
+
+HNI_BRB_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		stability_cost_modifier = -0.10
+	}
+	
+	bonus = {
+		trade_steering = 0.20
+	}
+	
+	trigger = {
+		tag = BRB
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_brb_stadsrechten_belforten = {
+		global_unrest = -1
+		land_morale = 0.20
+	}
+	hni_brb_brusselse_wandtapijten = {
+		production_efficiency = 0.10
+		improve_relation_modifier = 0.20
+	}
+	hni_brb_het_ziekenhuis_ninove = {
+		manpower_recovery_speed = 0.10
+	}
+	hni_brb_faceting = {
+		global_trade_goods_size_modifier = 0.10
+		global_tax_modifier = 0.10
+	}
+	hni_brb_opkomst_antwerpen = {
+		global_trade_power = 0.10
+	}
+	hni_brb_gilden_brussel = {
+		adm_tech_cost_modifier = -0.10
+		interest = -0.5
+	}
+	hni_brb_erfgenamen_lothar = {
+		infantry_cost = -0.10
+		global_manpower_modifier = 0.15
+	}
+}
+HNI_EFR_ideas = {
+	start = {
+		stability_cost_to_declare_war = -0.10
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		global_prov_trade_power_modifier = 0.10
+	}
+	
+	trigger = {
+		tag = EFR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_efr_fryske_frijheid = {
+		land_morale = 0.10
+	}
+	hni_efr_victual_brothers = {
+		privateer_efficiency = 0.15
+	}
+	hni_efr_haadlingen = {
+		global_unrest = -1
+	}
+	hni_efr_brokmerbrief = {
+		republican_tradition = 0.5
+		legitimacy = 1
+	}
+	hni_efr_defeat_empire = {
+		discipline = 0.05
+	}
+	hni_efr_mennonite_refuge = {
+		tolerance_heretic = 2
+	}
+	hni_efr_frisian_parliament = {
+		global_autonomy = -0.05
+		reform_progress_growth = 0.20
+	}
+}
+HNI_FLA_ideas = {
+	start = {
+		development_cost = -0.10
+		global_institution_spread = 0.10
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	
+	trigger = {
+		tag = FLA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_fla_vlaamese_lakens = {
+		production_efficiency = 0.15
+	}
+	hni_fla_guldensporenslag = {
+		infantry_power = 0.10
+		shock_damage_received = -0.05
+	}
+	hni_fla_koningen_jeruzalem = {
+		prestige = 1
+	}
+	hni_fla_vlaamse_renaissance = {
+		technology_cost = -0.05
+		advisor_cost = -0.10
+	}
+	hni_fla_brugse_beurs = {
+		trade_efficiency = 0.15
+	}
+	hni_fla_trappisten_orden = {
+		global_unrest = -2
+	}
+	hni_fla_leeuw_wederom_brullen = {
+		land_morale = 0.10
+		army_tradition = 0.5
+	}
+}
+HNI_FRI_ideas = {
+	start = {
+		global_tax_modifier = 0.15
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		reserves_organisation = 0.25
+	}
+	
+	trigger = {
+		tag = FRI
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_fri_upstalsboom = {
+		global_unrest = -2
+	}
+	hni_fri_fryske_frijheid = {
+		land_morale = 0.10
+	}
+	hni_fri_signal_ships = {
+		global_ship_trade_power = 0.20
+	}
+	hni_fri_frisian_horse_breeding = {
+		cavalry_power = 0.10
+	}
+	hni_fri_zuider_embankments = {
+		build_cost = -0.10
+	}
+	hni_fri_cross_dutchman = {
+		leader_land_shock = 1
+	}
+	hni_fri_stins = {
+		defensiveness = 0.15
+	}
+}
+HNI_GEL_ideas = {
+	start = {
+		diplomatic_annexation_cost = -0.15
+		global_tax_modifier = 0.10
+	}
+	
+	bonus = {
+		interest = -1
+	}
+	
+	trigger = {
+		tag = GEL
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	hni_gel_expansion_kastells = {
+		garrison_size = 0.25
+	}
+	hni_gel_imperial_elevation = {
+		prestige = 0.5
+		unjustified_demands = -0.25
+	}
+	hni_gel_independent_spirit = {
+		land_morale = 0.10
+	}
+	hni_gel_gelderse_oorlogen = {
+		imperial_mercenary_cost = -0.10
+		mercenary_discipline = 0.05
+	}
+	hni_gel_loot_payment = {
+		loot_amount = 0.25
+	}
+	hni_gel_strategic_marriages = {
+		diplomatic_reputation = 1
+	}
+	hni_gel_kastell_kilns = {
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+HNI_HOL_ideas = {
+	start = {
+		global_sailors_modifier = 0.25
+		naval_forcelimit_modifier = 0.50
+	}
+	
+	bonus = {
+		global_institution_spread = 0.50
+	}
+
+	trigger = {
+		tag = HOL
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_hol_polders = {
+		development_cost = -0.10
+	}
+	hni_hol_handelscompagnieen = {
+		merchants = 1
+		global_ship_trade_power = 0.25
+	}
+	hni_hol_soldaten_ter_zee = {
+		infantry_power = 0.10
+		allowed_marine_fraction = 0.50
+	}
+	hni_hol_de_admiraliteit = {
+		leader_naval_fire = 2
+		global_sailors_modifier = 0.10
+	}
+	hni_hol_gekoloniseerd = {
+		colonists = 1
+		range = 0.35
+	}
+	hni_hol_nieuw_amsterdam = {
+		global_colonial_growth = 25
+	}
+	hni_hol_monopoly_op_het_oosten = {
+		global_trade_power = 0.20
+	}
+}
+HNI_NED_DUT_ideas = {
+	start = {
+		naval_morale = 0.15
+		naval_forcelimit_modifier = 0.50
+	}
+	
+	bonus = {
+		colonists = 1
+	}
+
+	trigger = {
+		tag = NED
+		primary_culture = dutch
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_ned_dut_polders = {
+		development_cost = -0.10
+	}
+	hni_ned_dut_dijk_piercing = {
+		defensiveness = 0.20
+		hostile_attrition = 1
+	}
+	hni_ned_dut_wisselbank = {
+		interest = -0.5
+		inflation_reduction = 0.15
+	}
+	hni_ned_dut_mauritian_reforms = {
+		infantry_fire = 0.2
+		mil_tech_cost_modifier = -0.10
+	}
+	hni_ned_dut_haven_religious_refugees = {
+		tolerance_heathen = 2
+	}
+	hni_ned_dut_die_voorcompagnieen = {
+		trade_efficiency = 0.15
+	}
+	hni_ned_dut_instructie_voor_de_admiraliteiten = {
+		leader_naval_fire = 2
+		global_naval_engagement_modifier = 0.10
+	}
+}
+HNI_NED_FRI_ideas = {
+	start = {
+		land_morale = 0.10
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		tag = NED
+		primary_culture = frisian
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_ned_fri_polders = {
+		development_cost = -0.10
+	}
+	hni_ned_fri_dijk_piercing = {
+		defensiveness = 0.20
+		hostile_attrition = 1
+	}
+	hni_ned_fri_reunite_lowlands = {
+		ae_impact = -0.10
+	}
+	hni_ned_fri_new_heart_reformation = {
+		tolerance_own = 2
+	}
+	hni_ned_fri_likedeelers_van_buit = {
+		privateer_efficiency = 0.20
+		global_sailors_modifier = 0.20
+	}
+	hni_ned_fri_lessen_van_vrijheidsoorlogen = {
+		infantry_power = 0.10
+	}
+	hni_ned_fri_instructie_voor_de_admiraliteiten = {
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+}
+HNI_NED_FLE_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.10
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		land_morale = 0.10
+	}
+
+	trigger = {
+		tag = NED
+		OR = {
+			primary_culture = flemish
+			was_tag = BUR
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_ned_fle_polders = {
+		development_cost = -0.10
+	}
+	hni_ned_fle_dijk_piercing = {
+		defensiveness = 0.20
+		hostile_attrition = 1
+	}
+	hni_ned_fle_vlaamse_nederlander_renaissance = {
+		technology_cost = -0.10
+	}
+	hni_ned_fle_permit_hagepreken = {
+		tolerance_heretic = 3
+	}
+	hni_ned_fle_stadsrechten_grote_raad = {
+		republican_tradition = 0.6
+		legitimacy = 1
+		burghers_loyalty_modifier = 0.10
+	}
+	hni_ned_fle_chart_globe = {
+		range = 0.33
+		global_ship_trade_power = 0.15
+	}
+	hni_ned_fle_stock_markets_upgraded_ports = {
+		trade_efficiency = 0.15
+	}
+}
+
+#########		EASTERN EUROPE		#########
+#########		EASTERN EUROPE		#########
+#########		EASTERN EUROPE		#########
+
+HNI_NOV_ideas = {
+	start = {
+		global_trade_power = 0.15
+		shock_damage_received = -0.10
+	}
+	
+	bonus = {
+		naval_forcelimit_modifier = 0.20
+	}
+	
+	trigger = {
+		tag = NOV
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	
+	hni_nov_ledovoye_poboishche = {
+		land_morale = 0.10
+	}
+	hni_nov_nogorodckaya_prevaya_letopis = {
+		stability_cost_modifier = -0.10
+	}
+	hni_nov_ushkuyiniks = {
+		loot_amount = 0.50
+		mercenary_cost = -0.15
+	}
+	hni_nov_novgorodian_belka = {
+		merchants = 1
+	}
+	hni_nov_veliki_novgorod = {
+		trade_efficiency = 0.10
+		build_cost = -0.10
+	}
+	hni_nov_continuation_veche = {
+		republican_tradition = 0.5
+	}
+	hni_nov_zavolochye = {
+		caravan_power = 0.20
+		global_colonial_growth = 10
+	}
+}
+HNI_RUS_MOS_ideas = {
+	start = {
+		tolerance_own = 2
+		core_creation = -0.15
+	}
+
+	bonus = {
+		global_autonomy = -0.075
+	}
+
+	trigger = {
+		tag = RUS
+		NOT = {
+			OR = {
+				was_tag = NOV
+				was_tag = PSK
+			}
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_rus_mos_serfdom = {
+		land_forcelimit_modifier = 0.33
+	}
+	hni_rus_mos_siberian_frontiers = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	hni_rus_mos_third_rome = {
+		legitimacy = 1
+	}
+	hni_rus_mos_conscription_obligation = {
+		global_manpower_modifier = 0.25
+		infantry_cost = -0.10
+	}
+	hni_rus_mos_metropolitan_of_all_rus = {
+		warscore_cost_vs_other_religion = -0.25
+		yearly_patriarch_authority = 0.005
+	}
+	hni_rus_mos_sloboda = {
+		culture_conversion_cost = -0.20
+	}
+	hni_rus_mos_new_order = {
+		land_morale = 0.10
+		mil_tech_cost_modifier = -0.10
+	}
+}
+HNI_RUS_NOV_ideas = {
+	start = {
+		merchants = 1
+		shock_damage_received = -0.10
+	}
+
+	bonus = {
+		development_cost = -0.10
+	}
+
+	trigger = {
+		tag = RUS
+		OR = {
+			was_tag = NOV
+			was_tag = PSK
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_rus_nov_homeland_trade = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	hni_rus_nov_siberian_frontiers = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	hni_rus_nov_cold_water = {
+		build_cost = -0.15
+		center_of_trade_upgrade_cost = -0.20
+	}
+	hni_rus_nov_skhariya_the_jew = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+	hni_rus_nov_new_ushkuiniks = {
+		mercenary_cost = -0.15
+		navy_tradition = 1
+	}
+	hni_rus_nov_window_on_west = {
+		embracement_cost = -0.20
+		technology_cost = -0.05
+	}
+	hni_rus_nov_veche_of_all_rus = {
+		republican_tradition = 0.5
+	}
+}
+HNI_UKR_ideas = {
+	start = {
+		no_religion_penalty = yes
+		global_manpower_modifier = 0.20
+	}
+
+	bonus = {
+		development_cost = -0.10
+	}
+
+	trigger = {
+		tag = UKR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_ukr_chornozem = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_ukr_vissko_zaporozke = {
+		shock_damage = 0.10
+		cavalry_flanking = 0.50
+	}
+	hni_ukr_siberian_frontiers = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	hni_ukr_veliky_kiev = {
+		prestige = 1
+	}
+	hni_ukr_metropolitan_of_rus_and_kiev = {
+		yearly_patriarch_authority = 0.005
+		institution_spread_from_true_faith = 0.10
+	}
+	hni_ukr_kleinody = {
+		army_tradition = 0.75
+	}
+	hni_ukr_bratstvo = {
+		technology_cost = -0.05
+		tolerance_own = 2
+	}
+}
+HNI_POL_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		papal_influence = 2
+	}
+
+	bonus = {
+		reform_progress_growth = 0.20
+	}
+
+	trigger = {
+		tag = POL
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_pol_gaude_mater_polonia = {
+		land_morale = 0.10
+	}
+	hni_pol_union_of_krewo = {
+		diplomatic_upkeep = 1
+	}
+	hni_pol_constitutional_monarchy = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		monthly_support_heir_gain = 0.25
+	}
+	hni_pol_commonwealth = {
+		num_accepted_cultures = 2
+		nobles_loyalty_modifier = 0.10
+	}
+	hni_pol_pospolite_ruszenie = {
+		global_manpower_modifier = 0.20
+	}
+	hni_pol_winged_hussars = {
+		cavalry_shock = 1
+		cav_to_inf_ratio = 0.33
+	}
+	hni_pol_permanent_defence = {
+		garrison_size = 0.25
+		army_tradition = 0.5
+	}
+}
+HNI_PLC_POL_ideas = {
+	start = {
+		num_accepted_cultures = 3
+		papal_influence = 2
+	}
+
+	bonus = {
+		reform_progress_growth = 0.20
+	}
+
+	trigger = {
+		tag = PLC
+		primary_culture = polish
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_plc_pol_rebirth = {
+		idea_cost = -0.10
+	}
+	hni_plc_pol_pacta_conventa = {
+		all_estate_loyalty_equilibrium = 0.05
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+	hni_plc_pol_warsaw_confederation = {
+		tolerance_heretic = 3
+	}
+	hni_pol_pospolite_ruszenie = {
+		global_manpower_modifier = 0.20
+		land_morale = 0.10
+	}
+	hni_pol_winged_hussars = {
+		cavalry_shock = 1
+		cav_to_inf_ratio = 0.33
+	}
+	hni_plc_pol_magnates = {
+		production_efficiency = 0.10
+		land_maintenance_modifier = -0.10
+	}
+	hni_plc_pol_computed_army = {
+		infantry_power = 0.10
+	}
+}
+HNI_PLC_LIT_ideas = {
+	start = {
+		num_accepted_cultures = 3
+		tolerance_heretic = 3
+	}
+
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+
+	trigger = {
+		tag = PLC
+		primary_culture = lithuanian
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_plc_lit_rebirth = {
+		idea_cost = -0.10
+	}
+	hni_plc_lit_gediminid_legacy = {
+		diplomatic_reputation = 1
+	}
+	hni_plc_lit_amend_golden_liberty = {
+		free_policy = 1
+		reform_progress_growth = 0.20
+	}
+	hni_plc_lit_pospolite_ruszenie = {
+		global_manpower_modifier = 0.20
+		land_morale = 0.10
+	}
+	hni_plc_lit_winged_hussars = {
+		cavalry_shock = 1
+		cav_to_inf_ratio = 0.33
+	}
+	hni_plc_lit_magnates = {
+		production_efficiency = 0.10
+		land_maintenance_modifier = -0.10
+	}
+	hni_plc_lit_computed_army = {
+		infantry_power = 0.10
+	}
+}
+
+#########		PERSIA		#########
+#########		PERSIA		#########
+#########		PERSIA		#########
+
+HNI_PER_ideas = {
+ 	start = {
+		defensiveness = 0.15
+		cavalry_power = 0.25
+ 	}
+ 	
+ 	bonus = {
+		development_cost = -0.10
+ 	}
+ 	
+ 	trigger = {
+		tag = PER
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+ 	}
+ 	free = yes
+ 
+ 	hni_per_the_qizilbash = {
+		manpower_in_true_faith_provinces = 0.25
+		land_morale = 0.10
+ 	}
+ 	hni_per_caravanserais = {
+		global_prov_trade_power_modifier = 0.15
+ 	}
+ 	hni_per_rokn_ol_dowleh = {
+		governing_capacity_modifier = 0.10
+		free_mil_policy = 1
+ 	}
+ 	hni_per_persian_rug_production = {
+		global_trade_goods_size_modifier = 0.10
+ 	}
+ 	hni_per_jazayer = {
+		fire_damage = 0.10
+ 	}
+ 	hni_per_savaran_sapah_khorasan = {
+		cavalry_shock = 0.5
+		cav_to_inf_ratio = 0.50
+ 	}
+ 	hni_per_jazayerchi_tofangchi = {
+		discipline = 0.05
+		drill_gain_modifier = 0.25
+ 	}
+}
+
+#########		INDIA		#########
+#########		INDIA		#########
+#########		INDIA		#########
+
+HNI_DLH_ideas = {
+	start = {
+		cavalry_power = 0.20
+		global_autonomy = -0.05
+	}
+
+	bonus = {
+		artillery_power = 0.10
+	}
+
+	trigger = {
+		tag = DLH
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+		
+	hni_dlh_indo_mussalman_nobles = {
+		army_tradition_decay = -0.01
+	}
+	hni_dlh_double_defence = {
+		improve_relation_modifier = 0.20
+		defensiveness = 0.20
+	}
+	hni_dlh_streamlined_diwan = {
+		advisor_cost = -0.15
+	}
+	hni_dlh_kharaj = {
+		global_tax_modifier = 0.15
+	}
+	hni_dlh_zawabit = {
+		tolerance_own = 1
+		reform_progress_growth = 0.10
+	}
+	hni_dlh_decimal_organisation = {
+		free_leader_pool = 1
+	}
+	hni_dlh_against_rajputs = {
+		ae_impact = -0.10
+		land_morale = 0.10
+	}
+}
+HNI_BNG_ideas = {
+	start = {
+		infantry_power = 0.10
+		merchants = 1
+	}
+
+	bonus = {
+		dip_tech_cost_modifier = -0.10
+	}
+
+	trigger = {
+		tag = BNG
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	   #will be added at load.
+
+	hni_bng_shah_i_bangalah = {
+		province_warscore_cost = -0.10
+		leader_land_shock = 1
+	}
+	hni_bng_sikanders_peace = {
+		stability_cost_modifier = -0.10
+	}
+	hni_bng_dual_currency = {
+		inflation_reduction = 0.1
+	}
+	hni_bng_golden_age_of_sufism = {
+		idea_cost = -0.10
+	}
+	hni_bng_habshi_imports = {
+		manpower_recovery_speed = 0.10
+	}
+	hni_bng_growth_of_bhati = {
+		development_cost = -0.10
+		global_prov_trade_power_modifier = 0.15
+	}
+	hni_bng_holy_water = {
+		global_trade_goods_size_modifier = 0.15
+	}
+}
+HNI_MUG_ideas = {
+	start = {
+		shock_damage_received = -0.10
+		global_tax_modifier = 0.10
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+
+	trigger = {
+		tag = MUG
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	   #will be added at load.
+		
+		
+	hni_mug_ali_quli = {
+		fire_damage = 0.10
+	}
+	hni_mug_sawar_and_zat = {
+		land_forcelimit_modifier = 0.10
+		cavalry_power = 0.20
+	}
+	hni_mug_subahs = {
+		state_maintenance_modifier = -0.25
+	}
+	hni_mug_guns_and_cannons = {
+		mil_tech_cost_modifier = -0.10
+		artillery_power = 0.15
+	}
+	hni_mug_madi_i_maash = {
+		church_loyalty_modifier = 0.10
+		tolerance_own = 1
+	}
+	hni_mug_fatawa_i_almgiri = {
+		reform_progress_growth = 0.20
+	}
+	hni_mug_agricultural_reforms = {
+		production_efficiency = 0.15
+	}
+}
+HNI_JNP_ideas = {
+	start = {
+		adm_tech_cost_modifier = -0.10
+		manpower_recovery_speed = 0.20
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = JNP
+		religion_group = muslim
+		NOT = { has_country_flag = hni_use_vanilla_ideas } 
+	}
+	free = yes		#will be added at load.
+	
+	hni_jnp_sangitasiromani = {
+		idea_cost = -0.075
+	}
+	hni_jnp_lord_of_the_east = {
+		land_morale = 0.10
+	}
+	hni_jnp_treaties_and_laws = {
+		yearly_corruption = -0.1
+	}
+	hni_jnp_zamindar_army = {
+		land_forcelimit_modifier = 0.25
+		war_taxes_cost_modifier = -0.50
+	}
+	hni_jnp_shiraz_i_hind = {
+		embracement_cost = -0.20
+	}
+	hni_jnp_abode_of_peace = {
+		development_cost = -0.10
+		war_exhaustion = -0.03
+	}
+	hni_jnp_bahri_horses = {
+		cavalry_cost = -0.20
+		cavalry_power = 0.10
+	}
+}
+HNI_MER_ideas = {
+	start = {	
+		infantry_power = 0.10
+		province_warscore_cost = -0.15
+	}
+	bonus = {
+		army_tradition_decay = -0.01	
+	}
+	trigger = {
+		tag = MER
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_mer_kumbhalgarh = {
+		defensiveness = 0.20
+	}
+	hni_mer_victory_tower = {
+		prestige = 1
+	}
+	hni_mer_bravery_over_arms = {
+		shock_damage = 0.10
+	}
+	hni_mer_free_brothers_from_jizya = {
+		land_morale = 0.15
+	}
+	hni_mer_rajput_confederacy = {
+		governing_capacity_modifier = 0.10
+		special_unit_forcelimit = 0.10
+	}
+	hni_mer_city_of_lakes = {
+		development_cost = -0.10
+	}
+	hni_mer_leonidus_of_rajasthan = {
+		leader_land_shock = 1
+	}
+}
+HNI_VIJ_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		infantry_power = 0.10
+	}
+	
+	bonus = {
+		artillery_power = 0.10
+	}
+	
+	trigger = {
+		tag = VIJ
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_vij_amaranayaka_sainya = {
+		land_forcelimit_modifier = 0.25
+	}
+	hni_vij_council_of_ministers = {
+		advisor_pool = 1
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	hni_vij_varnasramadharma = {
+		stability_cost_modifier = -0.15
+	}
+	hni_vij_amaramakni = {
+		army_tradition = 0.5
+		global_tax_modifier = 0.10
+	}
+	hni_vij_astadiggajas = {
+		idea_cost = -0.10
+	}
+	hni_vij_virabanajigas_paradesi = {
+		global_trade_power = 0.15
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_vij_city_of_victory = {
+		tolerance_own = 1
+		development_cost = -0.10
+	}
+}
+HNI_ORI_ideas = {
+	start = {
+		cavalry_power = 0.25
+		core_creation = -0.10
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = ORI
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_ori_suryavamsi_militarism = {
+		land_morale = 0.15
+		global_manpower_modifier = 0.10
+	}
+	hni_ori_servitors_of_jagannath = {
+		tolerance_own = 2
+		build_cost = -0.10
+	}
+	hni_ori_angavala = {
+		defensiveness = 0.20
+	}
+	hni_ori_titles = {
+		monarch_military_power = 1
+	}
+	hni_ori_sasans = {
+		legitimacy = 1
+		prestige = 0.5
+	}
+	hni_ori_rajya = {
+		governing_capacity_modifier = 0.10
+	}
+	hni_ori_bhakt_vaishnavism = {
+		idea_cost = -0.05
+	}
+}
+
+HNI_GUJ_ideas = {
+	start = {
+		global_trade_power = 0.15
+		naval_forcelimit_modifier = 0.33
+	}
+	
+	bonus = {
+		trade_efficiency = 0.15
+	}
+	
+	trigger = {
+		tag = GUJ
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes #will be added at load.
+	
+	hni_guj_jamat_bandi = {
+		global_unrest = -2
+	}
+	hni_guj_garba = {
+		religious_unity = 0.5
+	}
+	hni_guj_lipi = {
+		stability_cost_modifier = -0.10
+	}
+	hni_guj_svetembara_banking = {
+		interest = -0.5
+	}
+	hni_guj_bab_el_makkah = {
+		tolerance_own = 1
+		trade_steering = 0.20
+	}
+	hni_guj_vanya_merchants = {
+		trade_range_modifier = 0.20
+		merchants = 1
+	}
+	hni_guj_begada = {
+		defensiveness = 0.20
+	}
+}
+
+HNI_MAR_ideas = {
+	start = {
+		infantry_power = 0.10
+		mercenary_cost = -0.15
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = MAR	#Marathas
+			tag = BDA	#Baroda
+			AND = {
+				TAG = GWA
+				primary_culture = marathi
+			} #Sindhias of Gwalior
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_mar_hindavi_swarajya = {
+		tolerance_own = 1
+		land_morale = 0.10
+	}
+	hni_mar_ganimi_kawa = {
+		fire_damage_received = -0.05
+	}
+	hni_mar_kunbi = {
+		infantry_cost = -0.15
+	}
+	hni_mar_modern_bureacracy = {
+		reform_progress_growth = 0.15
+		administrative_efficiency = 0.05
+	}
+	hni_mar_navy = {
+		navy_tradition = 1
+		galley_power = 0.15
+	}
+	hni_mar_forts = {
+		defensiveness = 0.20
+	}
+	hni_mar_peshwa = {
+		possible_policy = 1
+	}
+}
+
+#########		EAST ASIA		#########
+#########		EAST ASIA		#########
+#########		EAST ASIA		#########
+
+HNI_JAP_ideas = {
+	start = {
+		infantry_power = 0.10
+		army_tradition_decay = -0.01
+	}
+	
+	bonus = {
+		naval_morale = 0.15
+	}
+	
+	trigger = {
+		tag = JAP
+		NOT = { has_country_flag = hni_use_vanilla_ideas } 
+	}
+	free = yes
+	
+	hni_jap_free_market_guilds = {
+		free_adm_policy = 1
+		development_cost = -0.10
+	}
+	hni_jap_bakuhan = {
+		stability_cost_modifier = -0.10
+		global_tax_modifier = 0.15
+	}
+	hni_jap_bushido = {
+		discipline = 0.05
+		yearly_corruption = -0.1
+	}
+	hni_jap_tanegashima = {
+		fire_damage = 0.10
+	}
+	hni_jap_red_seal_ships = {
+		trade_range_modifier = 0.25
+		heavy_ship_power = 0.10
+	}
+	hni_jap_terakoya = {
+		technology_cost = -0.10
+	}
+	hni_jap_rice_brokers = {
+		interest = -1
+	}
+}
+
+HNI_KOR_ideas = {
+	start = {
+		idea_cost = -0.1
+		state_maintenance_modifier = -0.25
+	}
+	
+	bonus = {
+		monarch_admin_power = 1
+	}
+	
+	trigger = {
+		tag = KOR
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_kor_hanguel = {
+		global_institution_spread = 0.20
+	}
+	hni_kor_hwacha_chongtong = {
+		artillery_power = 0.10
+		galley_power = 0.15
+	}
+	hni_kor_gwageo = {
+		advisor_cost = -0.15
+		reform_progress_growth = 0.10
+	}
+	hni_kor_samsa = {
+		yearly_corruption = -0.1
+		advisor_pool = 1
+	}
+	hni_kor_righteous_armies = {
+		global_manpower_modifier = 0.15
+	}
+	hni_kor_gebukseon = {
+		ship_durability = 0.10
+	}
+	hni_kor_silhak = {
+		technology_cost = -0.10
+		development_cost = -0.10
+	}
+}
+
+#########		EAST INDIES		#########
+#########		EAST INDIES		#########
+#########		EAST INDIES		#########
+
+HNI_MAJ_ideas = {
+	start = {
+		ae_impact = -0.10
+		navy_tradition = 1
+	}
+
+	bonus = {
+		colonists = 1
+	}
+
+	trigger = {
+		tag = MAJ
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	   #will be added at load.
+		
+	hni_maj_thalassocracy_mandala = {
+		liberty_desire_from_subject_development = -0.33
+		global_ship_trade_power = 0.20
+	}
+	hni_maj_nagarakretagama = {
+		prestige = 1
+	}
+	hni_maj_cetbang = {
+		galley_power = 0.15
+	}
+	hni_maj_palapa_oath = {
+		land_morale = 0.10
+		naval_morale = 0.10
+	}
+	hni_maj_star_path_navigation = {
+		may_explore = yes
+	}
+	hni_maj_armada = {
+		naval_forcelimit_modifier = 0.33
+		global_ship_cost = -0.10
+	}
+	hni_maj_partners_with_common_order = {
+		vassal_forcelimit_bonus = 0.50
+		diplomatic_upkeep = 1
+	}
+}
+HNI_AYU_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		cavalry_power = 0.20
+	}
+	
+	bonus = {
+		diplomatic_annexation_cost = -0.15
+	}
+	
+	trigger = {
+		tag = AYU
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_ayu_mahatthai = {
+		state_maintenance_modifier = -0.20
+	}
+	hni_ayu_chatusadom = {
+		reform_progress_growth = 0.15
+		advisor_pool = 1
+	}
+	hni_ayu_bunga_emas_dan_perak = {
+		diplomatic_reputation = 1
+		vassal_income = 0.33
+	}
+	hni_ayu_floating_rice = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_ayu_sakdina = {
+		global_tax_modifier = 0.10
+	}
+	hni_ayu_phrai_conscription = {
+		global_manpower_modifier = 0.15
+	}
+	hni_ayu_ban_yipun = {
+		trade_efficiency = 0.10
+		mercenary_cost = -0.10
+	}
+}
+HNI_SIA_ideas = {
+	start = {
+		diplomats = 1
+		cavalry_power = 0.25
+	}
+	bonus = {
+		embracement_cost = -0.25
+	}
+	trigger = {
+		tag = SIA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+
+	hni_sia_songkram_yudhahatthi = {
+		army_tradition = 0.5
+		monarch_military_power = 1
+	}
+	hni_sia_chatusadom = {
+		reform_progress_growth = 0.20
+		free_dip_policy = 1
+	}
+	hni_sia_expell_westerners = {
+		land_morale = 0.10
+	}
+	hni_sia_floating_rice = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hni_sia_phra_chao_phaendin = {
+		max_absolutism = 25
+	}
+	hni_sia_golden_age = {
+		trade_efficiency = 0.15
+		build_cost = -0.10
+	}
+	hni_sia_dap_hak = {
+		shock_damage = 0.10
+	}
+}
+
+#########		NORTH AMERICA		#########
+#########		NORTH AMERICA		#########
+#########		NORTH AMERICA		#########
+
+HNI_USA_ideas = {
+	start = {
+		advisor_cost = -0.15
+		governing_capacity_modifier = 0.10
+	}
+	
+	bonus = {
+		republican_tradition = 0.5
+	}
+	
+	trigger = {
+		tag = USA
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_usa_price_freedom = {
+		land_morale = 0.10
+		allowed_marine_fraction = 0.50
+	}
+	hni_usa_land_opportunity = {
+		global_colonial_growth = 15
+	}
+	hni_usa_manifest_destiny = {
+		colonists = 1
+	}
+	hni_usa_lesson_valley_forge = {
+		army_tradition = 0.5
+		discipline = 0.05
+	}
+	hni_usa_founded_creed = {
+		development_cost = -0.10
+	}
+	hni_usa_workshop_world = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hni_usa_shining_city_hill = {
+		prestige = 1
+ 	}
+}
+
+HNI_AZT_ideas = {
+	start = {
+		land_morale = 0.10
+		diplomatic_upkeep = 1
+	}
+
+	bonus = {
+		global_autonomy = -0.05
+	}
+	
+	trigger = {
+		tag = AZT
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#wibe added at load.
+	
+	hni_azt_triple_alliance = {
+		global_tax_modifier = 0.10
+		vassal_forcelimit_bonus = 0.50
+	}
+	hni_azt_flower_wars = {
+		war_exhaustion_cost = -0.20
+		inflation_action_cost = -0.20
+	}
+	hni_azt_military_schools = {
+		army_tradition = 0.75
+	}
+	hni_azt_shorn_ones = {
+		shock_damage = 0.10
+	}
+	hni_azt_eagle_jaguars = {
+		infantry_power = 0.10
+	}
+	hni_azt_travelling_merchants = {
+		spy_offence = 0.25
+		global_trade_power = 0.10
+	}
+	hni_azt_right_to_rule = {
+		yearly_absolutism = 1
+		tolerance_own = 1
+	}
+}
+
+#########		SOUTH AMERICA		#########
+#########		SOUTH AMERICA		#########
+#########		SOUTH AMERICA		#########
+
+HNI_INC_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		global_manpower_modifier = 0.2
+	}
+	bonus = {
+		technology_cost = -0.1
+	}
+	trigger = {
+		OR = {
+			tag = INC
+			tag = CSU
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+		
+	hni_inc_quipu = {
+		idea_cost = -0.10
+	}
+	hni_inc_mita = { 
+		development_cost = -0.10
+		build_cost = -0.10
+	}
+	hni_inc_royal_road = {
+		movement_speed = 0.15
+		global_regiment_recruit_speed = -0.20
+	}
+	hni_inc_terrace_farming = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_inc_warachikuy = {
+		army_tradition_decay = -0.01
+	}
+	hni_inc_qullqas = {
+		land_forcelimit_modifier = 0.10
+		global_supply_limit_modifier = 0.10
+	}
+	hni_inc_tawantisuyu = {
+		governing_capacity_modifier = 0.15
+	}
+}
+
+#########		GENERIC IDEAS		#########
+#########		GENERIC IDEAS		#########
+#########		GENERIC IDEAS		#########
+
+HNI_PIR_ideas = {
+	start = {
+		global_ship_cost = -0.15
+		privateer_efficiency = 0.33
+	}
+	bonus = {
+		global_sailors_modifier = 0.25
+	}
+	trigger = {
+		OR = {
+			AND = {
+				has_reform = pirate_republic_reform
+				NOT = { culture_group = maghrebi }
+				NOT = { tag = TET }
+				NOT = { tag = SLE }
+			}
+			tag = NSS
+			tag = PRY
+			tag = TOR
+			tag = LIB
+		}
+		has_country_flag = hni_use_vanilla_ideas
+	}
+	free = yes
+	
+	hni_pir_religious_apathy = {
+		no_religion_penalty = yes
+	}
+	hni_pir_plunder = {
+		loot_amount = 0.25
+	}
+	hni_pir_grog_rationing = {	
+		naval_morale = 0.15
+	}
+	hni_pir_elected_captains = {
+		leader_land_shock = 1
+		global_unrest = -2
+	}
+	hni_pir_standardized_punishments = {
+		discipline = 0.05
+	}
+	hni_pir_flexible_ranks = {
+		navy_tradition = 1
+		allowed_marine_fraction = 0.50
+	}
+	hni_pir_true_maritime_republic = {
+		republican_tradition = 0.50
+	}
+}
+#########		COLONIAL IDEAS		#########
+#########		COLONIAL IDEAS		#########
+#########		COLONIAL IDEAS		#########
+
+HNI_COLONIAL_BRI_ideas = {
+	start = {
+		development_cost = -0.10
+		global_regiment_cost = -0.10
+	}	
+	bonus = {
+		global_tax_modifier = 0.15
+	}	
+	trigger = {
+		is_colonial_nation = yes
+		culture_group = british
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	
+	hni_colonial_bri_pilgrims = {
+		colonist_placement_chance = 0.10
+	}
+	hni_colonial_bri_lord_proprietors = {
+		colonists = 1
+		build_cost = -0.10
+	}
+	hni_colonial_bri_salutary_neglect = {
+		trade_efficiency = 0.15
+	}
+	hni_colonial_bri_great_awakening = {
+		idea_cost = -0.10
+		reform_progress_growth = 0.20
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.25
+	}
+	hni_colonial_bri_heart_of_empire = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_colonial_bri_free_press = {
+		global_institution_spread = 0.25
+	}
+	hni_colonial_bri_rights_of_englishmen = {
+		republican_tradition = 0.3
+	}
+}
+HNI_COLONIAL_DUT_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.33
+		placed_merchant_power = 10
+	}	
+	bonus = {
+		heavy_ship_power = 0.15
+	}	
+	trigger = {
+		is_colonial_nation = yes
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = frisian
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	
+	hni_colonial_dut_private_companies = {
+		merchants = 1
+		global_trade_power = 0.15
+	}
+	hni_colonial_dut_factories = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	hni_colonial_dut_patroon_system = {
+		colonists = 1
+	}
+	hni_colonial_dut_liberalised_markets = {
+		trade_efficiency = 0.15
+	}
+	hni_colonial_dut_grand_design = {
+		naval_morale = 0.10
+		province_warscore_cost = -0.10
+	}
+	hni_colonial_dut_free_men = {
+		land_morale = 0.10
+		development_cost = -0.10
+	}
+	hni_colonial_dut_civil_liberties = {
+		idea_cost = -0.10
+		tolerance_heathen = 3
+		tolerance_heretic = 3
+	}
+}
+# HNI_COLONIAL_FRE_ideas = {
+# 	start = {
+# 		global_heathen_missionary_strength = 0.02
+# 		native_assimilation = 0.50
+# 	}
+	
+# 	bonus = {
+# 		discipline = 0.05
+# 	}
+	
+# 	trigger = {
+# 		is_colonial_nation = yes
+# 		culture_group = french
+# 		NOT = { has_country_flag = hni_use_vanilla_ideas }
+# 	}
+# 	free = yes
+	
+# 	hni_colonial_fre_company_of_one_hundred = {
+# 		global_trade_power = 0.15
+# 	}
+# 	hni_colonial_fre_coreur_de_bois = {
+# 		colonists = 1
+# 		trade_efficiency = 0.10
+# 	}
+# 	hni_colonial_fre_coutume_de_paris = {
+# 		global_autonomy = -0.05
+# 		liberty_desire = -20
+# 	}
+# 	hni_colonial_fre_small_wars = {
+# 		shock_damage_received = -0.10
+# 		land_attrition = -0.10
+# 	}
+# 	hni_colonial_fre_indian_alliances = {
+# 		global_manpower_modifier = 0.20
+# 	}
+# 	hni_colonial_fre_kings_daughters = {
+# 		colonist_placement_chance = 0.10
+# 	}
+# 	hni_colonial_fre_canadian_militia = {
+# 		land_forcelimit_modifier = 0.20
+# 		global_regiment_cost = -0.10
+# 	}
+# }
+HNI_COLONIAL_LAT_ideas = {
+	start = {
+		navy_tradition = 1
+		advisor_cost = -0.15
+	}
+	
+	bonus = {
+		trade_efficiency = 0.15
+	}
+	
+	trigger = {
+		is_colonial_nation = yes
+		culture_group = latin
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_colonial_lat_national_militia = {
+		global_manpower_modifier = 0.20
+		global_regiment_cost = -0.10
+	}
+	hni_colonial_lat_renaissance = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+	hni_colonial_lat_missions = {
+		global_missionary_strength = 0.02
+		culture_conversion_cost = -0.20
+	}
+	hni_colonial_lat_republican_traditions = {
+		republican_tradition = 0.3
+	}
+	hni_colonial_lat_coastal_expeditions = {
+		may_explore = yes
+		leader_naval_manuever = 1
+	}
+	hni_colonial_lat_commercial_concessions = {
+		global_trade_power = 0.15
+	}
+	hni_colonial_lat_new_world_navy = {
+		naval_forcelimit_modifier = 0.33
+		global_ship_cost = -0.10
+	}
+}
+HNI_COLONIAL_POR_ideas = {
+	start = {
+		free_leader_pool = 1
+		global_trade_goods_size_modifier = 0.10
+	}	
+	bonus = {
+		global_manpower_modifier = 0.25
+	}	
+	trigger = {
+		is_colonial_nation = yes
+		OR = {
+			primary_culture = portugese
+			primary_culture = brazilian
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes	
+	hni_colonial_por_pau_brazil = {
+		trade_efficiency = 0.20
+	}
+	hni_colonial_por_bandeirantes = {
+		may_explore = yes
+		leader_land_manuever = 1
+	}
+	hni_colonial_por_entradas = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	hni_colonial_por_caboclo = {
+		num_accepted_cultures = 2
+	}
+	hni_colonial_por_capoeira = {
+		land_morale = 0.10
+	}
+	hni_colonial_por_estrada_real = {
+		build_cost = -0.10
+		global_prov_trade_power_modifier = 0.20
+	}
+	hni_colonial_por_gold_rush = {
+		monthly_gold_inflation_modifier = -0.20
+		gold_depletion_chance_modifier = -0.20
+	}
+}
+HNI_COLONIAL_SPA_ideas = {
+	start = {
+		colonists = 1
+		global_autonomy = -0.05
+	}
+	
+	bonus = {
+		tolerance_own = 2
+	}
+	
+	trigger = {
+		is_colonial_nation = yes
+		culture_group = iberian
+		NOT = { primary_culture = portugese }
+		NOT = { primary_culture = brazilian }
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes
+	
+	hni_colonial_spa_indian_reductions = {
+		culture_conversion_cost = -0.20
+		global_heathen_missionary_strength = 0.03
+		native_uprising_chance = -0.25
+	}
+	hni_colonial_spa_real_audencia = {
+		state_governing_cost = -0.10
+		state_maintenance_modifier = -0.20
+	}
+	hni_colonial_spa_presidio = {
+		fort_maintenance_modifier = -0.20
+		army_tradition = 0.5
+	}
+	hni_colonial_spa_repartimiento = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hni_colonial_spa_purity_of_blood = {
+		same_culture_advisor_cost = -0.20
+	}
+	hni_colonial_spa_manilla_galleon = {
+		light_ship_cost = -0.15
+		naval_forcelimit_modifier = 0.25
+	}
+	hni_colonial_spa_creole_militia = {
+		global_manpower_modifier = 0.20
+		land_forcelimit_modifier = 0.20
+	}
+}
