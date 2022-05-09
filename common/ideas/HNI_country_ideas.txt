@@ -3,8 +3,8 @@
 #########		BALKANS		#########
 HNI_BYZ_ideas = {
 	start = {
-		idea_cost = -0.20
-		defensiveness = 0.15
+		idea_cost = -0.10
+		defensiveness = 0.20
 	}
 	
 	bonus = {
