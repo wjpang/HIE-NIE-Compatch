@@ -1019,6 +1019,7 @@ HAB_ideas = {
 				dynasty = "von Habsburg"
 			}
 		}
+		has_country_flag = hni_use_vanilla_ideas
 	}
 	free = yes		#will be added at load.
 

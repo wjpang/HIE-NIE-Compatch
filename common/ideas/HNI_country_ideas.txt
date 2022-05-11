@@ -1017,6 +1017,55 @@ HNI_BUR_ideas = {
 #########		GERMANY		#########
 #########		GERMANY		#########
 
+HNI_HAB_ideas = {
+	start = {
+		land_morale = 0.10
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = HAB
+			AND = {
+				tag = STY
+				dynasty = "von Habsburg"
+			}
+		}
+		NOT = { has_country_flag = hni_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+
+	hni_hab_felix_austria = {
+		diplomatic_upkeep = 2
+	}
+	hni_hab_fugger_banking = {
+		interest = -0.50
+		inflation_reduction = 0.05
+	}
+	hni_hab_pietas_austriacae = {
+		tolerance_own = 2
+		papal_influence = 2
+	}
+	hni_hab_hofkriegsrat = {
+		army_tradition = 0.75
+	}
+	hni_hab_militargrenze = {
+		rival_border_fort_maintenance = -0.33
+		land_forcelimit_modifier = 0.20
+	}
+	hni_hab_neuafteilung_der_erblande = {
+		legitimacy = 1
+		diplomatic_annexation_cost = -0.20
+	}
+	hni_hab_austriae_est_imperare_orbi_universo = {
+		ae_impact = -0.10
+		imperial_authority = 0.15
+	}
+}
 HNI_BOH_ideas = {
 	start = {
 		imperial_authority = 0.15
@@ -1855,13 +1904,13 @@ HNI_GEN_ideas = {
 	}
 	free = yes
 	
+	hni_gen_genoese_crossbowmen = {
+		infantry_fire = 0.2
+	}f
 	hni_gen_vivaldi_noli_malfante = {
 		may_explore = yes
 		naval_attrition = -0.25
 		range = 0.33
-	}
-	hni_gen_genoese_crossbowmen = {
-		infantry_fire = 0.2
 	}
 	hni_gen_genoese_colonies = {
 		global_trade_power = 0.15
