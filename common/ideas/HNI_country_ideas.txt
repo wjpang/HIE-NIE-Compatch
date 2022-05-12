@@ -1970,7 +1970,7 @@ HNI_ITA_ideas = {
 		defensiveness = 0.25
 	}
 	hni_ita_pianure_alluvionali = {
-		development_cost = -0.10
+		development_cost = -0.15
 	}
 }
 HNI_MAN_ideas = {
