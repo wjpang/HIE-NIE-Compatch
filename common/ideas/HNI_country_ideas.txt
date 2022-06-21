@@ -1949,8 +1949,7 @@ HNI_ITA_ideas = {
 	free = yes
 	
 	hni_ita_culla_rinascimento = {
-		technology_cost = -0.075
-		idea_cost = -0.075
+		all_power_cost = -0.05
 	}
 	hni_ita_milizia = {
 		land_morale	= 0.10
@@ -2411,14 +2410,15 @@ HNI_TUS_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	hni_tus_birthplace_renaissance = {
-		all_power_cost = -0.05
+		technology_cost = -0.10
+		idea_cost = -0.10
 	}
 	hni_tus_uffizi = {
 		advisor_cost = -0.15
 		advisor_pool = 1
 	}
 	hni_tus_riforma_terra = {
-		development_cost = -0.10
+		development_cost = -0.15
 	}
 	hni_tus_fiorino_oro = {
 		interest = -0.75
