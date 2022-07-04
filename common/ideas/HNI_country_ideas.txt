@@ -2405,13 +2405,13 @@ HNI_TUS_ideas = {
 	hni_tus_pavese = {
 		fire_damage_received = -0.05
 	}
-	hni_tus_bande_toscane = {
-		land_forcelimit_modifier = 0.15
-		global_manpower_modifier = 0.15
-	}
 	hni_tus_birthplace_renaissance = {
 		technology_cost = -0.10
 		idea_cost = -0.10
+	}
+	hni_tus_bande_toscane = {
+		land_forcelimit_modifier = 0.15
+		global_manpower_modifier = 0.15
 	}
 	hni_tus_uffizi = {
 		advisor_cost = -0.15
