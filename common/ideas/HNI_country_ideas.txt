@@ -2387,6 +2387,7 @@ HNI_TTS_ideas = {
 HNI_TUS_ideas = {
 	start = {
 		republican_tradition = 0.5
+		legitimacy = 1
 		improve_relation_modifier = 0.25
 	}
 	
