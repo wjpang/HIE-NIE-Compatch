@@ -1600,7 +1600,7 @@ HNI_LON_ideas = {
 HNI_MJO_ideas = {
 	start = {
 		naval_morale = 0.10
-		galley_power = 0.20
+		may_perform_slave_raid = yes
 	}
  
 	bonus = {
@@ -1619,7 +1619,7 @@ HNI_MJO_ideas = {
 		devotion = 1
 	}
 	hni_mjo_haven_slave_trade = {
-		may_perform_slave_raid = yes
+		galley_power = 0.20
 	}
 	hni_mjo_misquelets = {
 		manpower_recovery_speed = 0.15
