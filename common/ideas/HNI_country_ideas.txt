@@ -1965,7 +1965,7 @@ HNI_ITA_ideas = {
 	hni_ita_corti_imperiali = {
 		improve_relation_modifier = 0.50
 	}
-	hni_ita_catene_montuose = {
+	hni_ita_fortificazione_italiana = {
 		defensiveness = 0.25
 	}
 	hni_ita_pianure_alluvionali = {
