@@ -545,45 +545,6 @@ FER_ideas = {
 	}
 }
 
-URB_ideas = {
-	start = {
-		production_efficiency = 0.1
-		idea_cost = -0.1
-	}
-
-	bonus = {
-		leader_siege = 1
-	}
-
-	trigger = {
-		tag = URB
-	}
-	free = yes		#will be added at load.
-
-	URB_italian_wars = {
-		mercenary_manpower = 0.5
-	}
-	URB_condot_kings = {
-		mercenary_discipline = 0.05
-	}
-	URB_ducal_palace = {
-		prestige = 1
-	}
-	URB_humanist_court = {
-		tolerance_heretic = 1
-		religious_unity = 0.25
-	}
-	URB_book_of_courtier = {
-		diplomatic_reputation = 1
-	}
-	URB_papal_loyalty = {
-		papal_influence = 1
-	}
-	URB_light_of_italy = {
-		global_institution_spread = 0.1
-	}
-}
-
 BLG_ideas = {
 	start = {
 		defensiveness = 0.2
@@ -3871,44 +3832,6 @@ GEO_ideas = {
 	}
 }
 
-AFG_ideas = {
-	start = {
-		army_tradition = 0.5
-		global_own_trade_power = 0.1
-	}
-
-	bonus = {
-		general_cost = -0.33
-	}
-
-	trigger = {
-		tag = AFG
-	}
-	free = yes
-
-	pashtunwali = {
-		war_exhaustion_cost = -0.10
-	}
-	shadows_of_the_hindu_kush = {
-		defensiveness = 0.25
-	}
-	tureh = {
-		global_manpower_modifier = 0.2
-	}
-	afghan_diaspora = {
-		diplomatic_reputation = 1
-	}
-	durrani_imperialism = {
-		cavalry_power = 0.15
-	}
-	institutionalized_loya_jirga = {
-		legitimacy = 1
-	}
-	graveyard_of_empires = {
-		hostile_attrition = 1
-	}
-}
-
 WAL_ideas = {
 	start = {
 		defensiveness = 0.2
@@ -6962,46 +6885,6 @@ BAL_ideas = {
 	}
 	bal_baluch_leadership = {
 		army_tradition = 0.5
-	}
-}
-
-ORL_ideas = {
-	start = {
-		defensiveness = 0.2
-		global_trade_power = 0.1
-	}
-
-	bonus = {
-		monarch_diplomatic_power = 1
-	}
-
-	trigger = {
-		tag = ORL
-	}
-	free = yes
-
-	orl_brothers_of_kings = {
-		prestige = 1
-	}
-	orl_maid_of_orleans = {
-		land_morale = 0.1
-		may_recruit_female_generals = yes
-	}
-	orl_faith_and_devotion = {
-		tolerance_own = 2
-	}
-	orl_saffron_of_boynes = {
-		production_efficiency = 0.1
-	}
-	orl_chateaux_of_the_loire_valley = {
-		build_cost = -0.1
-		build_time = -0.1
-	}
-	orl_calvin_and_moliere = {
-		idea_cost = -0.1
-	}
-	french_language_in_all_courts = {
-		#See French Ideas
 	}
 }
 

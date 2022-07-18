@@ -8507,7 +8507,7 @@ PAD_ideas = {
 		republican_tradition = 0.5
 	}
 	the_river_pader = {
-		trade_range = 0.33
+		trade_range_modifier = 0.33
 		production_efficiency = 0.10
 	}
 	both_religious_and_secular_responsibilities = { 
@@ -13591,7 +13591,6 @@ GER_ideas = {  #The vanilla Germany ideas are basically set for Prussia already,
 	}
 }
 
-
 ###################################################################
 ### POST-COLONIAL NATIONS - They have been neglected by Paradox ###
 ###################################################################
@@ -15314,7 +15313,7 @@ ASK_ideas = {
         vassal_income = 0.25
         vassal_forcelimit_bonus = 1
     }
-    
+
     bonus = {
         legitimacy = 1
     }
@@ -15427,8 +15426,15 @@ NATIONAL_IDEAS_TEMPLATE = {  #Currently for Luxembourg#
 }
 
 
-## Minor Changes for Patch 2.6b ##
+### Minor Changes for Patch 2.6b ###
+
+## General Changes/Fixes ##
 # - NIE is now officially unpartnered with the Expanded Mod Family
+# - Cham National Ideas should work properly across Cham culture tags
+# - Fixed the Mongol Empire decision file to work with the Sino-Altaic stuff added by Paradox
+# - Added custom national ideas for Orleans (French Region)
+
+## Specific National Idea Changes ##
 # - All instances of Monthly Fervor in national ideas sets have been buffed from +0.25 -> +0.50
 # - Prussia: Fire Damage +10% -> +7.5%; Fire Damage Recieved -10% -> -7.5%
 # - Russia: Fire Damage +10% -> +7.5%; Shock Damage Recieved -10% -> -7.5%
