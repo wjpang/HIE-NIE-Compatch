@@ -2278,18 +2278,18 @@ HNI_SIC_ideas = {
 		diplomatic_reputation = 1
 		legitimacy = 1
 	}
+	hni_sic_norman_knights = {
+		discipline = 0.05
+	}
 	hni_sic_parramentu_sicilianu = {
 		reform_progress_growth = 0.15
-	}
-	hni_sic_bellezza_sicilia = {
-		tolerance_heathen = 1
-		num_accepted_cultures = 1
 	}
 	hni_sic_vespri_siciliani = {
 		land_morale = 0.15
 	}
-	hni_sic_norman_knights = {
-		discipline = 0.05
+	hni_sic_bellezza_sicilia = {
+		tolerance_heathen = 1
+		num_accepted_cultures = 1
 	}
 	hni_sic_spanish_heritage = {
 		tolerance_own = 1
