@@ -3837,6 +3837,7 @@ HNI_USA_ideas = {
 	}
 	hni_usa_manifest_destiny = {
 		colonists = 1
+		culture_conversion_cost = -0.20
 	}
 	hni_usa_lesson_valley_forge = {
 		army_tradition = 0.5
