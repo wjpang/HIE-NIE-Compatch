@@ -1,2 +1,2 @@
-# HNI-NIE-Compatch
-Allows playing with both HNI and NIE; With HNI ideas having priority, of course.
+# HIE-NIE-Compatch
+Allows playing with both HIE and NIE; With HIE ideas having priority, of course.
