@@ -742,8 +742,8 @@ HIE_IRE_ideas = {
 	hie_ire_high_kingship = {
 		legitimacy = 1
 		republican_tradition = 0.5
-		liberty_desire = -15
-		reduced_liberty_desire = -15
+		liberty_desire = 15
+		reduced_liberty_desire = 15
 	}
 	hie_ire_brendan_ily_brasil = {
 		range = 0.25
