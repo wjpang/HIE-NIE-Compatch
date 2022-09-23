@@ -17,6 +17,7 @@ norse_ideas = {
 	trigger = {
 		primary_culture = norse
 		religion = norse_pagan_reformed
+		NOT = { has_country_flag = refused_norse_ideas }
 	}
 	free = yes
 
@@ -414,7 +415,6 @@ MOS_ideas = {
 
 }
 
-
 RUS_ideas = {
 	start = {
 		core_creation = -0.10
@@ -586,7 +586,6 @@ NED_ideas = {
 	}
 }
 
-
 FRA_ideas = {
 	start = {
 		diplomatic_reputation = 1
@@ -627,7 +626,6 @@ FRA_ideas = {
 		tolerance_heretic = 2
 	}
 }
-
 
 TUR_ideas = {
 	start = {
@@ -1033,7 +1031,6 @@ DAL_ideas = {
 	}
 }
 
-
 PRU_ideas = {
 	start = {
 		army_tradition = 0.5
@@ -1159,7 +1156,6 @@ POR_ideas = {
 	}
 }
 
-
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
@@ -1201,7 +1197,6 @@ POL_ideas = {
 		land_morale = 0.15
 	}
 }
-
 
 LIT_ideas = {
 	start = {
@@ -1369,7 +1364,6 @@ PLC_LIT_ideas = {
 	}
 }
 
-
 HAB_ideas = {
 	start = {
 		land_morale = 0.10
@@ -1419,7 +1413,6 @@ HAB_ideas = {
 	}
 }
 
-
 CHI_ideas = {
 	start = {
 		fort_maintenance_modifier = -0.2
@@ -1460,11 +1453,10 @@ CHI_ideas = {
 	}
 }
 
-
 PER_ideas = {
 	start = {
 		land_morale = 0.15
-		cavalry_shock = 1
+		cavalry_power = 0.15
 	}
 
 	bonus = {
@@ -1500,7 +1492,6 @@ PER_ideas = {
 		global_tax_modifier = 0.10
 	}
 }
-
 
 BUR_Ideas = {
 	start = {
@@ -1540,7 +1531,6 @@ BUR_Ideas = {
 		global_manpower_modifier = 0.25
 	}
 }
-
 
 GEN_Ideas = {
 	start = {
@@ -1583,7 +1573,6 @@ GEN_Ideas = {
 	}
 }
 
-
 SCO_Ideas = {
 	start = {
 		leader_land_shock = 1
@@ -1623,7 +1612,6 @@ SCO_Ideas = {
 	}
 }
 
-
 HUN_ideas = {
 	start = {
 		cavalry_power = 0.20
@@ -1662,7 +1650,6 @@ HUN_ideas = {
 		no_religion_penalty = yes
 	}
 }
-
 
 JAP_ideas = {
 	start = {
@@ -1704,7 +1691,6 @@ JAP_ideas = {
 	}
 }
 
-
 MAM_ideas = {
 	start = {
 		trade_steering = 0.25
@@ -1744,7 +1730,6 @@ MAM_ideas = {
 		trade_efficiency = 0.10
 	}
 }
-
 
 NAP_ideas = {
 	start = {
@@ -1990,7 +1975,6 @@ HSA_ideas = {
 	}
 }
 
-
 MLO_ideas = {
 	start = {
 		infantry_power = 0.10
@@ -2029,7 +2013,6 @@ MLO_ideas = {
 		stability_cost_modifier = -0.1
 	}
 }
-
 
 BYZ_ideas = {
 	start = {
@@ -2071,7 +2054,6 @@ BYZ_ideas = {
 	}
 }
 
-
 VIJ_ideas = {
 	start = {
 		advisor_pool = 1
@@ -2112,7 +2094,6 @@ VIJ_ideas = {
 	}
 }
 
-
 AYU_ideas = {
 	start = {
 		cavalry_power = 0.15
@@ -2151,7 +2132,6 @@ AYU_ideas = {
 		harsh_treatment_cost = -0.2
 	}
 }
-
 
 OMA_ideas = {
 	start = {
@@ -2193,7 +2173,6 @@ OMA_ideas = {
 	}
 }
 
-
 KOR_ideas = {
 	start = {
 		global_own_trade_power = 0.25
@@ -2234,7 +2213,6 @@ KOR_ideas = {
 
 }
 
-
 BOH_ideas = {
 	start = {
 		imperial_authority = 0.10
@@ -2274,7 +2252,6 @@ BOH_ideas = {
 		same_culture_advisor_cost = -0.25
 	}
 }
-
 
 ITA_ideas = {
 	start = {
@@ -2403,7 +2380,6 @@ MCH_ideas = {
 	}
 }
 
-
 QNG_ideas = {
 	start = {
 		core_creation = -0.2
@@ -2419,7 +2395,6 @@ QNG_ideas = {
 		# has_country_flag = hie_use_vanilla_ideas
 	}
 	free = yes
-
 
 	expand_the_banners = {
 		amount_of_banners = 0.3
@@ -2448,7 +2423,6 @@ QNG_ideas = {
 		prestige_from_land = 0.5
 	}
 }
-
 
 PAL_ideas = {
 	start = {
@@ -2487,7 +2461,6 @@ PAL_ideas = {
 		stability_cost_modifier = -0.10
 	}
 }
-
 
 NOV_ideas = {
 	start = {
@@ -2530,7 +2503,6 @@ NOV_ideas = {
 	}
 }
 
-
 ETH_ideas = {
 	start = {
 		global_autonomy = -0.05
@@ -2570,7 +2542,6 @@ ETH_ideas = {
 		army_tradition = 0.5
 	}
 }
-
 
 SAV_ideas = {
 	start = {
@@ -2613,7 +2584,6 @@ SAV_ideas = {
 	}
 }
 
-
 SAR_ideas = {
 	start = {
 		idea_cost = -0.1
@@ -2654,7 +2624,6 @@ SAR_ideas = {
 	}
 }
 
-
 COR_ideas = {
 	start = {
 		naval_forcelimit_modifier = 0.2
@@ -2694,7 +2663,6 @@ COR_ideas = {
 		max_revolutionary_zeal = 10
 	}
 }
-
 
 SPI_ideas = {
 	start = {
@@ -2738,7 +2706,6 @@ SPI_ideas = {
 	}
 }
 
-
 SAX_ideas = {
 	start = {
 		advisor_cost = -0.1
@@ -2778,8 +2745,6 @@ SAX_ideas = {
 		discipline = 0.05
 	}
 }
-
-
 
 MAR_ideas = {
 	start = {
@@ -2826,7 +2791,6 @@ MAR_ideas = {
 		global_ship_cost = -0.1
 	}
 }
-
 
 TAU_ideas = {
 	start = {
@@ -2907,7 +2871,6 @@ AVA_ideas = {
 	}
 }
 
-
 GRA_ideas = {
 	start = {
 		global_tax_modifier = 0.15
@@ -2947,7 +2910,6 @@ GRA_ideas = {
 		prestige = 1
 	}
 }
-
 
 PAP_ideas = {
 	start = {
@@ -3067,7 +3029,6 @@ RAG_ideas = {
 	}
 }
 
-
 RYU_ideas = {
 	start = {
 		trade_steering = 0.20
@@ -3105,7 +3066,6 @@ RYU_ideas = {
 		free_leader_pool = 1
 	}
 }
-
 
 ASS_ideas = {
 	start = { #Ahomization
@@ -3145,7 +3105,6 @@ ASS_ideas = {
 		diplomats = 1
 	}
 }
-
 
 TUS_ideas = {
 	start = {
@@ -3190,7 +3149,6 @@ TUS_ideas = {
  	}
 }
 
-
 USA_ideas = {
 	start = {
 		merchants = 1
@@ -3230,7 +3188,6 @@ USA_ideas = {
 		global_autonomy = -0.025
  	}
 }
-
 
 SWI_ideas = {
 	start = {
@@ -3273,7 +3230,6 @@ SWI_ideas = {
 	}
 }
 
-
 SON_ideas = {
 	start = {
 		infantry_power = 0.1
@@ -3311,7 +3267,6 @@ SON_ideas = {
 		caravan_power = 0.2
 	}
 }
-
 
 BRI_ideas = {
 	start = {
@@ -3355,7 +3310,6 @@ BRI_ideas = {
  	}
 }
 
-
 NAJ_ideas = {
 	start = {
 		global_missionary_strength = 0.02
@@ -3393,7 +3347,6 @@ NAJ_ideas = {
 		tolerance_own = 2
 	}
 }
-
 
 HED_ideas = {
 	start = {
@@ -3437,7 +3390,6 @@ HED_ideas = {
 	}
 }
 
-
 NPL_ideas = {
 	start = {
 		land_forcelimit_modifier = 0.25
@@ -3475,7 +3427,6 @@ NPL_ideas = {
 		leader_siege = 1
 	}
 }
-
 
 KNI_ideas = {
 	start = {
@@ -3516,7 +3467,6 @@ KNI_ideas = {
 		army_tradition = 0.5
 	}
 }
-
 
 KON_ideas = {
 	start = {
@@ -3561,7 +3511,6 @@ KON_ideas = {
 		discipline = 0.05
 	}
 }
-
 
 MAL_ideas = {
 	start = {
@@ -3616,7 +3565,6 @@ HUR_ideas = {
 	}
 	free = yes		# will be added at load
 
-
 	great_lakes_trade = {
 		merchants = 1
 	}
@@ -3640,8 +3588,6 @@ HUR_ideas = {
 	}
 
 }
-
-
 
 IRO_ideas = {
 	start = {
@@ -3681,8 +3627,6 @@ IRO_ideas = {
 	}
 
 }
-
-
 
 CHICK_ideas = {
 	start = {
@@ -3724,8 +3668,6 @@ CHICK_ideas = {
 	}
 
 }
-
-
 
 CHE_ideas = {
 	start = {
@@ -3847,7 +3789,6 @@ SHA_ideas = {
 
 	}
 }
-
 
 CRE_ideas = {
 	start = {
@@ -4318,7 +4259,6 @@ DAH_ideas = {
 	}
 }
 
-
 KBO_ideas = {
 	start = {
 		vassal_income = 0.25
@@ -4360,7 +4300,6 @@ KBO_ideas = {
 	}
 
 }
-
 
 FEO_ideas = {
 	start = {
@@ -4443,7 +4382,6 @@ SIL_ideas = {
 		production_efficiency = 0.1
 	}
 }
-
 
 DNZ_ideas = {
 	start = {
@@ -4817,8 +4755,6 @@ TAR_ideas = {
 	}
 }
 
-
-
 KAR_ideas = {
 	start = {
 		army_tradition = 0.5
@@ -5051,8 +4987,6 @@ ASH_ideas = {
 		years_of_nationalism = -5
 	}
 }
-
-
 
 MPC_ideas = {
 	start = {
@@ -6103,7 +6037,6 @@ CAN_ideas = {
 	}
 	free = yes
 
-
 	singing_lumberjacks = {
 		production_efficiency = 0.10
 	}
@@ -6141,7 +6074,6 @@ QUE_ideas = {
 		tag = QUE
 	}
 	free = yes
-
 
 	coureurs_des_bois = {
 		global_trade_goods_size_modifier = 0.1
@@ -6654,7 +6586,6 @@ BTI_ideas = {
 		global_institution_spread = 0.1
 	}
 }
-
 
 CAT_ideas = {
 	start = {
@@ -8791,7 +8722,6 @@ AMA_ideas = {
 
 }
 
-
 HSK_ideas = {
 	start = {
 		galley_power = 0.2
@@ -8926,7 +8856,6 @@ YMN_ideas = {
 	}
 
 }
-
 
 DTE_ideas = {
 	start = {
@@ -9077,8 +9006,6 @@ OTM_ideas = {
 		tag = OTM
 	}
 	free = yes
-
-
 
 	otm_domination_of_northern_kyushu = {
 		global_manpower_modifier = 0.2
@@ -9236,7 +9163,6 @@ TKI_ideas = {
 	}
 }
 
-
 STK_ideas = {
 	start = {
 		war_exhaustion = -0.02
@@ -9272,7 +9198,6 @@ STK_ideas = {
 		improve_relation_modifier = 0.3
 	}
 }
-
 
 AKT_ideas = {
 	start = {
@@ -9521,7 +9446,6 @@ TTI_ideas = {
 	}
 }
 
-
 KKC_ideas = {
 	start = {
 		global_regiment_cost = -0.1
@@ -9536,7 +9460,6 @@ KKC_ideas = {
 		tag = KKC
 	}
 	free = yes
-
 
 	kkc_disinguished_family_in_kyushu = {
 		global_unrest = -1
@@ -9561,7 +9484,6 @@ KKC_ideas = {
 		defensiveness = 0.15
 	}
 }
-
 
 KNO_ideas = {
 	start = {
@@ -13136,7 +13058,6 @@ PIS_ideas = {
 	}
 }
 
-
 EPI_ideas = {
 	start = {
 		merchants = 1
@@ -13175,7 +13096,6 @@ EPI_ideas = {
 		discipline = 0.05
 	}
 }
-
 
 LOT_ideas = {
 	start = {
