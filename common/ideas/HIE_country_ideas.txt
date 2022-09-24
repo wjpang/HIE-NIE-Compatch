@@ -1358,7 +1358,7 @@ HIE_POL_ideas = {
 		global_manpower_modifier = 0.20
 	}
 	hie_pol_winged_hussars = {
-		cavalry_shock = 1
+		can_recruit_hussars = yes
 		cav_to_inf_ratio = 0.33
 	}
 	hie_pol_permanent_defence = {
@@ -1397,7 +1397,7 @@ HIE_PLC_POL_ideas = {
 		land_morale = 0.10
 	}
 	hie_pol_winged_hussars = {
-		cavalry_shock = 1
+		can_recruit_hussars = yes
 		cav_to_inf_ratio = 0.33
 	}
 	hie_plc_pol_magnates = {
@@ -1438,7 +1438,7 @@ HIE_PLC_LIT_ideas = {
 		land_morale = 0.10
 	}
 	hie_plc_lit_winged_hussars = {
-		cavalry_shock = 1
+		can_recruit_hussars = yes
 		cav_to_inf_ratio = 0.33
 	}
 	hie_plc_lit_magnates = {
