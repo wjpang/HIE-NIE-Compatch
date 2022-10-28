@@ -7,9 +7,7 @@ HIE_ACH_ideas = {
 		governing_capacity_modifier = 0.10
 	}
 	trigger = {
-		OR = {
-			tag = ACH
-		}
+		tag = ACH
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
@@ -1332,7 +1330,7 @@ HIE_POL_ideas = {
 		can_recruit_hussars = yes
 		cav_to_inf_ratio = 0.33
 	}
-	hie_pol_permanent_defence = {
+	hie_pol_permanent_defense = {
 		garrison_size = 0.25
 		army_tradition = 0.5
 	}
@@ -2665,7 +2663,7 @@ HIE_DLH_ideas = {
 	hie_dlh_indo_mussalman_nobles = {
 		army_tradition_decay = -0.01
 	}
-	hie_dlh_double_defence = {
+	hie_dlh_double_defense = {
 		improve_relation_modifier = 0.20
 		defensiveness = 0.20
 	}
@@ -3276,7 +3274,7 @@ HIE_PGA_ideas = {
 		mercenary_cost = -0.15
 	}
 	bonus = {
-		mercenary_discipline = 0.05
+		mercenary_discipline = 0.075
 	}
 	trigger = {
 		tag = PGA
@@ -4326,7 +4324,7 @@ HIE_USA_ideas = {
 HIE_PER_ideas = {
  	start = {
 		defensiveness = 0.15
-		cavalry_power = 0.25
+		cavalry_shock = 1
  	}
  
  	bonus = {
@@ -4356,8 +4354,8 @@ HIE_PER_ideas = {
 		fire_damage = 0.10
  	}
  	hie_per_savaran_sapah_khorasan = {
-		cavalry_shock = 0.5
-		cav_to_inf_ratio = 0.50
+		cavalry_flanking = 0.33
+		cav_to_inf_ratio = 0.25
  	}
  	hie_per_jazayerchi_tofangchi = {
 		discipline = 0.05
