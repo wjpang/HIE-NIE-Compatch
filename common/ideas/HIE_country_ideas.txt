@@ -1,6 +1,3 @@
-#########    BALKANS    #########
-#########    BALKANS    #########
-#########    BALKANS    #########
 HIE_ACH_ideas = {
 	start = {
 		defensiveness = 0.20
@@ -12,7 +9,6 @@ HIE_ACH_ideas = {
 	trigger = {
 		OR = {
 			tag = ACH
-			#### Latin Empire ###
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
@@ -55,8 +51,7 @@ HIE_ATH_ideas = {
 		tag = ATH
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes		#will be added at load
-
+	free = yes
 	hie_ath_divine_comedy = {
 		idea_cost = -0.10
 		diplomatic_reputation = 1
@@ -296,8 +291,7 @@ HIE_GRE_GRE_ideas = {
 		NOT = { religion = catholic }
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes		#will be added at load
-
+	free = yes
 	hie_gre_gre_home_democracy_philosophy = {
 		legitimacy = 1
 		reform_progress_growth = 0.15
@@ -344,8 +338,7 @@ HIE_GRE_LAT_ideas = {
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes		#will be added at load
-
+	free = yes
 	hie_gre_lat_literal_renaissance = {
 		idea_cost = -0.10
 		diplomatic_reputation = 1
@@ -504,7 +497,7 @@ HIE_NAX_ideas = {
 	}
 	trigger = {
 		tag = NAX
-		NOT = { has_country_flag = hie_use_vanilla_ideas } 
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
 	hie_nax_pronoia = {
@@ -570,10 +563,6 @@ HIE_TUR_ideas = {
 		reform_progress_growth = 0.15
 	}
 }
-
-#########    BRITANNIA    #########
-#########    BRITANNIA    #########
-#########    BRITANNIA    #########
 HIE_CNN_ideas = {
 	start = {
 		land_attrition = -0.10
@@ -612,21 +601,18 @@ HIE_CNN_ideas = {
 	}
 }
 HIE_DMS_ideas = {
-	start = {  
+	start = {
 		global_manpower_modifier = 0.20
 		stability_cost_modifier = -0.10
 	}
-  
 	bonus = {
 		defensiveness = 0.15
 	}
-  
 	trigger = {
 		tag = DMS
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-  
 	hie_dms_port_cork = {
 		development_cost = -0.10
 		center_of_trade_upgrade_cost = -0.20
@@ -636,14 +622,14 @@ HIE_DMS_ideas = {
 	}
 	hie_dms_munster_ambition = {
 		core_creation = -0.10
-		province_warscore_cost = -0.10	  
+		province_warscore_cost = -0.10
 	}
 	hie_dms_old_gods = {
 		tolerance_heathen = 2
 		tolerance_heretic = 2
 	}
 	hie_dms_representative_ireland_abroad = {
-		diplomatic_reputation = 1  
+		diplomatic_reputation = 1
 	}
 	hie_dms_culture_service = {
 		war_exhaustion = -0.02
@@ -766,7 +752,7 @@ HIE_IRE_ideas = {
 		global_regiment_cost = -0.10
 	}
 }
-HIE_MCM_ideas = { #Munster
+HIE_MCM_ideas = {
 	start = {
 		build_cost = -0.10
 		global_autonomy = -0.05
@@ -803,22 +789,19 @@ HIE_MCM_ideas = { #Munster
 		own_coast_naval_combat_bonus = 1
 	}
 }
-HIE_MNS_ideas = { #Theomond
-	start = {  
+HIE_MNS_ideas = {
+	start = {
 		shock_damage = 0.10
 		leader_land_shock = 1
 	}
-  
 	bonus = {
 		global_trade_goods_size_modifier = 0.10
 	}
-  
 	trigger = {
 		tag = MNS
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-  
 	hie_mns_dal_gcais_blood = {
 		army_tradition = 0.5
 	}
@@ -843,7 +826,7 @@ HIE_MNS_ideas = { #Theomond
 		defensiveness = 0.20
 	}
 }
-HIE_MTH_ideas = { #Meath
+HIE_MTH_ideas = {
 	start = {
 		land_morale = 0.1
 		defensiveness = 0.20
@@ -883,7 +866,7 @@ HIE_MTH_ideas = { #Meath
 		global_trade_power = 0.15
 	}
 }
-HIE_ORD_ideas = { #Ormond
+HIE_ORD_ideas = {
 	start = {
 		global_autonomy = -0.05
 		diplomatic_reputation = 1
@@ -921,22 +904,19 @@ HIE_ORD_ideas = { #Ormond
 		global_trade_goods_size_modifier = 0.10
 	}
 }
-HIE_SLN_ideas = { #Sligo
-	start = {  
+HIE_SLN_ideas = {
+	start = {
 		global_tax_modifier = 0.15
 		build_cost = -0.10
 	}
-  
 	bonus = {
 		global_trade_goods_size_modifier = 0.10
 	}
-  
 	trigger = {
 		tag = SLN
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-  
 	hie_sln_free_gaelic_towns = {
 		development_cost = -0.10
 	}
@@ -948,7 +928,7 @@ HIE_SLN_ideas = { #Sligo
 	}
 	hie_sln_preserve_irish_culture = {
 		prestige = 1
-		culture_conversion_cost = -0.15	  
+		culture_conversion_cost = -0.15
 	}
 	hie_sln_tower_houses_gaelic_castles = {
 		defensiveness = 0.20
@@ -961,7 +941,7 @@ HIE_SLN_ideas = { #Sligo
 		hostile_attrition = 1
 	}
 }
-HIE_TYR_ideas = { #Tyrone
+HIE_TYR_ideas = {
 	start = {
 		infantry_power = 0.10
 		prestige = 1
@@ -999,7 +979,7 @@ HIE_TYR_ideas = { #Tyrone
 		diplomatic_reputation = 1
 	}
 }
-HIE_TRY_ideas = { #Tyrconnell
+HIE_TRY_ideas = {
 	start = {
 		development_cost = -0.10
 		infantry_power = 0.1
@@ -1035,7 +1015,6 @@ HIE_TRY_ideas = { #Tyrconnell
 		fort_maintenance_modifier = -0.20
 	}
 }
-
 HIE_ENG_ideas = {
 	start = {
 		infantry_power = 0.10
@@ -1152,10 +1131,6 @@ HIE_GBR_ideas = {
 		global_trade_goods_size_modifier = 0.15
 	}
 }
-
-#########    EASTERN EUROPE    #########
-#########    EASTERN EUROPE    #########
-#########    EASTERN EUROPE    #########
 HIE_NOV_ideas = {
 	start = {
 		global_trade_power = 0.15
@@ -1202,7 +1177,6 @@ HIE_RUS_MOS_ideas = {
 	bonus = {
 		global_autonomy = -0.075
 	}
-
 	trigger = {
 		tag = RUS
 		NOT = {
@@ -1248,7 +1222,6 @@ HIE_RUS_NOV_ideas = {
 	bonus = {
 		development_cost = -0.10
 	}
-
 	trigger = {
 		tag = RUS
 		OR = {
@@ -1293,7 +1266,6 @@ HIE_UKR_ideas = {
 	bonus = {
 		development_cost = -0.10
 	}
-
 	trigger = {
 		tag = UKR
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
@@ -1333,7 +1305,6 @@ HIE_POL_ideas = {
 	bonus = {
 		governing_capacity_modifier = 0.20
 	}
-
 	trigger = {
 		tag = POL
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
@@ -1374,7 +1345,6 @@ HIE_PLC_POL_ideas = {
 	bonus = {
 		governing_capacity_modifier = 0.20
 	}
-
 	trigger = {
 		tag = PLC
 		primary_culture = polish
@@ -1416,7 +1386,6 @@ HIE_PLC_LIT_ideas = {
 	bonus = {
 		governing_capacity_modifier = 0.20
 	}
-
 	trigger = {
 		tag = PLC
 		primary_culture = lithuanian
@@ -1449,10 +1418,6 @@ HIE_PLC_LIT_ideas = {
 		infantry_power = 0.10
 	}
 }
-
-#########    EAST INDIES    #########
-#########    EAST INDIES    #########
-#########    EAST INDIES    #########
 HIE_AYU_ideas = {
 	start = {
 		diplomatic_upkeep = 1
@@ -1499,13 +1464,11 @@ HIE_MAJ_ideas = {
 	bonus = {
 		colonists = 1
 	}
-
 	trigger = {
 		tag = MAJ
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	 
-		
+	free = yes
 	hie_maj_thalassocracy_mandala = {
 		liberty_desire_from_subject_development = -0.33
 		global_ship_trade_power = 0.20
@@ -1612,10 +1575,6 @@ HIE_SIA_ideas = {
 		shock_damage = 0.10
 	}
 }
-
-#########    FAR EAST ASIA    #########
-#########    FAR EAST ASIA    #########
-#########    FAR EAST ASIA    #########
 HIE_JAP_ideas = {
 	start = {
 		infantry_power = 0.10
@@ -1626,7 +1585,7 @@ HIE_JAP_ideas = {
 	}
 	trigger = {
 		tag = JAP
-		NOT = { has_country_flag = hie_use_vanilla_ideas } 
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
 	hie_jap_free_market_guilds = {
@@ -1732,50 +1691,6 @@ HIE_MNG_ideas = {
 		artillery_power = 0.10
 	}
 }
-# HIE_QNG_ideas = {
-# 	start = {
-# 		core_creation = -0.2
-# 		ae_impact = -0.1
-# 	}
-# 	bonus = {
-# 		advisor_cost = -0.15
-# 	}
-# 	trigger = {
-# 		tag = QNG
-# 		NOT = { has_country_flag = hie_use_vanilla_ideas }
-# 	}
-# 	free = yes
-# 	hie_qng_baqi = {
-# 		amount_of_banners = 0.3
-# 	}
-# 	hie_qng_luyingbing = {
-# 		manpower_recovery_speed = 0.15
-# 		global_manpower_modifier = 0.15
-# 	}
-# 	hie_qng_sheng_yu = {
-# 		global_unrest = -2
-# 	}
-# 	hie_qng_six_ministries = {
-# 		years_of_nationalism = -5
-# 		legitimacy = 1
-# 		meritocracy = 1
-# 	}
-# 	hie_qng_junji_chu = {
-# 		administrative_efficiency = 0.05
-# 	}
-# 	hie_qng_zongly_yamen = {
-# 		state_maintenance_modifier = -0.15
-# 		global_autonomy = -0.05
-# 	}
-# 	hie_qng_huiguan_gongsuo_guilds = {
-# 		land_morale = 0.15
-# 		prestige_from_land = 0.5
-# 	}
-# }
-
-#########    FRANCE    #########
-#########    FRANCE    #########
-#########    FRANCE    #########
 HIE_FRA_ideas = {
 	start = {
 		cavalry_power = 0.20
@@ -1784,7 +1699,6 @@ HIE_FRA_ideas = {
 	bonus = {
 		land_morale = 0.15
 	}
-
 	trigger = {
 		tag = FRA
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
@@ -1833,7 +1747,7 @@ HIE_BRI_ideas = {
 	}
 	hie_bri_arthurian_legends = {
 		prestige = 1
-		legitimacy = 1	
+		legitimacy = 1
 	}
 	hie_bri_protective_treaties = {
 		diplomatic_reputation = 1
@@ -1892,10 +1806,6 @@ HIE_BUR_ideas = {
 		diplomatic_annexation_cost = -0.20
 	}
 }
-
-#########    GERMANY    #########
-#########    GERMANY    #########
-#########    GERMANY    #########
 HIE_HAB_ideas = {
 	start = {
 		land_morale = 0.10
@@ -1992,7 +1902,7 @@ HIE_BRA_ideas = {
 	}
 	trigger = {
 		tag = BRA
-		NOT = { has_country_flag =  hie_use_vanilla_ideas }
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
 	hie_bra_nordmark = {
@@ -2020,7 +1930,7 @@ HIE_BRA_ideas = {
 	}
 }
 HIE_HSA_ideas = {
-	start = {  
+	start = {
 		trade_steering = 0.15
 		placed_merchant_power = 5
 	}
@@ -2069,7 +1979,7 @@ HIE_PAD_ideas = {
 	}
 	trigger = {
 		tag = PAD
-		NOT = { has_country_flag =  hie_use_vanilla_ideas }
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
 	hie_pad_irminsul = {
@@ -2108,7 +2018,7 @@ HIE_PRU_ideas = {
 	}
 	trigger = {
 		tag = PRU
-		NOT = { has_country_flag =  hie_use_vanilla_ideas }
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
 	hie_pru_prussian_virtues = {
@@ -2139,7 +2049,7 @@ HIE_PRU_ideas = {
 }
 HIE_SAX_ideas = {
 	start = {
-	   	ae_impact = -0.15
+	 	ae_impact = -0.15
 		prestige = 1
 	}
 	bonus = {
@@ -2189,8 +2099,7 @@ HIE_SWI_ideas = {
 		tag = SWI
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes  #will be triggered at load
-	
+	free = yes
 	hie_swi_drills_drums = {
 		infantry_power = 0.10
 	}
@@ -2253,25 +2162,19 @@ HIE_TEU_ideas = {
 		free_leader_pool = 1
 	}
 }
-
-#########    IBERIA    #########
-#########    IBERIA    #########
-#########    IBERIA    #########
 HIE_ADU_ideas = {
 	start = {
-		land_morale = 0.15 
+		land_morale = 0.15
 		warscore_cost_vs_other_religion = -0.20
 	}
 	bonus = {
 		global_manpower_modifier = 0.15
 	}
-
 	trigger = {
 		tag = ADU
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	  
-		
+	free = yes
 	hie_adu_medical_advancements = {
 		manpower_recovery_speed = 0.20
 	}
@@ -2414,17 +2317,14 @@ HIE_CAT_ideas = {
 		land_morale = 0.10
 		defensiveness = 0.20
 	}
- 
 	bonus = {
 		diplomatic_reputation = 1
 	}
- 
 	trigger = {
 		tag = CAT
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
- 
 	hie_cat_generalitat_catalunya = {
 		legitimacy = 1
 		republican_tradition = 0.3
@@ -2459,14 +2359,11 @@ HIE_GAL_ideas = {
 	bonus = {
 		global_unrest = -2
 	}
-
 	trigger = {
 		tag = GAL
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-
-	free = yes	  
-
+	free = yes
 	hie_gal_always_armed = {
 		shock_damage_received = -0.15
 	}
@@ -2570,17 +2467,14 @@ HIE_MJO_ideas = {
 		naval_morale = 0.10
 		may_perform_slave_raid = yes
 	}
- 
 	bonus = {
 		sunk_ship_morale_hit_recieved = -0.2
 	}
- 
 	trigger = {
 		tag = MJO
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
- 
 	hie_mjo_privative_kingdom = {
 		legitimacy = 1
 		republican_tradition = 0.3
@@ -2687,17 +2581,14 @@ HIE_VAL_ideas = {
 		global_trade_goods_size_modifier = 0.10
 		trade_steering = 0.20
 	}
- 
 	bonus = {
 		artillery_fire = 1
 	}
- 
 	trigger = {
 		tag = VAL
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
- 
 	hie_val_heritage_balansiyya = {
 		development_cost = -0.15
 	}
@@ -2751,17 +2642,13 @@ HIE_SPA_ideas = {
 	hie_spa_spanish_inquisition = {
 		missionaries = 1
 	}
-	hie_spa_gregoria_calendar = { 
+	hie_spa_gregoria_calendar = {
 		production_efficiency = 0.10
 	}
 	hie_spa_guerrilla_warfare = {
 		hostile_attrition = 1
 	}
 }
-
-#########    INDIA    #########
-#########    INDIA    #########
-#########    INDIA    #########
 HIE_DLH_ideas = {
 	start = {
 		cavalry_power = 0.20
@@ -2770,13 +2657,11 @@ HIE_DLH_ideas = {
 	bonus = {
 		artillery_power = 0.10
 	}
-
 	trigger = {
 		tag = DLH
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-		
 	hie_dlh_indo_mussalman_nobles = {
 		army_tradition_decay = -0.01
 	}
@@ -2810,13 +2695,11 @@ HIE_BNG_ideas = {
 	bonus = {
 		dip_tech_cost_modifier = -0.10
 	}
-
 	trigger = {
 		tag = BNG
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	 
-
+	free = yes
 	hie_bng_shah_i_bangalah = {
 		province_warscore_cost = -0.10
 		leader_land_shock = 1
@@ -2854,7 +2737,6 @@ HIE_GUJ_ideas = {
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-	
 	hie_guj_jamat_bandi = {
 		global_unrest = -2
 	}
@@ -2890,7 +2772,7 @@ HIE_JNP_ideas = {
 	trigger = {
 		tag = JNP
 		religion_group = muslim
-		NOT = { has_country_flag = hie_use_vanilla_ideas } 
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
 	hie_jnp_sangitasiromani = {
@@ -2928,12 +2810,12 @@ HIE_MAR_ideas = {
 	}
 	trigger = {
 		OR = {
-			tag = MAR	#Marathas
-			tag = BDA	#Baroda
+			tag = MAR
+			tag = BDA
 			AND = {
 				TAG = GWA
 				primary_culture = marathi
-			} #Sindhias of Gwalior
+			}
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
@@ -2964,12 +2846,12 @@ HIE_MAR_ideas = {
 	}
 }
 HIE_MER_ideas = {
-	start = {	
+	start = {
 		infantry_power = 0.10
 		province_warscore_cost = -0.15
 	}
 	bonus = {
-		army_tradition_decay = -0.01	
+		army_tradition_decay = -0.01
 	}
 	trigger = {
 		tag = MER
@@ -3007,14 +2889,11 @@ HIE_MUG_ideas = {
 	bonus = {
 		global_manpower_modifier = 0.15
 	}
-
 	trigger = {
 		tag = MUG
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	 
-		
-		
+	free = yes
 	hie_mug_ali_quli = {
 		fire_damage = 0.10
 	}
@@ -3117,26 +2996,22 @@ HIE_VIJ_ideas = {
 		development_cost = -0.10
 	}
 }
-
-#########    ITALY    #########
-#########    ITALY    #########
-#########    ITALY    #########
 HIE_FER_ideas = {
  	start = {
 		land_morale = 0.10
 		diplomatic_upkeep = 1
  	}
- 	
+ 
  	bonus = {
 		fire_damage = 0.10
  	}
- 	
+ 
  	trigger = {
 		tag = FER
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
  	}
  	free = yes
- 	
+ 
  	hie_fer_estensi = {
 		legitimacy = 1
  	}
@@ -3322,19 +3197,16 @@ HIE_MLO_ideas = {
 HIE_NAP_ideas = {
 	start = {
 		global_manpower_modifier = 0.15
-		infantry_power = 0.10 
+		infantry_power = 0.10
 	}
 	bonus = {
 		land_forcelimit_modifier = 0.15
 	}
-
 	trigger = {
 		tag = NAP
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-
 	free = yes
-		
 	hie_nap_sicilian_kingship = {
 		diplomatic_reputation = 1
 		legitimacy = 1
@@ -3544,7 +3416,7 @@ HIE_SAV_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	hie_sav_statuta_sabaudiae = {
-   		state_maintenance_modifier = -0.15
+ 		state_maintenance_modifier = -0.15
 	}
 	hie_sav_venaria_reale = {
 		legitimacy = 1
@@ -3554,7 +3426,7 @@ HIE_SAV_ideas = {
 HIE_SIC_ideas = {
 	start = {
 		global_manpower_modifier = 0.15
-		infantry_power = 0.10 
+		infantry_power = 0.10
 	}
 	bonus = {
 		land_forcelimit_modifier = 0.15
@@ -3563,7 +3435,6 @@ HIE_SIC_ideas = {
 		tag = SIC
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	
 	free = yes
 	hie_sic_sicilian_kingship = {
 		diplomatic_reputation = 1
@@ -3630,7 +3501,7 @@ HIE_SPI_ideas = {
 		production_efficiency = 0.10
 	}
 }
-HIE_TTS_ideas = { 
+HIE_TTS_ideas = {
 	start = {
 		infantry_power = 0.10
 		naval_morale = 0.10
@@ -3642,7 +3513,6 @@ HIE_TTS_ideas = {
 		tag = TTS
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	
 	free = yes
 	hie_tts_constitutio_amalfitana = {
 		possible_policy = 1
@@ -3681,7 +3551,7 @@ HIE_TUS_ideas = {
 	trigger = {
 		OR = {
 			tag = TUS
-			tag = LAN 
+			tag = LAN
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
@@ -3750,10 +3620,6 @@ HIE_VEN_ideas = {
 		leader_naval_fire = 2
 	}
 }
-
-#########    LEVANT    #########
-#########    LEVANT    #########
-#########    LEVANT    #########
 HIE_CYP_ideas = {
 	start = {
 		diplomats = 1
@@ -3918,17 +3784,14 @@ HIE_MAM_ideas = {
 		army_tradition = 0.5
 		cavalry_power = 0.20
 	}
-	
 	bonus = {
 		global_trade_power = 0.15
 	}
-	
 	trigger = {
 		tag = MAM
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-	
 	hie_mam_royal_mamluks = {
 		land_morale = 0.10
 	}
@@ -3963,12 +3826,10 @@ HIE_TRE_ideas = {
 	bonus = {
 		core_creation = -0.15
 	}
-
 	trigger = {
 		tag = TRE
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-
 	free = yes
 	hie_tre_last_rhomanoi = {
 		idea_cost = -0.15
@@ -3996,10 +3857,6 @@ HIE_TRE_ideas = {
 		governing_capacity_modifier = 0.10
 	}
 }
-
-#########    LOW COUNTRIES    #########
-#########    LOW COUNTRIES    #########
-#########    LOW COUNTRIES    #########
 HIE_BRB_ideas = {
 	start = {
 		trade_efficiency = 0.10
@@ -4195,7 +4052,6 @@ HIE_HOL_ideas = {
 	bonus = {
 		global_institution_spread = 0.50
 	}
-
 	trigger = {
 		tag = HOL
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
@@ -4235,7 +4091,6 @@ HIE_NED_DUT_ideas = {
 	bonus = {
 		colonists = 1
 	}
-
 	trigger = {
 		tag = NED
 		primary_culture = dutch
@@ -4276,7 +4131,6 @@ HIE_NED_FRI_ideas = {
 	bonus = {
 		discipline = 0.05
 	}
-
 	trigger = {
 		tag = NED
 		primary_culture = frisian
@@ -4316,7 +4170,6 @@ HIE_NED_FLE_ideas = {
 	bonus = {
 		land_morale = 0.10
 	}
-
 	trigger = {
 		tag = NED
 		OR = {
@@ -4352,10 +4205,6 @@ HIE_NED_FLE_ideas = {
 		trade_efficiency = 0.15
 	}
 }
-
-#########    NORTH AFRICA    #########
-#########    NORTH AFRICA    #########
-#########    NORTH AFRICA    #########
 HIE_MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
@@ -4397,10 +4246,6 @@ HIE_MOR_ideas = {
 		global_autonomy = -0.05
 	}
 }
-
-#########    NORTH AMERICA    #########
-#########    NORTH AMERICA    #########
-#########    NORTH AMERICA    #########
 HIE_AZT_ideas = {
 	start = {
 		land_morale = 0.10
@@ -4413,8 +4258,7 @@ HIE_AZT_ideas = {
 		tag = AZT
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes		#wibe added at load.
-	
+	free = yes
 	hie_azt_triple_alliance = {
 		global_tax_modifier = 0.10
 		vassal_forcelimit_bonus = 0.50
@@ -4479,26 +4323,21 @@ HIE_USA_ideas = {
 		prestige = 1
  	}
 }
-
-#########    PERSIA    #########
-#########    PERSIA    #########
-#########    PERSIA    #########
 HIE_PER_ideas = {
  	start = {
 		defensiveness = 0.15
 		cavalry_power = 0.25
  	}
- 	
+ 
  	bonus = {
 		development_cost = -0.10
  	}
- 	
+ 
  	trigger = {
 		tag = PER
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
  	}
  	free = yes
- 
  	hie_per_the_qizilbash = {
 		manpower_in_true_faith_provinces = 0.25
 		land_morale = 0.10
@@ -4525,10 +4364,6 @@ HIE_PER_ideas = {
 		drill_gain_modifier = 0.25
  	}
 }
-
-#########    SCANDINAVIA    #########
-#########    SCANDINAVIA    #########
-#########    SCANDINAVIA    #########
 HIE_DAN_ideas = {
 	start = {
 		galley_power = 0.15
@@ -4649,10 +4484,6 @@ HIE_SWE_ideas = {
 		global_own_trade_power = 0.20
 	}
 }
-
-#########    SOUTH AMERICA    #########
-#########    SOUTH AMERICA    #########
-#########    SOUTH AMERICA    #########
 HIE_INC_ideas = {
 	start = {
 		shock_damage_received = -0.1
@@ -4669,11 +4500,10 @@ HIE_INC_ideas = {
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-		
 	hie_inc_quipu = {
 		idea_cost = -0.10
 	}
-	hie_inc_mita = { 
+	hie_inc_mita = {
 		development_cost = -0.10
 		build_cost = -0.10
 	}
@@ -4695,10 +4525,6 @@ HIE_INC_ideas = {
 		governing_capacity_modifier = 0.15
 	}
 }
-
-#########    GENERIC IDEAS    #########
-#########    GENERIC IDEAS    #########
-#########    GENERIC IDEAS    #########
 HIE_PIR_ideas = {
 	start = {
 		global_ship_cost = -0.15
@@ -4729,7 +4555,7 @@ HIE_PIR_ideas = {
 	hie_pir_plunder = {
 		loot_amount = 0.25
 	}
-	hie_pir_grog_rationing = {	
+	hie_pir_grog_rationing = {
 		naval_morale = 0.15
 	}
 	hie_pir_elected_captains = {
@@ -4747,10 +4573,6 @@ HIE_PIR_ideas = {
 		republican_tradition = 0.50
 	}
 }
-
-#########    COLONIAL IDEAS    #########
-#########    COLONIAL IDEAS    #########
-#########    COLONIAL IDEAS    #########
 HIE_COLONIAL_BRI_ideas = {
 	start = {
 		development_cost = -0.10
@@ -4764,7 +4586,7 @@ HIE_COLONIAL_BRI_ideas = {
 		culture_group = british
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	
+	free = yes
 	hie_colonial_bri_pilgrims = {
 		colonist_placement_chance = 0.10
 	}
@@ -4808,7 +4630,7 @@ HIE_COLONIAL_DUT_ideas = {
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	
+	free = yes
 	hie_colonial_dut_private_companies = {
 		merchants = 1
 		global_trade_power = 0.15
@@ -4836,49 +4658,6 @@ HIE_COLONIAL_DUT_ideas = {
 		tolerance_heretic = 3
 	}
 }
-# HIE_COLONIAL_FRE_ideas = {
-# 	start = {
-# 		global_heathen_missionary_strength = 0.02
-# 		native_assimilation = 0.50
-# 	}
-	
-# 	bonus = {
-# 		discipline = 0.05
-# 	}
-	
-# 	trigger = {
-# 		is_colonial_nation = yes
-# 		culture_group = french
-# 		NOT = { has_country_flag = hie_use_vanilla_ideas }
-# 	}
-# 	free = yes
-	
-# 	hie_colonial_fre_company_of_one_hundred = {
-# 		global_trade_power = 0.15
-# 	}
-# 	hie_colonial_fre_coreur_de_bois = {
-# 		colonists = 1
-# 		trade_efficiency = 0.10
-# 	}
-# 	hie_colonial_fre_coutume_de_paris = {
-# 		global_autonomy = -0.05
-# 		liberty_desire = -20
-# 	}
-# 	hie_colonial_fre_small_wars = {
-# 		shock_damage_received = -0.10
-# 		land_attrition = -0.10
-# 	}
-# 	hie_colonial_fre_indian_alliances = {
-# 		global_manpower_modifier = 0.20
-# 	}
-# 	hie_colonial_fre_kings_daughters = {
-# 		colonist_placement_chance = 0.10
-# 	}
-# 	hie_colonial_fre_canadian_militia = {
-# 		land_forcelimit_modifier = 0.20
-# 		global_regiment_cost = -0.10
-# 	}
-# }
 HIE_COLONIAL_LAT_ideas = {
 	start = {
 		navy_tradition = 1
@@ -4936,7 +4715,7 @@ HIE_COLONIAL_POR_ideas = {
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
-	free = yes	
+	free = yes
 	hie_colonial_por_pau_brazil = {
 		trade_efficiency = 0.20
 	}
