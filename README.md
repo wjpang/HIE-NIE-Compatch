@@ -3,7 +3,9 @@ An EU4 mod compatibility patch so you can play with both the HIE and NIE mods. N
 
 ## Links
 [Stable Steam Workshop release](https://steamcommunity.com/sharedfiles/filedetails/?id=2804416132)
+
 [Historical Ideas Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2804377099)
+
 [National Ideas Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=1592328478)
 
 ## Discord
