@@ -218,7 +218,7 @@ NOR_ideas = {
 		global_ship_cost = -0.1
 	}
 	seize_the_opportunity = {
- 		global_trade_power = 0.1
+		global_trade_power = 0.1
 	}
 	nor_fishing = {
 		production_efficiency = 0.1
@@ -245,7 +245,7 @@ FIN_ideas = {
 		defensiveness = 0.15
 	}
 	hakkapelitta_fin = {
- 		cavalry_power = 0.15
+		cavalry_power = 0.15
 	}
 	the_fourth_estate = {
 		production_efficiency = 0.1
@@ -325,7 +325,7 @@ MOS_ideas = {
 	}
 	strength_of_the_boyars = {
 		stability_cost_modifier = -0.2
- 	}
+	}
 	zasechnaya_cherta = {
 		fort_maintenance_modifier = -0.20
 	}
@@ -1009,7 +1009,7 @@ POL_ideas = {
 		num_accepted_cultures = 1
 	}
 	bonus = {
-	 	tolerance_heretic = 3
+		tolerance_heretic = 3
 	}
 	trigger = {
 		tag = POL
@@ -1700,7 +1700,7 @@ TIM_ideas = {
 	}
 	reform_the_diwan = {
 		yearly_corruption = -0.1
- 	}
+	}
 }
 HSA_ideas = {
 	start = {
@@ -1835,7 +1835,7 @@ VIJ_ideas = {
 	}
 	vij_tolerance = {
 		tolerance_heretic = 1
- 		tolerance_heathen = 1
+		tolerance_heathen = 1
 	}
 	carnatic_music = {
 		prestige = 1
@@ -1880,42 +1880,6 @@ AYU_ideas = {
 	}
 	personal_executions = {
 		harsh_treatment_cost = -0.2
-	}
-}
-OMA_ideas = {
-	start = {
-		naval_morale = 0.15
-		naval_maintenance_modifier = -0.2
-	}
-	bonus = {
-		blockade_efficiency = 0.33
-	}
-	trigger = {
-		tag = OMA
-	}
-	free = yes
-	local_merchant_preference = {
-		trade_steering = 0.33
-	}
-	secured_timber_supplies = {
-		global_ship_recruit_speed = -0.1
-	}
-	association_with_unbelievers = {
-		tolerance_heathen = 2
-		global_sailors_modifier = 0.10
-	}
-	port_security_improvement = {
-		trade_efficiency = 0.1
-	}
-	end_of_shipbuilding_guilds = {
-		light_ship_cost = -0.15
-		sailor_maintenance_modifer = -0.05
-	}
-	skilled_captains = {
-		leader_naval_manuever = 1
-	}
-	expansion_of_trade_contacts = {
-		merchants = 1
 	}
 }
 KOR_ideas = {
@@ -2375,7 +2339,7 @@ SAX_ideas = {
 		diplomatic_reputation = 1
 	}
 	wittenberg_university = {
-	 	tolerance_heretic = 3
+		tolerance_heretic = 3
 	}
 	corpus_evangelicorum = {
 		diplomatic_upkeep = 1
@@ -2400,10 +2364,6 @@ MAR_ideas = {
 		OR = {
 			tag = MAR
 			tag = BDA
-			AND = {
-				TAG = GWA
-				primary_culture = marathi
-			}
 		}
 		has_country_flag = hie_use_vanilla_ideas
 	}
@@ -2748,7 +2708,7 @@ TUS_ideas = {
 	}
 	tuscan_grand_duchy = {
 		global_manpower_modifier = 0.25
- 	}
+	}
 }
 USA_ideas = {
 	start = {
@@ -2784,7 +2744,7 @@ USA_ideas = {
 	empire_of_liberty = {
 		min_autonomy_in_territories = -0.10
 		global_autonomy = -0.025
- 	}
+	}
 }
 SWI_ideas = {
 	start = {
@@ -2893,7 +2853,7 @@ BRI_ideas = {
 	}
 	catholicon = {
 		prestige = 1
- 	}
+	}
 }
 NAJ_ideas = {
 	start = {
@@ -3785,7 +3745,7 @@ SIL_ideas = {
 		diplomatic_reputation = 1
 	}
 	bonus = {
-	 	global_tax_modifier = 0.10
+		global_tax_modifier = 0.10
 	}
 	trigger = {
 		OR = {
@@ -4610,7 +4570,7 @@ BUL_ideas = {
 		global_heretic_missionary_strength = 0.02
 	}
 	bul_idea_3 = {
- 		global_unrest = -1
+		global_unrest = -1
 	}
 	bul_idea_4 = {
 		infantry_cost = -0.1
@@ -4737,7 +4697,7 @@ POM_ideas = {
 		land_morale = 0.1
 	}
 	bonus = {
- 		global_trade_power = 0.1
+		global_trade_power = 0.1
 	}
 	trigger = {
 		OR = {
@@ -4838,45 +4798,6 @@ ARM_ideas = {
 	}
 	end_of_armenian_diaspora = {
 		production_efficiency = 0.1
-	}
-}
-hausa_ideas = {
-	start = {
-		diplomats = 1
-		global_own_trade_power = 0.1
-	}
-	bonus = {
-		development_cost = -0.1
-	}
-	trigger = {
-		OR = {
-			TAG = KTS
-			TAG = KAN
-			TAG = ZZZ
-			TAG = HAU
-		}
-	}
-	free = yes
-	heirs_of_bayajida = {
-		diplomatic_upkeep = 1
-	}
-	regnal_chronicles = {
-		prestige = 1
-	}
-	sarakunan_babba = {
-		production_efficiency = 0.1
-	}
-	sarakunan_kasuwa = {
-		caravan_power = 0.2
-	}
-	sarkin_yaki = {
-		shock_damage_received = -0.1
-	}
-	sarkin_bayi = {
-		build_cost = -0.1
-	}
-	borno_refugees = {
-		global_institution_spread = 0.1
 	}
 }
 GUA_ideas = {
@@ -10141,7 +10062,7 @@ irish_ideas = {
 	}
 	unconquerable_ireland = {
 		war_exhaustion = -0.02
- 	}
+	}
 	ire_gallowglasses = {
 		discipline = 0.05
 	}

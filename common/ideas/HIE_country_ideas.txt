@@ -744,7 +744,7 @@ HIE_IRE_ideas = {
 	}
 	hie_ire_irish_crofters = {
 		build_cost = -0.10
- 	}
+	}
 	hie_ire_unconquerable_ireland = {
 		war_exhaustion = -0.02
 		global_regiment_cost = -0.10
@@ -1762,7 +1762,7 @@ HIE_BRI_ideas = {
 	}
 	hie_bri_catholicon = {
 		num_accepted_cultures = 2
- 	}
+	}
 }
 HIE_BUR_ideas = {
 	start = {
@@ -2047,7 +2047,7 @@ HIE_PRU_ideas = {
 }
 HIE_SAX_ideas = {
 	start = {
-	 	ae_impact = -0.15
+		ae_impact = -0.15
 		prestige = 1
 	}
 	bonus = {
@@ -2069,7 +2069,7 @@ HIE_SAX_ideas = {
 		monarch_admin_power = 1
 	}
 	hie_sax_meisner_porcelain = {
-	 	global_trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	hie_sax_wittenberg_university = {
 		tolerance_heretic = 2
@@ -2995,45 +2995,42 @@ HIE_VIJ_ideas = {
 	}
 }
 HIE_FER_ideas = {
- 	start = {
+	start = {
 		land_morale = 0.10
 		diplomatic_upkeep = 1
- 	}
- 
- 	bonus = {
+	}
+	bonus = {
 		fire_damage = 0.10
- 	}
- 
- 	trigger = {
+	}
+	trigger = {
 		tag = FER
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
- 	}
- 	free = yes
- 
- 	hie_fer_estensi = {
+	}
+	free = yes
+	hie_fer_estensi = {
 		legitimacy = 1
- 	}
- 	hie_fer_condotte_militari = {
+	}
+	hie_fer_condotte_militari = {
 		merc_maintenance_modifier = -0.33
 		mercenary_manpower = 0.15
- 	}
- 	hie_fer_addizione_erculea = {
+	}
+	hie_fer_addizione_erculea = {
 		development_cost = -0.10
- 	}
- 	hie_fer_mecenatismo_estense = {
+	}
+	hie_fer_mecenatismo_estense = {
 		advisor_cost = -0.15
 		idea_cost = -0.05
- 	}
- 	hie_fer_castello_estense = {
+	}
+	hie_fer_castello_estense = {
 		defensiveness = 0.15
- 	}
- 	hie_fer_corti_imperiali = {
+	}
+	hie_fer_corti_imperiali = {
 		prestige = 1
- 	}
- 	hie_fer_fonderie_ferraresi = {
+	}
+	hie_fer_fonderie_ferraresi = {
 		artillery_cost = -0.10
 		artillery_power = 0.10
- 	}
+	}
 }
 HIE_GEN_ideas = {
 	start = {
@@ -3414,7 +3411,7 @@ HIE_SAV_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	hie_sav_statuta_sabaudiae = {
- 		state_maintenance_modifier = -0.15
+		state_maintenance_modifier = -0.15
 	}
 	hie_sav_venaria_reale = {
 		legitimacy = 1
@@ -3578,7 +3575,7 @@ HIE_TUS_ideas = {
 	hie_tus_artigianato_fiorentino = {
 		global_trade_goods_size_modifier = 0.15
 		global_institution_spread = 0.05
- 	}
+	}
 }
 HIE_VEN_ideas = {
 	start = {
@@ -4319,48 +4316,46 @@ HIE_USA_ideas = {
 	}
 	hie_usa_shining_city_hill = {
 		prestige = 1
- 	}
+	}
 }
 HIE_PER_ideas = {
- 	start = {
+	start = {
 		defensiveness = 0.15
 		cavalry_shock = 1
- 	}
- 
- 	bonus = {
+	}
+	bonus = {
 		development_cost = -0.10
- 	}
- 
- 	trigger = {
+	}
+	trigger = {
 		tag = PER
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
- 	}
- 	free = yes
- 	hie_per_the_qizilbash = {
+	}
+	free = yes
+	hie_per_the_qizilbash = {
 		manpower_in_true_faith_provinces = 0.25
 		land_morale = 0.10
- 	}
- 	hie_per_caravanserais = {
+	}
+	hie_per_caravanserais = {
 		global_prov_trade_power_modifier = 0.15
- 	}
- 	hie_per_rokn_ol_dowleh = {
+	}
+	hie_per_rokn_ol_dowleh = {
 		governing_capacity_modifier = 0.10
 		free_mil_policy = 1
- 	}
- 	hie_per_persian_rug_production = {
+	}
+	hie_per_persian_rug_production = {
 		global_trade_goods_size_modifier = 0.10
- 	}
- 	hie_per_jazayer = {
+	}
+	hie_per_jazayer = {
 		fire_damage = 0.10
- 	}
- 	hie_per_savaran_sapah_khorasan = {
+	}
+	hie_per_savaran_sapah_khorasan = {
 		cavalry_flanking = 0.33
 		cav_to_inf_ratio = 0.25
- 	}
- 	hie_per_jazayerchi_tofangchi = {
+	}
+	hie_per_jazayerchi_tofangchi = {
 		discipline = 0.05
 		drill_gain_modifier = 0.25
- 	}
+	}
 }
 HIE_DAN_ideas = {
 	start = {
@@ -4420,7 +4415,7 @@ HIE_FIN_ideas = {
 		defensiveness = 0.15
 	}
 	hie_fin_saunas = {
- 		global_unrest = -2
+		global_unrest = -2
 	}
 	hie_fin_free_peasants = {
 		global_trade_goods_size_modifier = 0.10
