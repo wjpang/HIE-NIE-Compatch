@@ -1,3 +1,6 @@
+#########	BALKANS	#########
+#########	BALKANS	#########
+#########	BALKANS	#########
 HIE_ACH_ideas = {
 	start = {
 		defensiveness = 0.20
@@ -36,6 +39,47 @@ HIE_ACH_ideas = {
 		land_morale = 0.10
 	}
 }
+HIE_ALB_ideas = {
+	start = {
+		defensiveness = 0.20
+		leader_land_shock = 1
+	}
+	bonus = {
+		army_tradition_decay = -0.01
+	}
+	trigger = {
+		tag = ALB
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_alb_military_conducts = {
+		leader_cost = -0.25
+		leader_land_fire = 1
+	}
+	hie_alb_athleta_christi = {
+		manpower_in_true_faith_provinces = 0.15
+		warscore_cost_vs_other_religion = -0.10
+	}
+	hie_alb_church_holy_trinity = {
+		army_tradition = 1
+		papal_influence = 1
+		yearly_patriarch_authority = 0.0025
+	}
+	hie_alb_stratioti = {
+		discipline = 0.05
+		shock_damage = 0.10
+	}
+	hie_alb_marascallum_regnie_albaniae = {
+		land_forcelimit_modifier = 0.15
+	}
+	hie_alb_legacy_anjou = {
+		diplomatic_reputation = 1
+		monarch_military_power = 1
+	}
+	hie_alb_italian_campaign = {
+		leader_land_manuever = 1
+	}
+}
 HIE_ATH_ideas = {
 	start = {
 		republican_tradition = 0.5
@@ -50,6 +94,7 @@ HIE_ATH_ideas = {
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_ath_divine_comedy = {
 		idea_cost = -0.10
 		diplomatic_reputation = 1
@@ -75,6 +120,84 @@ HIE_ATH_ideas = {
 	hie_ath_modern_hoplites = {
 		discipline = 0.05
 		shock_damage_received = -0.10
+	}
+}
+HIE_BOS_ideas = {
+	start = {	
+		land_morale = 0.10
+		infantry_power = 0.10
+	}
+	bonus = {
+		core_creation = -0.10
+	}
+	trigger = {
+		tag = BOS
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bos_imperial_law = {
+		adm_tech_cost_modifier = -0.10
+		reform_progress_growth = 0.33
+	}
+	hie_bos_caves_kristjani = {
+		hostile_attrition = 2
+		reverse_relation_with_same_religion = 25
+	}
+	hie_bos_stanak = {
+		estate_interaction_cooldown_modifier = -0.20
+	}
+	hie_bos_treaties_with_republics = {
+		global_trade_power = 0.20
+		global_trade_goods_size_modifier = 0.15
+	}
+	hie_bos_land_princes = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.50
+	}
+	hie_bos_guaranteed = {
+		diplomatic_reputation = 1
+	}
+	hie_bos_bosnian_freedom = {
+		religious_unity = 0.25
+		tolerance_heretic = 4
+	}
+}
+HIE_BUL_ideas = {
+	start = {
+		infantry_shock = 0.15
+		defensiveness = 0.15
+	}
+	bonus = {
+		core_creation = -0.10
+	}
+	trigger = {
+		tag = BUL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bul_slavonic_script = {
+		institution_spread_from_true_faith = 0.15
+		idea_cost = -0.10
+	}
+	hie_bul_fighting_roman_military_art = {
+		infantry_power = 0.10
+	}
+	hie_bul_ascension_cathedral = {
+ 		yearly_patriarch_authority = 0.005
+		prestige = 0.5
+	}
+	hie_bul_cuman_fighter = {
+		cavalry_power = 0.10
+		morale_damage = 0.10
+	}
+	hie_bul_tarnovo_artistic_school = {
+		build_cost = -0.10
+	}
+	hie_bul_oblast_system = {
+		governing_capacity_modifier = 0.10
+	}
+	hie_bul_crowned_czar = {
+		legitimacy = 1
 	}
 }
 HIE_BYZ_ideas = {
@@ -153,6 +276,49 @@ HIE_CEP_ideas = {
 	}
 	hie_cep_pan_hellenism = {
 		dip_tech_cost_modifier = -0.10
+	}
+}
+HIE_CRO_ideas = {
+	start = {
+		cavalry_power = 0.20
+		naval_forcelimit_modifier = 0.20
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = CRO
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_cro_historia_salonitana = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_cro_croatian_renaissance = {
+		technology_cost = -0.075
+	}
+	hie_cro_venetian_rivalry = {
+		galley_power = 0.20
+		global_trade_power = 0.15
+	}
+	hie_cro_allagions = {
+		cav_to_inf_ratio = 0.50
+		infantry_power = 0.10
+	}
+	hie_cro_sabor = {
+		nobles_loyalty_modifier = 0.10
+	}
+	hie_cro_hussars = {
+		can_recruit_hussars = yes
+		special_unit_forcelimit = 0.25
+	}
+	hie_cro_union_with_hungary = {
+		diplomatic_upkeep = 1
+		core_creation = -0.15
 	}
 }
 HIE_CRT_ideas = {
@@ -290,6 +456,7 @@ HIE_GRE_GRE_ideas = {
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_gre_gre_home_democracy_philosophy = {
 		legitimacy = 1
 		reform_progress_growth = 0.15
@@ -337,6 +504,7 @@ HIE_GRE_LAT_ideas = {
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_gre_lat_literal_renaissance = {
 		idea_cost = -0.10
 		diplomatic_reputation = 1
@@ -523,6 +691,83 @@ HIE_NAX_ideas = {
 		dip_tech_cost_modifier = -0.10
 	}
 }
+HIE_RAG_ideas = {
+	start = {
+		trade_efficiency = 0.1
+		republican_tradition = 0.5
+	}
+	bonus = {
+		naval_morale = 0.15
+	}
+	trigger = {
+		tag = RAG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_rag_saint_blaise = {
+		papal_influence = 1
+		yearly_patriarch_authority = 0.003
+		tolerance_heretic = 1
+	}
+	hie_rag_liber_statutorum_civitatis_ragusii = {
+		all_estate_loyalty_equilibrium = 0.10
+		reform_progress_growth = 0.10
+	}
+	hie_rag_slavic_latin_union = {
+		development_cost = -0.10
+	}
+	hie_rag_republic_ancona = {
+		global_ship_trade_power = 0.15
+	}
+	hie_rag_abolition_slavery = {
+		global_unrest = -2
+	}
+	hie_rag_doors_blakans_orient = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_rag_venetian_rivalry = {
+		naval_forcelimit_modifier = 0.15
+	}
+}
+HIE_SER_ideas = {
+	start = {
+		land_morale = 0.10
+		manpower_in_true_faith_provinces = 0.20
+	}
+	bonus = {
+		governing_capacity_modifier = 0.10
+	}
+	trigger = {
+		tag = SER
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ser_gusar = {
+		can_recruit_hussars = yes
+		special_unit_cost_modifier = -0.10
+	}
+	hie_ser_patriarchate_pec = {
+		yearly_patriarch_authority = 0.0033
+	}
+	hie_ser_dusan_code = {
+		reform_progress_growth = 0.10
+		land_maintenance_modifier = -0.10
+	}
+	hie_ser_dusan_reforms = {
+		global_own_trade_power = 0.10
+	}
+	hie_ser_dinar = {
+		inflation_reduction = 0.10
+		gold_depletion_chance_modifier = -0.10
+	}
+	hie_ser_gradozandaje = {
+		defensiveness = 0.20
+		fort_maintenance_modifier = -0.20
+	}
+	hie_ser_vlachs = {
+		manpower_recovery_speed = 0.15
+	}
+}
 HIE_TUR_ideas = {
 	start = {
 		army_tradition_from_battle = 1
@@ -561,6 +806,49 @@ HIE_TUR_ideas = {
 		reform_progress_growth = 0.15
 	}
 }
+HIE_WAL_ideas = {
+	start = {
+		defensiveness = 0.20
+		discipline = 0.05
+	}
+	bonus = {
+		manpower_recovery_speed = 0.20
+	}
+	trigger = {
+		tag = WAL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_wal_well_rounded_soldiers = {
+		infantry_fire = 0.15
+	}
+	hie_wal_restoring_voivodie = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	hie_wal_european_mongolian_frontier = {
+		leader_land_shock = 1
+		loot_amount = 0.15
+	}
+	hie_wal_order_dragon = {
+		leader_cost = -0.25
+		army_tradition = 0.25
+	}
+	hie_wal_danube_fortifications = {
+		hostile_attrition = 1
+		garrison_size = 0.15
+	}
+	hie_wal_union_of_romanians = {
+		global_manpower_modifier = 0.20
+	}
+	hie_wal_phanarotie_century = {
+		advisor_cost = -0.15
+		technology_cost = -0.05
+	}
+}
+
+#########	BRITANNIA	#########
+#########	BRITANNIA	#########
+#########	BRITANNIA	#########
 HIE_CNN_ideas = {
 	start = {
 		land_attrition = -0.10
@@ -603,14 +891,17 @@ HIE_DMS_ideas = {
 		global_manpower_modifier = 0.20
 		stability_cost_modifier = -0.10
 	}
+
 	bonus = {
 		defensiveness = 0.15
 	}
+
 	trigger = {
 		tag = DMS
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_dms_port_cork = {
 		development_cost = -0.10
 		center_of_trade_upgrade_cost = -0.20
@@ -750,7 +1041,7 @@ HIE_IRE_ideas = {
 		global_regiment_cost = -0.10
 	}
 }
-HIE_MCM_ideas = {
+HIE_MCM_ideas = { #Munster
 	start = {
 		build_cost = -0.10
 		global_autonomy = -0.05
@@ -787,19 +1078,22 @@ HIE_MCM_ideas = {
 		own_coast_naval_combat_bonus = 1
 	}
 }
-HIE_MNS_ideas = {
+HIE_MNS_ideas = { #Theomond
 	start = {
 		shock_damage = 0.10
 		leader_land_shock = 1
 	}
+
 	bonus = {
 		global_trade_goods_size_modifier = 0.10
 	}
+
 	trigger = {
 		tag = MNS
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_mns_dal_gcais_blood = {
 		army_tradition = 0.5
 	}
@@ -824,7 +1118,7 @@ HIE_MNS_ideas = {
 		defensiveness = 0.20
 	}
 }
-HIE_MTH_ideas = {
+HIE_MTH_ideas = { #Meath
 	start = {
 		land_morale = 0.1
 		defensiveness = 0.20
@@ -864,7 +1158,7 @@ HIE_MTH_ideas = {
 		global_trade_power = 0.15
 	}
 }
-HIE_ORD_ideas = {
+HIE_ORD_ideas = { #Ormond
 	start = {
 		global_autonomy = -0.05
 		diplomatic_reputation = 1
@@ -902,19 +1196,22 @@ HIE_ORD_ideas = {
 		global_trade_goods_size_modifier = 0.10
 	}
 }
-HIE_SLN_ideas = {
+HIE_SLN_ideas = { #Sligo
 	start = {
 		global_tax_modifier = 0.15
 		build_cost = -0.10
 	}
+
 	bonus = {
 		global_trade_goods_size_modifier = 0.10
 	}
+
 	trigger = {
 		tag = SLN
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_sln_free_gaelic_towns = {
 		development_cost = -0.10
 	}
@@ -939,7 +1236,7 @@ HIE_SLN_ideas = {
 		hostile_attrition = 1
 	}
 }
-HIE_TYR_ideas = {
+HIE_TYR_ideas = { #Tyrone
 	start = {
 		infantry_power = 0.10
 		prestige = 1
@@ -977,7 +1274,7 @@ HIE_TYR_ideas = {
 		diplomatic_reputation = 1
 	}
 }
-HIE_TRY_ideas = {
+HIE_TRY_ideas = { #Tyrconnell
 	start = {
 		development_cost = -0.10
 		infantry_power = 0.1
@@ -1013,6 +1310,7 @@ HIE_TRY_ideas = {
 		fort_maintenance_modifier = -0.20
 	}
 }
+
 HIE_ENG_ideas = {
 	start = {
 		infantry_power = 0.10
@@ -1127,6 +1425,515 @@ HIE_GBR_ideas = {
 	}
 	hie_gbr_domestic_revolution = {
 		global_trade_goods_size_modifier = 0.15
+	}
+}
+
+#########	CAUCASIA	#########
+#########	CAUCASIA	#########
+#########	CAUCASIA	#########
+HIE_ARM_ideas = {
+	start = {
+		cavalry_cost = -0.25
+		tolerance_own = 2
+	}
+	bonus = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+	trigger = {
+		tag = ARM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_arm_legacy_armenian_empire = {
+		core_creation = -0.15
+	}
+	hie_arm_apostolic_church = {
+		global_missionary_strength = 0.02
+	}
+	hie_arm_armenian_cataphracts = {
+		cavalry_shock = 0.5
+	}
+	hie_arm_mount_ararat = {
+		defensiveness = 0.20
+		hostile_attrition = 1
+	}
+	hie_arm_karabkh_horses = {
+		cavalry_flanking = 1
+		cav_to_inf_ratio = 0.20
+	}
+	hie_arm_valley_copper_wine = {
+		trade_efficiency = 0.10
+	}
+	hie_arm_cultural_resiliance = {
+		culture_conversion_cost = -0.20
+		# culture_conversion_time = -0.10
+	}
+}
+HIE_AVR_ideas = {
+	start = {
+		cavalry_power = 0.20
+		improve_relation_modifier = 0.20
+	}
+	bonus = {
+		shock_damage = 0.10
+	}
+	trigger = {
+		tag = AVR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_avr_footsteps_pannonian_avars = {
+		culture_conversion_cost = -0.25
+	}
+	hie_avr_mountaineer_horse_riders = {
+		cavalry_cost = -0.20
+		land_attrition = -0.05
+	}
+	hie_avr_nomadic_lifestyle = {
+		movement_speed = 0.10
+		cavalry_flanking = 1
+	}
+	hie_avr_protectors_derbent = {
+		caravan_power = 0.15
+		hostile_attrition = 1
+	}
+	hie_avr_masterful_metalworkers = {
+		discipline = 0.05
+	}
+	hie_avr_flexible_alliance = {
+		diplomatic_upkeep = 2
+	}
+	hie_avr_prevent_russian_encroachment = {
+		morale_damage = 0.15
+	}
+}
+HIE_CIR_ideas = {
+	start = {
+		leader_land_manuever = 1
+		movement_speed = 0.15
+	}
+	bonus = {
+		land_forcelimit_modifier = 0.15
+	}
+	trigger = {
+		tag = CIR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_cir_head_choppers = {
+		land_morale = 0.10
+	}
+	hie_cir_genoese_ties = {
+		global_prov_trade_power_modifier = 0.20
+	}
+	hie_cir_circassian_steppes = {
+		cavalry_power = 0.10
+		cav_to_inf_ratio = 0.20
+	}
+	hie_cir_federalism = {
+		global_manpower_modifier = 0.15
+	}
+	hie_cir_cicassian_in_all_courts = {
+		diplomatic_upkeep = 2
+	}
+	hie_cir_papal_correspondence = {
+		papal_influence = 2
+		yearly_patriarch_authority = 0.0033
+	}
+	hie_cir_always_surrounded = {
+		morale_damage_received = -0.10
+	}
+}
+HIE_GEO_ideas = {
+	start = {
+		hostile_attrition = 1
+		defensiveness = 0.30
+	}
+	bonus = {
+		missionaries = 1
+	}
+	trigger = {
+		tag = GEO
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_geo_bagrationi_dynasty = {
+		accept_vassalization_reasons = 10
+		diplomatic_reputation = 1
+	}
+	hie_geo_last_christian_bastion = {
+		global_missionary_strength = 0.03
+	}
+	hie_geo_kipchak_settlements = {
+		local_development_cost = -0.10
+		manpower_recovery_speed = 0.10
+	}
+	hie_geo_campaigns_king_tamar = {
+		movement_speed = 0.15
+		discipline = 0.05
+	}
+	hie_geo_sadrosho_banners = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_geo_shadow_empire = {
+		infantry_power = 0.10
+	}
+	hie_geo_avenge_battle_chalagan = {
+		leader_land_manuever = 1
+	}
+}
+HIE_IME_ideas = {
+	start = {
+		merchants = 1
+		trade_steering = 0.20
+	}
+	bonus = {
+		global_prov_trade_power_modifier = 0.33
+	}
+	trigger = {
+		tag = IME
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ime_breaking_yoke_ilkhanate = {
+		shock_damage_received = -0.10
+		morale_damage_received = -0.05
+	}
+	hie_ime_genoese_colony_bati = {
+		global_trade_power = 0.15
+	}
+	hie_ime_islamic_affiliation = {
+		tolerance_of_heathens_capacity = 2
+		tolerance_heathen = 2
+	}
+	hie_ime_center_georgian_literature = {
+		prestige = 1
+	}
+	hie_ime_persian_ties = {
+		trade_efficiency = 0.10
+	}
+	hie_ime_black_sea_port = {
+		global_ship_trade_power = 0.25
+		naval_forcelimit_modifier = 0.15
+	}
+	hie_ime_fertile_black_sea_coast = {
+		global_trade_goods_size_modifier = 0.10
+	}
+}
+HIE_MLK_ideas = {
+	start = {
+		advisor_cost = -0.15
+		tolerance_own = 2
+	}
+	bonus = {
+		improve_relation_modifier = 0.20
+	}
+	trigger = {
+		tag = MLK
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mlk_letters_from_byzantines = {
+		diplomatic_reputation = 1
+	}
+	hie_mlk_descendents_kings_artsakh = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		horde_unity = 1
+		meritocracy = 1
+		devotion = 1
+	}
+	hie_mlk_five_melikdoms_karabakh = {
+		reform_progress_growth = 0.20
+	}
+	hie_mlk_karabakh_horses = {
+		cavalry_flanking = 1
+		cav_to_inf_ratio = 0.20
+	}
+	hie_mlk_syghnakh_recruitment_system = {
+		manpower_in_true_faith_provinces = 0.15
+	}
+	hie_mlk_last_bastion_armenian_independence = {
+		defensiveness = 0.20
+		hostile_attrition = 1
+	}
+	hie_mlk_cultural_resilience = {
+		culture_conversion_cost = -0.20
+		# culture_conversion_time = -0.10
+	}
+}
+HIE_SME_ideas = {
+	start = {
+		defensiveness = 0.25
+		leader_siege = 1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = SME
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_sme_jaqeli_jakeli = {
+		advisor_cost = -0.15
+	}
+	hie_sme_rabati_fortress = {
+		fort_maintenance_modifier = -0.20
+		hostile_attrition = 1
+	}
+	hie_sme_gelati_academy = {
+		idea_cost = -0.10
+	}
+	hie_sme_legacy_david_builder = {
+		build_cost = -0.15
+	}
+	hie_sme_lessons_ertsukhi = {
+		army_tradition = 0.75
+	}
+	hie_sme_defenders_faith = {
+		missionaries = 1
+	}
+	hie_sme_ones_who_broke_mongols = {
+		land_morale = 0.10
+	}
+}
+HIE_SRV_ideas = {
+	start = {
+		infantry_power = 0.10
+		ae_impact = -0.10
+	}
+	bonus = {
+		trade_efficiency = 0.10
+	}
+	trigger = {
+		tag = SRV
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_srv_bukhara_silk = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_srv_palace_shirvanshahs = {
+		build_cost = -0.10
+		build_time = -0.10
+	}
+	hie_srv_kurdish_roots = {
+		num_accepted_cultures = 2
+	}
+	hie_srv_reforms_manuchihr = {
+		possible_policy = 1
+	}
+	hie_srv_kura_river_agriculture = {
+		production_efficiency = 0.10
+	}
+	hie_srv_great_city_shusha = {
+		development_cost = -0.10
+	}
+	hie_srv_persian_trade = {
+		caravan_power = 0.15
+		merchants = 1
+	}
+}
+
+#########	EASTERN EUROPE	#########
+#########	EASTERN EUROPE	#########
+#########	EASTERN EUROPE	#########
+HIE_LIT_ideas = {
+	start = {
+		shock_damage_received = -0.10
+		tolerance_heretic = 3
+	}
+	bonus = {
+		cavalry_power = 0.20
+	}
+	trigger = {
+		tag = LIT
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_lit_protectorate_ruthenia = {
+		diplomatic_annexation_cost = -0.10
+		global_autonomy = -0.05
+	}
+	hie_lit_crusade_against_hordes = {
+		land_morale = 0.10
+		can_recruit_hussars = yes
+	}
+	hie_lit_lithuanian_endurance = {
+		army_tradition = 0.75
+	}
+	hie_lit_eastern_balance_power = {
+		diplomatic_reputation = 1
+	}
+	hie_lit_revitilazing_ruthenia = {
+		development_cost = -0.10
+	}
+	hie_lit_statutes_lithuania = {
+		global_unrest = -2
+	}
+	hie_lit_lithuanian_renaissance = {
+		technology_cost = -0.05
+	}
+}
+HIE_PLC_POL_ideas = {
+	start = {
+		num_accepted_cultures = 3
+		papal_influence = 2
+	}
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+	trigger = {
+		tag = PLC
+		primary_culture = polish
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_plc_pol_rebirth = {
+		idea_cost = -0.10
+	}
+	hie_plc_pol_pacta_conventa = {
+		all_estate_loyalty_equilibrium = 0.05
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+	hie_plc_pol_warsaw_confederation = {
+		tolerance_heretic = 3
+	}
+	hie_pol_pospolite_ruszenie = {
+		global_manpower_modifier = 0.20
+		land_morale = 0.10
+	}
+	hie_pol_winged_hussars = {
+		can_recruit_hussars = yes
+		cav_to_inf_ratio = 0.33
+	}
+	hie_plc_pol_magnates = {
+		production_efficiency = 0.10
+		land_maintenance_modifier = -0.10
+	}
+	hie_plc_pol_computed_army = {
+		infantry_power = 0.10
+	}
+}
+HIE_PLC_LIT_ideas = {
+	start = {
+		num_accepted_cultures = 3
+		tolerance_heretic = 3
+	}
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+	trigger = {
+		tag = PLC
+		primary_culture = lithuanian
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_plc_lit_rebirth = {
+		idea_cost = -0.10
+	}
+	hie_plc_lit_gediminid_legacy = {
+		diplomatic_reputation = 1
+	}
+	hie_plc_lit_amend_golden_liberty = {
+		free_policy = 1
+		reform_progress_growth = 0.20
+	}
+	hie_plc_lit_pospolite_ruszenie = {
+		global_manpower_modifier = 0.20
+		land_morale = 0.10
+	}
+	hie_plc_lit_winged_hussars = {
+		can_recruit_hussars = yes
+		cav_to_inf_ratio = 0.33
+	}
+	hie_plc_lit_magnates = {
+		production_efficiency = 0.10
+		land_maintenance_modifier = -0.10
+	}
+	hie_plc_lit_computed_army = {
+		infantry_power = 0.10
+	}
+}
+HIE_POL_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		papal_influence = 2
+	}
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+	trigger = {
+		tag = POL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_pol_gaude_mater_polonia = {
+		land_morale = 0.10
+	}
+	hie_pol_union_of_krewo = {
+		diplomatic_upkeep = 1
+	}
+	hie_pol_constitutional_monarchy = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		monthly_support_heir_gain = 0.25
+	}
+	hie_pol_commonwealth = {
+		num_accepted_cultures = 2
+		nobles_loyalty_modifier = 0.10
+	}
+	hie_pol_pospolite_ruszenie = {
+		global_manpower_modifier = 0.20
+	}
+	hie_pol_winged_hussars = {
+		can_recruit_hussars = yes
+		cav_to_inf_ratio = 0.33
+	}
+	hie_pol_permanent_defense = {
+		garrison_size = 0.25
+		army_tradition = 0.5
+	}
+}
+HIE_MOS_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		build_cost = -0.10
+	}
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+	}
+	trigger = {
+		tag = MOS
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mos_elevate_muscovite_metropolitan_patriarch = {
+		yearly_patriarch_authority = 0.005
+		tolerance_own = 1
+	}
+	hie_mos_ugorschina = {
+		land_morale = 0.10
+	}
+	hie_mos_tsar_vseya_rossii = {
+		fabricate_claims_cost = -0.20
+		core_creation = -0.10
+	}
+	hie_mos_zasechnaya_cherta = {
+		fort_maintenance_modifier = -0.20
+	}
+	hie_mos_relentless_push = {
+		ae_impact = -0.10
+ 	}
+	hie_mos_samoderzhaviye = {
+		max_absolutism = 10
+		yearly_absolutism = 1
+	}
+	hie_mos_sloboda = {
+		culture_conversion_cost = -0.15
 	}
 }
 HIE_NOV_ideas = {
@@ -1295,127 +2102,10 @@ HIE_UKR_ideas = {
 		institution_spread_from_true_faith = 0.15
 	}
 }
-HIE_POL_ideas = {
-	start = {
-		diplomatic_reputation = 1
-		papal_influence = 2
-	}
-	bonus = {
-		governing_capacity_modifier = 0.20
-	}
-	trigger = {
-		tag = POL
-		NOT = { has_country_flag = hie_use_vanilla_ideas }
-	}
-	free = yes
-	hie_pol_gaude_mater_polonia = {
-		land_morale = 0.10
-	}
-	hie_pol_union_of_krewo = {
-		diplomatic_upkeep = 1
-	}
-	hie_pol_constitutional_monarchy = {
-		legitimacy = 1
-		republican_tradition = 0.5
-		monthly_support_heir_gain = 0.25
-	}
-	hie_pol_commonwealth = {
-		num_accepted_cultures = 2
-		nobles_loyalty_modifier = 0.10
-	}
-	hie_pol_pospolite_ruszenie = {
-		global_manpower_modifier = 0.20
-	}
-	hie_pol_winged_hussars = {
-		can_recruit_hussars = yes
-		cav_to_inf_ratio = 0.33
-	}
-	hie_pol_permanent_defense = {
-		garrison_size = 0.25
-		army_tradition = 0.5
-	}
-}
-HIE_PLC_POL_ideas = {
-	start = {
-		num_accepted_cultures = 3
-		papal_influence = 2
-	}
-	bonus = {
-		governing_capacity_modifier = 0.20
-	}
-	trigger = {
-		tag = PLC
-		primary_culture = polish
-		NOT = { has_country_flag = hie_use_vanilla_ideas }
-	}
-	free = yes
-	hie_plc_pol_rebirth = {
-		idea_cost = -0.10
-	}
-	hie_plc_pol_pacta_conventa = {
-		all_estate_loyalty_equilibrium = 0.05
-		legitimacy = 1
-		republican_tradition = 0.5
-	}
-	hie_plc_pol_warsaw_confederation = {
-		tolerance_heretic = 3
-	}
-	hie_pol_pospolite_ruszenie = {
-		global_manpower_modifier = 0.20
-		land_morale = 0.10
-	}
-	hie_pol_winged_hussars = {
-		can_recruit_hussars = yes
-		cav_to_inf_ratio = 0.33
-	}
-	hie_plc_pol_magnates = {
-		production_efficiency = 0.10
-		land_maintenance_modifier = -0.10
-	}
-	hie_plc_pol_computed_army = {
-		infantry_power = 0.10
-	}
-}
-HIE_PLC_LIT_ideas = {
-	start = {
-		num_accepted_cultures = 3
-		tolerance_heretic = 3
-	}
-	bonus = {
-		governing_capacity_modifier = 0.20
-	}
-	trigger = {
-		tag = PLC
-		primary_culture = lithuanian
-		NOT = { has_country_flag = hie_use_vanilla_ideas }
-	}
-	free = yes
-	hie_plc_lit_rebirth = {
-		idea_cost = -0.10
-	}
-	hie_plc_lit_gediminid_legacy = {
-		diplomatic_reputation = 1
-	}
-	hie_plc_lit_amend_golden_liberty = {
-		free_policy = 1
-		reform_progress_growth = 0.20
-	}
-	hie_plc_lit_pospolite_ruszenie = {
-		global_manpower_modifier = 0.20
-		land_morale = 0.10
-	}
-	hie_plc_lit_winged_hussars = {
-		can_recruit_hussars = yes
-		cav_to_inf_ratio = 0.33
-	}
-	hie_plc_lit_magnates = {
-		production_efficiency = 0.10
-		land_maintenance_modifier = -0.10
-	}
-	hie_plc_lit_computed_army = {
-		infantry_power = 0.10
-	}
-}
+
+#########	EAST INDIES	#########
+#########	EAST INDIES	#########
+#########	EAST INDIES	#########
 HIE_AYU_ideas = {
 	start = {
 		diplomatic_upkeep = 1
@@ -1573,6 +2263,10 @@ HIE_SIA_ideas = {
 		shock_damage = 0.10
 	}
 }
+
+#########	FAR EAST ASIA	#########
+#########	FAR EAST ASIA	#########
+#########	FAR EAST ASIA	#########
 HIE_JAP_ideas = {
 	start = {
 		infantry_power = 0.10
@@ -1597,9 +2291,11 @@ HIE_JAP_ideas = {
 	hie_jap_bushido = {
 		discipline = 0.05
 		yearly_corruption = -0.1
+		has_samurai = yes
 	}
 	hie_jap_tanegashima = {
 		fire_damage = 0.10
+		allowed_samurai_fraction = 0.15
 	}
 	hie_jap_red_seal_ships = {
 		trade_range_modifier = 0.25
@@ -1643,8 +2339,9 @@ HIE_KOR_ideas = {
 	hie_kor_righteous_armies = {
 		global_manpower_modifier = 0.15
 	}
-	hie_kor_gebukseon = {
+	hie_kor_geobukseon = {
 		ship_durability = 0.10
+		has_geobukseon = yes
 	}
 	hie_kor_silhak = {
 		technology_cost = -0.10
@@ -1689,6 +2386,50 @@ HIE_MNG_ideas = {
 		artillery_power = 0.10
 	}
 }
+# HIE_QNG_ideas = {
+#	start = {
+#		core_creation = -0.2
+#		ae_impact = -0.1
+#	}
+#	bonus = {
+#		advisor_cost = -0.15
+#	}
+#	trigger = {
+#		tag = QNG
+#		NOT = { has_country_flag = hie_use_vanilla_ideas }
+#	}
+#	free =		#will be added at load.
+#	hie_qng_baqi = {
+#		amount_of_banners = 0.3
+#	}
+#	hie_qng_luyingbing = {
+#		manpower_recovery_speed = 0.15
+#		global_manpower_modifier = 0.15
+#	}
+#	hie_qng_sheng_yu = {
+#		global_unrest = -2
+#	}
+#	hie_qng_six_ministries = {
+#		years_of_nationalism = -5
+#		legitimacy = 1
+#		meritocracy = 1
+#	}
+#	hie_qng_junji_chu = {
+#		administrative_efficiency = 0.05
+#	}
+#	hie_qng_zongly_yamen = {
+#		state_maintenance_modifier = -0.15
+#		global_autonomy = -0.05
+#	}
+#	hie_qng_huiguan_gongsuo_guilds = {
+#		land_morale = 0.15
+#		prestige_from_land = 0.5
+#	}
+# }
+
+#########	FRANCE	#########
+#########	FRANCE	#########
+#########	FRANCE	#########
 HIE_FRA_ideas = {
 	start = {
 		cavalry_power = 0.20
@@ -1795,7 +2536,7 @@ HIE_BUR_ideas = {
 		republican_tradition = 0.3
 		trade_efficiency = 0.10
 	}
-	hie_bur_great_council_of_mechilen = {
+	hie_bur_great_council_of_mechelen = {
 		reduced_liberty_desire = 10
 		global_unrest = -2
 	}
@@ -1804,50 +2545,215 @@ HIE_BUR_ideas = {
 		diplomatic_annexation_cost = -0.20
 	}
 }
-HIE_HAB_ideas = {
+HIE_LOT_ideas = {
 	start = {
-		land_morale = 0.10
-		diplomatic_reputation = 1
+		infantry_fire = 0.25
+		governing_capacity_modifier = 0.20
 	}
 	bonus = {
-		infantry_power = 0.10
+		core_creation = -0.20
 	}
 	trigger = {
-		OR = {
-			tag = HAB
-			AND = {
-				tag = STY
-				dynasty = "von Habsburg"
-			}
-		}
+		tag = LOT
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
-	hie_hab_felix_austria = {
-		diplomatic_upkeep = 2
-	}
-	hie_hab_fugger_banking = {
-		interest = -0.50
-		inflation_reduction = 0.05
-	}
-	hie_hab_pietas_austriacae = {
-		tolerance_own = 2
+	hie_lot_distinguished_order_golden_fleece = {
 		papal_influence = 2
+		prestige = 1
 	}
-	hie_hab_hofkriegsrat = {
-		army_tradition = 0.75
+	hie_lot_students_warfare = {
+		artillery_power = 0.10
+		mil_tech_cost_modifier = -0.10
 	}
-	hie_hab_militargrenze = {
-		fort_maintenance_modifier = -0.25
-		land_forcelimit_modifier = 0.20
+	hie_lot_compagnies_ordonnance = {
+		discipline = 0.05
 	}
-	hie_hab_neuafteilung_der_erblande = {
+	hie_lot_chambres_comptes = {
+		global_tax_modifier = 0.10
+	}
+	hie_lot_lotharingian_abbeys = {
+		church_loyalty_modifier = 0.10
+		curia_powers_cost = -0.20
+	}
+	hie_lot_ancient_imperial_capital = {
+		build_cost = -0.10
+		development_cost = -0.05
+	}
+	hie_lot_pax_francia = {
+		reform_progress_growth = 0.20
+	}
+}
+
+#########	GERMANY	#########
+#########	GERMANY	#########
+#########	GERMANY	#########
+
+HIE_AAC_ideas = {
+	start = {
+		adm_tech_cost_modifier = -0.10
+		global_trade_power = 0.15
+	}
+	bonus = {
+		reform_progress_growth = 0.30
+	}
+	trigger = {
+		tag = AAC
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_aac_acquis_granum = {
+		development_cost = -0.10
+	}
+	hie_aac_plats_charlemagne = {
+		imperial_authority_value = 0.10
+		prestige = 1
+	}
+	hie_aac_dom_aken = {
+		church_influence_modifier = -0.10
+		devotion = 1
+		horde_unity = 1
 		legitimacy = 1
-		diplomatic_annexation_cost = -0.20
+		meritocracy = 1
+		republican_tradition = 0.3
 	}
-	hie_hab_austriae_est_imperare_orbi_universo = {
-		ae_impact = -0.10
-		imperial_authority = 0.15
+	hie_aac_walls_aken = {
+		defensiveness = 0.15
+		garrison_size = 0.15
+	}
+	hie_aac_imperial_capital = {
+		global_institution_spread = 0.33
+	}
+	hie_aac_old_limburg = {
+		core_creation = -0.10
+	}
+	hie_aac_pax_francia = {
+		global_manpower_modifier = 0.20
+		land_morale = 0.10
+	}
+}
+HIE_ALS_ideas = {
+	start = {
+		development_cost = -0.10
+		dip_tech_cost_modifier = -0.10
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = ALS
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_als_strasburg_cathedral = {
+		tolerance_own = 2
+		prestige = 1
+	}
+	hie_als_kirchenfabriken = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_als_franco_allemanic_melting_pot = {
+		num_accepted_cultures = 1
+	}
+	hie_als_printed_word = {
+		global_institution_spread = 0.33
+		idea_cost = -0.10
+	}
+	hie_als_religious_agreements = {
+		tolerance_heretic = 3
+	}
+	hie_als_confessio_tetrapolitana = {
+		diplomatic_reputation = 1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+	hie_als_gates_rhine = {
+		defensiveness = 0.20
+	}
+}
+HIE_ANH_ideas = {
+	start = {
+		land_morale = 0.1
+		technology_cost = -0.05
+	}
+	bonus = {
+		monarch_military_power = 1
+	}
+	trigger = {
+		tag = ANH
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_anh_allodium = {
+		global_tax_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+	hie_anh_many_princes_only_one_princedom = {
+		diplomatic_upkeep = 1
+	}
+	hie_anh_wolfgang_confessor = {
+		prestige_per_development_from_conversion = 0.25
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+		papal_influence = 1
+	}
+	hie_anh_anhalt_militarisation = {
+		infantry_fire = 0.3
+		yearly_army_professionalism = 0.005
+	}
+	hie_anh_adoption_prussian_system = {
+		army_tradition = 0.5
+		discipline = 0.05
+	}
+	hie_anh_duchy_anhalt = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_anh_anhalt_constitution = {
+		reform_progress_growth = 0.15
+	}
+}
+HIE_AUG_ideas = {
+	start = {
+		missionaries = 1
+		development_cost = -0.10
+	}
+	bonus = {
+		all_power_cost = -0.05
+	}
+	trigger = {
+		tag = AUG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_aug_builders_churches_abbeys = {
+		build_cost = -0.10
+		church_loyalty_modifier = 0.10
+	}
+	hie_aug_right_coinage = {
+		global_tax_modifier = 0.15
+		trade_efficiency = 0.10
+	}
+	hie_aug_free_city_augsburg = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_aug_encouragement_printing_press = {
+		global_institution_spread = 0.50
+	}
+	hie_aug_patronage_bishops = {
+		prestige = 1
+	}
+	hie_aug_peace_augsburg = {
+		tolerance_heretic = 3
+		diplomatic_reputation = 1
+	}
+	hie_aug_jesuit_counter_reformation = {
+		technology_cost = -0.05
+		global_missionary_strength = 0.01
 	}
 }
 HIE_BOH_ideas = {
@@ -1874,10 +2780,10 @@ HIE_BOH_ideas = {
 		tolerance_heretic = 3
 	}
 	hie_boh_university_of_prague = {
-		papal_influence = 1
+		technology_cost = -0.05
 		monthly_fervor_increase = 0.5
 		church_power_modifier = 0.25
-		technology_cost = -0.05
+		papal_influence = 1
 	}
 	hie_boh_diplomatic_treatise = {
 		diplomats = 1
@@ -1927,6 +2833,806 @@ HIE_BRA_ideas = {
 		infantry_power = 0.10
 	}
 }
+HIE_BRE_ideas = {
+	start = {
+		global_institution_spread = 0.50
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	bonus = {
+		colonists = 1
+	}
+	trigger = {
+		tag = BRE
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bre_bremer_dykes_polders = {
+		development_cost = -0.10
+	}
+	hie_bre_bremer_hansa = {
+		merchants = 1
+	}
+	hie_bre_food_market_northern_europe = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	hie_bre_bremer_shipyards = {
+		naval_maintenance_modifier = -0.25
+		ship_durability = 0.10
+	}
+	hie_bre_bremerhaven = {
+		global_sailors_modifier = 0.30
+		ship_power_propagation = 0.33
+	}
+	hie_bre_fierce_independence = {
+		hostile_attrition = 1
+		land_morale = 0.10
+	}
+	hie_bre_new_world_trading_port = {
+		global_trade_power = 0.15
+		may_explore = yes
+	}
+}
+HIE_BRG_ideas = {
+	start = {
+		land_morale = 0.10
+		tolerance_own = 1
+	}
+	bonus = {
+		stability_cost_modifier = -0.15
+	}
+	trigger = {
+		tag = BRG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_brg_gallia_belgica = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_brg_whupper_valley = {
+		global_trade_power = 0.15
+		development_cost = -0.10
+	}
+	hie_brg_united_duchies = {
+		accept_vassalization_reasons = 10
+		diplomatic_upkeep = 1
+	}
+	hie_brg_via_media = {
+		global_institution_spread = 0.5
+		tolerance_heretic = 3
+	}
+	hie_brg_uniting_rhine = {
+		global_autonomy = -0.05
+	}
+	hie_brg_imperial_honour = {
+		prestige = 1
+	}
+	hie_brg_early_industrialisation = {
+		global_trade_goods_size_modifier = 0.15
+		technology_cost = -0.05
+	}
+}
+HIE_COB_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		development_cost = -0.10
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = COB
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_cob_veste_coburg = {
+		defensiveness = 0.15
+	}
+	hie_cob_jewish_district = {
+		production_efficiency = 0.10
+	}
+	hie_cob_luther_study = {
+		idea_cost = -0.10
+	}
+	hie_cob_gymnasium_casimirianum = {
+		advisor_cost = -0.10
+		global_institution_spread = 0.33
+	}
+	hie_cob_schloss_ehrenburg = {
+		prestige = 1
+	}
+	hie_cob_art_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_cob_dynasty_many_crowns = {
+		diplomatic_reputation = 2
+	}
+}
+HIE_DTT_ideas = {
+	start = {
+		land_morale = 0.1
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = DTT
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_dtt_geestland = {
+		production_efficiency = 0.10
+	}
+	hie_dtt_wrecking = {
+		capture_ship_chance = 0.10
+		privateer_efficiency = 0.25
+	}
+	hie_dtt_the_joke_that_is_aristocracy = {
+		all_estate_loyalty_equilibrium = 0.10
+		all_estate_influence_modifier = -0.10
+	}
+	hie_dtt_come_and_get_it = {
+		defensiveness = 0.15
+		infantry_power = 0.10
+	}
+	hie_dtt_containing_feudalism = {
+		global_trade_power = 0.10
+		reform_progress_growth = 0.20
+	}
+	hie_dtt_peaceful_front_yard = {
+		diplomatic_upkeep = 1
+	}
+	hie_dtt_our_feudes = {
+		rival_border_fort_maintenance = -0.50
+	}
+}
+HIE_FKN_ideas = {
+	start = {
+		ae_impact = -0.1
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		global_autonomy = -0.05
+	}
+	trigger = {
+		tag = FKN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_fkn_imperial_lineages = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_fkn_inextinguishable_title = {
+		reform_progress_growth = 0.10
+	}
+	hie_fkn_knights_franconian_orders = {
+		army_tradition = 0.5
+		leader_cost = -0.20
+	}
+	hie_fkn_curb_raubritter = {
+		global_prov_trade_power_modifier = 0.15
+		siege_ability = 0.10
+	}
+	hie_fkn_franconian_reformation = {
+		institution_spread_from_true_faith = 0.50
+		tolerance_own = 1
+	}
+	hie_fkn_nichtabgeschlossenes_gebiet = {
+		diplomatic_annexation_cost = -0.15
+	}
+	hie_fkn_franconian_brewing_expterise = {
+		global_unrest = -2
+	}
+}
+HIE_FRN_ideas = {
+	start = {
+		development_cost = -0.10
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = FRN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_frn_ruins_nida = {
+		build_cost = -0.10
+	}
+	hie_frn_council_frankfurt = {
+		religious_unity = 0.15
+	}
+	hie_frn_frankfurter_messe = {
+		global_institution_spread = 0.50
+		global_trade_power = 0.20
+	}
+	hie_frn_we_are_capital_once_more = {
+		administrative_efficiency = 0.05
+		global_autonomy = -0.02
+	}
+	hie_frn_frankfurt_exchange = {
+		inflation_reduction = 0.15
+	}
+	hie_frn_neutrality = {
+		diplomatic_reputation = 1
+		accept_vassalization_reasons = 5
+	}
+	hie_frn_beating_heart_german_nation = {
+		reform_progress_growth = 0.3
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+}
+HIE_GER_ideas = {
+	start = {
+		ae_impact = -0.20
+		core_creation = -0.20
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = GER
+		if = {
+			limit = { has_dlc = "Emperor" }
+			is_revolution_target = no
+		}
+		else = { is_revolutionary = no }
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ger_regierungsbezirke = {
+		administrative_efficiency = 0.05
+		governing_capacity_modifier = 0.10
+	}
+	hie_ger_divided_faith_united_purpose = {
+		tolerance_heretic = 2
+		tolerance_of_heretics_capacity = 2
+	}
+	hie_ger_real_union = {
+		province_warscore_cost = -0.25
+	}
+	hie_ger_stechschritt = {
+		fire_damage_received = -0.10
+		infantry_power = 0.15
+	}
+	hie_ger_standesherren = {
+		production_efficiency = 0.15
+		state_maintenance_modifier = -0.15
+	}
+	hie_ger_wartburgfest = {
+		manpower_in_culture_group_provinces = 0.15
+		manpower_in_own_culture_provinces = 0.15
+	}
+	hie_ger_zollverein = {
+		trade_efficiency = 0.15
+	}
+}
+HIE_GER_REV_ideas = {
+	start = {
+		global_manpower_modifier = 0.20
+		infantry_power = 0.15
+	}
+	bonus = {
+		governing_capacity_modifier = 0.10
+	}
+	trigger = {
+		tag = GER
+		if = {
+			limit = { has_dlc = "Emperor" }
+			is_revolution_target = yes
+		}
+		else = { is_revolutionary = yes }
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ger_schwarz_rod_gold = {
+		land_morale = 0.10
+	}
+	hie_ger_national_assembly = {
+		reform_progress_growth = 0.33
+		global_unrest = -2
+	}
+	hie_ger_unification_of_germania = {
+		ae_impact = -0.20
+		core_creation = -0.10
+	}
+	hie_ger_bundesrepublik = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_ger_pressefreiheit_und_fressefreiheit = {
+		stability_cost_modifier = -0.25
+	}
+	hie_ger_people_army = {
+		discipline = 0.05
+	}
+	hie_ger_reichsflotte = {
+		naval_forcelimit_modifier = 0.33
+		number_of_cannons_modifier = 0.20
+	}
+}
+HIE_GNV_ideas = {
+	start = {
+		drill_gain_modifier = 0.25
+		global_trade_power = 0.1
+	}
+	bonus = {
+		heavy_ship_power = 0.1
+	}	
+	trigger = {
+		tag = GNV
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_gnv_great_council_geneva = {
+		development_cost = -0.15
+	}
+	hie_gnv_assembly_halberds = {
+		diplomatic_reputation = 1
+	}
+	hie_gnv_protestant_rome = {
+		enforce_religion_cost = -0.20
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 1
+		papal_influence = 1
+	}
+	hie_gnv_genevan_psalter = {
+		tolerance_own = 1
+	}
+	hie_gnv_wathmaking_city = {
+		global_missionary_strength = 0.01
+	}
+	hie_gnv_early_welfare_system = {
+		defensiveness = 0.25
+	}
+	hie_gnv_citoyens_geneve = {
+		land_morale = 0.1
+	}
+}
+HIE_HAB_ideas = {
+	start = {
+		land_morale = 0.10
+		diplomatic_reputation = 2
+	}
+	bonus = {
+		infantry_power = 0.10
+	}
+	trigger = {
+		OR = {
+			tag = HAB
+			AND = {
+				tag = STY
+				dynasty = "von Habsburg"
+			}
+		}
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_hab_felix_austria = {
+		diplomatic_upkeep = 2
+	}
+	hie_hab_fugger_banking = {
+		interest = -0.50
+		inflation_reduction = 0.05
+	}
+	hie_hab_pietas_austriacae = {
+		tolerance_own = 2
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_hab_hofkriegsrat = {
+		army_tradition = 0.75
+	}
+	hie_hab_militargrenze = {
+		fort_maintenance_modifier = -0.25
+		land_forcelimit_modifier = 0.20
+	}
+	hie_hab_neuafteilung_der_erblande = {
+		diplomatic_annexation_cost = -0.20
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_hab_austriae_est_imperare_orbi_universo = {
+		ae_impact = -0.10
+		imperial_authority = 0.15
+	}
+}
+HIE_HAM_ideas = {
+	start = {
+		global_sailors_modifier = 0.50
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	bonus = {
+		merchants = 1
+	}
+	trigger = {
+		tag = HAM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes		#will be added at load.
+	hie_ham_old_new_hamburg = {
+		center_of_trade_upgrade_cost = -0.20
+		global_trade_power = 0.15
+	}		
+	hie_ham_sister_city_lubeck = {
+		development_cost = -0.10
+	}
+	hie_ham_territoriale_politik = {
+		accept_vassalization_reasons = 10
+		vassal_income = 0.50
+	}
+	hie_ham_imperial_right_prosecute = {
+		cannons_for_hunting_pirates_in_fleet = 1.0
+		fabricate_claims_cost = -0.25
+	}
+	hie_ham_secularisation = {
+		reform_progress_growth = 0.15
+		unjustified_demands = -0.10
+	}
+	hie_ham_citadel_hamburg = {
+		defensiveness = 0.25
+	}
+	hie_ham_ambivalente_position_stadt_hamburg = {
+		diplomatic_upkeep = 1
+	}
+}
+HIE_HAN_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		infantry_power = 0.10
+	}
+	bonus = {
+		global_unrest = -2
+	}
+	trigger = {
+		tag = HAN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_han_res_gestae_saxonicae_sive_annalium_libri_tres = {
+		diplomatic_reputation = 1
+		land_morale = 0.10
+	}
+	hie_han_kurkhannover = {
+		prestige = 0.5
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_han_legally_indivisible = {
+		administrative_efficiency = 0.05
+		min_autonomy_in_territories = -0.10
+	}
+	hie_han_naturally_protestant = {
+		church_power_modifier = 0.20
+		monthly_fervor_increase = 0.20
+		papal_influence = 0.50
+	}
+	hie_han_feoffment = {
+		state_maintenance_modifier = -0.20
+		diplomatic_upkeep = 1
+	}
+	hie_han_privy_council_hannover = {
+		allow_free_estate_privilege_revocation = yes
+	}
+	hie_han_real_union = {
+		accept_vassalization_reasons = 10
+	}
+}
+HIE_HES_ideas = {
+	start = {
+		administrative_efficiency = 0.05
+		global_manpower_modifier = 0.20
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = HES
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_hes_thuringian_connections = {
+		army_tradition = 0.5
+		diplomatic_reputation = 1
+	}
+	hie_hes_military_leadership_schmalkaldic_league = {
+		diplomatic_upkeep = 1
+		land_morale = 0.10
+	}
+	hie_hes_safe_haven_reformation = {
+		same_religion_advisor_cost = -0.15
+	}
+	hie_hes_imperial_auxiliaries = {
+		discipline = 0.05
+		possible_condottieri = 0.5
+	}
+	hie_hes_rivalries_protestant_universities = {
+		technology_cost = -0.075
+	}
+	hie_hes_grossmutig = {
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+		papal_influence = 1
+	}
+	hie_hes_standersherren = {
+		production_efficiency = 0.15
+		state_maintenance_modifier = -0.15
+	}
+}
+HIE_HLR_ideas = {
+	start = {
+		production_efficiency = 0.20
+		land_morale = 0.15
+	}
+	bonus = {
+		administrative_efficiency = 0.05
+	}	
+	trigger = {
+		tag = HLR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+		NOT = { culture_group = latin }
+		NOT = { was_tag = HAB }
+		NOT = { primary_culture = austrian }
+		NOT = { dynasty = "Von Habsburg" }
+		NOT = { primary_culture = burgundian }
+		NOT = { was_tag = BOH }
+	}
+	free = yes
+	hie_hlr_reform_the_landsknechte = {
+		discipline = 0.05
+		yearly_army_professionalism = 0.001
+	}
+	hie_hlr_chancellery_of_the_empire = {
+		monarch_diplomatic_power = 1
+	}
+	hie_hlr_prussian_influence = {
+		army_tradition_decay = -0.02
+		infantry_power = 0.20
+	}
+	hie_hlr_wise_electors = {
+		monarch_admin_power = 1
+	}
+	hie_hlr_gutenberg_press = {
+		global_institution_spread = 0.5
+		technology_cost = -0.10
+	}
+	hie_hlr_reichslandwirtschaftsausstellung = {
+		caravan_power = 0.25
+		trade_efficiency = 0.15
+	}
+	hie_hlr_imperial_concessions = {
+		monthly_favor_modifier = 0.10
+		diplomatic_reputation = 2
+	}
+}
+HIE_HLR_BUR_ideas = {
+	start = {
+		infantry_fire = 0.25
+		governing_capacity_modifier = 0.20
+	}
+	bonus = {
+		core_creation = -0.25
+	}	
+	trigger = {
+		tag = HLR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+		primary_culture = burgundian
+		NOT = { culture_group = latin }
+		NOT = { was_tag = HAB }
+		NOT = { primary_culture = austrian }
+		NOT = { dynasty = "Von Habsburg" }
+		NOT = { was_tag = BOH }
+	}
+	free = yes
+	hie_hlr_bur_the_distinguished_order_of_the_golden_fleece = {
+		prestige = 1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_hlr_bur_students_of_warfare = {
+		artillery_power = 0.10
+		mil_tech_cost_modifier = -0.10
+	}
+	hie_hlr_bur_the_ancient_imperial_capital = {
+		build_cost = -0.10
+		development_cost = -0.05
+	}
+	hie_hlr_bur_renovatio_imperii_romanorum = {
+		reform_progress_growth = 0.20
+	}
+	hie_hlr_bur_renaissance_after_renaissance = {
+		global_institution_spread = 0.50
+	}
+	hie_hlr_bur_the_burgundian_circle = {
+		accept_vassalization_reasons = 15
+		vassal_income = 0.50
+	}
+	hie_hlr_bur_a_modern_standing_army = {
+		discipline = 0.05
+	}
+}
+HIE_HLR_BOH_ideas = {
+	start = {
+		global_autonomy = -0.10
+		infantry_power = 0.10
+	}
+	bonus = {
+		development_cost = -0.10
+	}	
+	trigger = {
+		tag = HLR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+		was_tag = BOH
+		NOT = { culture_group = latin }
+		NOT = { was_tag = HAB }
+		NOT = { primary_culture = austrian }
+		NOT = { dynasty = "Von Habsburg" }
+		NOT = { primary_culture = burgundian }
+	}
+	free = yes
+	hie_hlr_boh_vozova_hradba = {
+		shock_damage_received = -0.10
+		fire_damage = 0.10
+	}
+	hie_hlr_boh_compactata = {
+		tolerance_heretic = 3
+	}
+	hie_hlr_boh_universitatis_carolinae_ferdinandeae = {
+		technology_cost = -0.05
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.5
+		papal_influence = 1
+	}
+	hie_hlr_boh_teutonic_respect = {
+		monarch_military_power = 1
+	}
+	hie_hlr_boh_the_reinstatement_of_a_true_reichsgut = {
+		global_tax_modifier = 0.15
+		global_allowed_num_of_buildings = 1
+	}
+	hie_hlr_boh_standardize_the_prager_groschen = {
+		global_trade_power = 0.15
+	}
+	hie_hlr_boh_the_legacy_of_house_luxembourg = {
+		num_accepted_cultures = 2
+		relation_with_other_culture = 15
+	}
+}
+HIE_HLR_HAB_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		land_morale = 0.15
+	}
+	bonus = {
+		army_tradition = 0.75
+	}	
+	trigger = {
+		tag = HLR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+		OR = {
+			was_tag = HAB
+			primary_culture = austrian
+			dynasty = "Von Habsburg"
+		}
+		NOT = { culture_group = latin }
+		NOT = { primary_culture = burgundian }
+		NOT = { was_tag = BOH }
+	}
+	free = yes
+	hie_hlr_hab_felix_austria = {
+		diplomatic_upkeep = 2
+	}
+	hie_hlr_hab_neuaufteilung_der_erblande = {
+		diplomatic_annexation_cost = -0.20
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_hlr_hab_austriae_est_imperare_orbi_universo = {
+		ae_impact = -0.10
+		core_creation = -0.20
+	}
+	hie_hlr_hab_catholic_supremacy = {
+		global_religious_conversion_resistance = 0.50
+		global_heretic_missionary_strength = 0.02
+	}
+	hie_hlr_hab_the_diet_of_worms = {
+		adm_tech_cost_modifier = -0.10
+		reform_progress_growth = 0.25
+	}
+	hie_hlr_hab_the_foundations_for_capitalism = {
+		global_trade_goods_size_modifier = 0.15
+		trade_efficiency = 0.15
+	}
+	hie_hlr_hab_imperial_baroque = {
+		prestige = 1
+	}
+}
+HIE_HLR_LAT_ideas = {
+	start = {
+		global_trade_power = 0.20
+		development_cost_in_primary_culture = -0.15
+	}
+	bonus = {
+		land_morale = 0.15
+	}	
+	trigger = {
+		tag = HLR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+		culture_group = latin
+		NOT = { primary_culture = burgundian }
+		NOT = { was_tag = HAB }
+		NOT = { primary_culture = austrian }
+		NOT = { dynasty = "Von Habsburg" }
+		NOT = { was_tag = BOH }
+	}
+	free = yes
+	hie_hlr_lat_birthplace_of_renaissance = {
+		technology_cost = -0.10
+		idea_cost = -0.10
+	}
+	hie_hlr_lat_armata_imperiale = {
+		land_forcelimit_modifier = 0.33
+		army_tradition = 0.5
+	}
+	hie_hlr_lat_statuta_sabaudiae = {
+		state_maintenance_modifier = -0.15
+	}
+	hie_hlr_lat_cordone_giallo = {
+		tolerance_own = 2
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_hlr_lat_the_iron_crown = {
+		prestige = 1
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_hlr_lat_e_pluribus_unum = {
+		governing_capacity_modifier = 0.10
+	}
+	hie_hlr_lat_southern_marches = {
+		global_manpower_modifier = 0.20
+	}
+}
 HIE_HSA_ideas = {
 	start = {
 		trade_steering = 0.15
@@ -1966,11 +3672,342 @@ HIE_HSA_ideas = {
 		trade_efficiency = 0.15
 	}
 }
+HIE_KLE_ideas = {
+	start = {
+		diplomatic_annexation_cost = -0.15
+		global_tax_modifier = 0.10
+	}
+	bonus = {
+		land_morale = 0.10
+	}
+	trigger = {
+		tag = KLE
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_kle_city_clovers = {
+		num_accepted_cultures = 1
+	}
+	hie_kle_knight_swan = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_kle_limbourg_old = {
+		development_cost = -0.10
+		global_trade_power = 0.10
+	}
+	hie_kle_wachter_klever_reichswald = {
+		prestige = 1
+	}
+	hie_kle_via_media = {
+		global_institution_spread = 0.50
+		tolerance_heretic = 3
+	}
+	hie_kle_rhine_toll = {
+		caravan_power = 0.20
+		fort_maintenance_modifier = -0.20
+	}
+	hie_kle_know_our_name = {
+		diplomatic_reputation = 1
+		diplomatic_upkeep = 1
+	}
+}
+HIE_KOL_ideas = {
+	start = {
+		diplomatic_annexation_cost = -0.15
+		tolerance_own = 2
+	}
+	bonus = {
+		ae_impact = -0.15
+	}
+	trigger = {
+		tag = KOL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_kol_imperial_concessions = {
+		diplomatic_reputation = 1
+		monthly_favor_modifier = 0.10
+	}
+	hie_kol_erblandesvereinigung = {
+		all_estate_loyalty_equilibrium = 0.10
+		all_estate_influence_modifier = -0.10
+	}
+	hie_kol_free_city_cologne = {
+		development_cost = -0.1
+	}
+	hie_kol_gaffeln = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_kol_papal_nunciature = {
+		global_heretic_missionary_strength = 0.02
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_kol_flexible_diplomacy = {
+		improve_relation_modifier = 0.20
+	}
+	hie_kol_council_prime_minister_cathedral_chapter = {
+		advisor_pool = 1
+		reform_progress_growth = 0.20
+	}
+}
+HIE_LPP_ideas = {
+	start = {
+		discipline = 0.05
+		global_trade_goods_size_modifier = 0.10
+	}
+	bonus = {
+		enforce_religion_cost = -0.20
+	}
+	trigger = {
+		tag = LPP
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_lpp_allodium = {
+		global_tax_modifier = 0.15
+		global_manpower_modifier = 0.15
+	}
+	hie_lpp_city_builders = {
+		development_cost = -0.10
+	}
+	hie_lpp_samtherrschaft = {
+		diplomatic_upkeep = 1
+		global_autonomy = -0.03
+	}
+	hie_lpp_pactum_unionis = {
+		global_trade_power = 0.20
+		burghers_loyalty_modifier = 0.10
+	}
+	hie_lpp_fluidity_religion = {
+		tolerance_own = 2
+	}
+	hie_lpp_astronomiae_instauratae_mechanica = {
+		dip_tech_cost_modifier = -0.10
+	}
+	hie_lpp_old_saxon_reformed = {
+		idea_cost = -0.10
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 1
+		papal_influence = 1
+	}
+}
+HIE_MAI_ideas = {
+	start = {
+		global_prov_trade_power_modifier = 0.15
+		global_unrest = -2
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	trigger = {
+		tag = MAI
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mai_gutenberg_press = {
+		global_institution_spread = 0.50
+		technology_cost = -0.10
+	}
+	hie_mai_institutionalized_simony = {
+		global_tax_modifier = 0.20
+	}
+	hie_mai_archicancellarius_germania = {
+		prestige = 1
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_mai_found_university_mainz = {
+		idea_cost = -0.10
+	}
+	hie_mai_weck_worscht_woi = {
+		land_morale = 0.10
+	}
+	hie_mai_restricted_masonry = {
+		defensiveness = 0.15
+	}
+	hie_mai_city_nobility = {
+		build_cost = -0.10
+		nobles_loyalty_modifier = 0.10
+	}
+}
+HIE_MVA_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	trigger = {
+		tag = MVA
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mva_fortification_experts = {
+		global_defender_dice_roll_bonus = 1
+		defensiveness = 0.20
+	}
+	hie_mva_saint_rastislav = {
+		yearly_patriarch_authority = 0.005
+		tolerance_own = 2
+	}
+	hie_mva_colloquium_generale = {
+		all_estate_loyalty_equilibrium = 0.10
+	}
+	hie_mva_lessons_learned = {
+		shock_damage_received = -0.10
+	}
+	hie_mva_morravian_industrie = {
+		global_trade_goods_size_modifier = 0.10
+		infantry_fire = 0.30
+	}
+	hie_mva_union_with_bohemia = {
+		diplomatic_reputation = 1
+	}
+	hie_mva_dream_great_moravia = {
+		core_creation = -0.15
+		land_morale = 0.10
+	}
+}
+HIE_NSA_ideas = {
+	start = {
+		defensiveness = 0.10
+		movement_speed = 0.10
+	}
+	bonus = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	trigger = {
+		tag = NSA
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_nsa_river_tools = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	hie_nsa_zunfte = {
+		production_efficiency = 0.15
+	}
+	hie_nsa_tenacious_rebuilders = {
+		build_cost = -0.10
+		global_monthly_devastation = -0.05
+	}
+	hie_nsa_rhenish_circles = {
+		reform_progress_growth = 0.15
+		stability_cost_modifier = -0.15
+	}
+	hie_nsa_lowland_dynasties = {
+		diplomatic_reputation = 1
+	}
+	hie_nsa_german_viticulture = {
+		global_unrest = -1
+	}
+	hie_nsa_romanticism = {
+		num_accepted_cultures = 1
+		promote_culture_cost = -0.50
+	}
+}
+HIE_NUM_ideas = {
+	start = {
+		ae_impact = -0.10
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		global_autonomy = -0.05
+	}
+	trigger = {
+		tag = NUM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_num_castle_nuremberg = {
+		defensiveness = 0.15
+		prestige = 0.5
+	}
+	hie_num_reichsschultheiss = {
+		stability_cost_modifier = -0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_num_unofficial_capital = {
+		monarch_admin_power = 1
+	}
+	hie_num_grosser_freiheitsbrief = {
+		trade_efficiency = 0.10
+	}
+	hie_num_abolishment_guilds = {
+		burghers_influence_modifier = -0.10
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_num_german_renaissance = {
+		global_institution_spread = 0.33
+		technology_cost = -0.10
+	}
+	hie_num_tanzstatus = {
+		diplomatic_reputation = 1
+	}
+}
+HIE_OLD_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		infantry_power = 0.10
+	}
+	bonus = {
+		prestige = 1
+	}
+	trigger = {
+		tag = OLD
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_old_descendants_widukind = {
+		hostile_attrition = 1
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_old_enemies_on_all_sides = {
+		army_tradition = 0.75
+	}
+	hie_old_rivalry_with_frisians = {
+		fabricate_claims_cost = -0.25
+		unjustified_demands = -0.20
+	}
+	hie_old_kings_kalmar_union = {
+		heir_chance = 1.0
+		years_to_integrate_personal_union = -15
+	}
+	hie_old_soldier_dukes = {
+		land_morale = 0.10
+		yearly_army_professionalism = 0.001
+	}
+	hie_old_unity_above_all = {
+		tolerance_heretic = 2
+	}
+	hie_old_imperial_tolls = {
+		global_trade_power = 0.15
+	}
+}
 HIE_PAD_ideas = {
 	start = {
 		defensiveness = 0.15
-		papal_influence = 1
 		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
 	}
 	bonus = {
 		warscore_cost_vs_other_religion = -0.15
@@ -1988,8 +4025,11 @@ HIE_PAD_ideas = {
 	}
 	hie_pad_neuhaus_palace= {
 		monthly_splendor = 2
-		legitimacy = 1
 		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
 	}
 	hie_pad_hochstift_paderborn= {
 		governing_capacity_modifier = 0.10
@@ -2004,6 +4044,46 @@ HIE_PAD_ideas = {
 	hie_pad_franco_prussian_influence = {
 		discipline = 0.075
 		harsh_treatment_cost = -0.33
+	}
+}
+HIE_PAL_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_autonomy = -0.05
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = PAL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_pal_imperial_vicars = {
+		diplomatic_upkeep = 1
+		prestige = 1
+	}
+	hie_pal_chancellery_empire = {
+		monarch_diplomatic_power = 1
+	}
+	hie_pal_heidelberg_university = {
+		advisor_cost = -0.10
+	}
+	hie_pal_bibliotheca_palatina = {
+		embracement_cost = -0.20
+		reform_progress_growth = 0.20
+	}
+	hie_pal_religious_disputations = {
+		development_cost = -0.05
+		tolerance_heretic = 2
+	}
+	hie_pal_compulsory_education = {
+		technology_cost = -0.10
+		female_advisor_chance = 0.50
+	}
+	hie_pal_mannheim_school_music = {
+		prestige_decay = -0.10
+		stability_cost_modifier = -0.10
 	}
 }
 HIE_PRU_ideas = {
@@ -2034,15 +4114,102 @@ HIE_PRU_ideas = {
 		army_tradition = 1
 		drill_gain_modifier = 0.33
 	}
-	hie_pru_prussian_drill = {
+	hie_pru_goosestep = {
 		fire_damage_received = -0.10
 		infantry_power = 0.10
 	}
-	hie_pru_goosestep = {
+	hie_pru_prussian_drill = {
 		discipline = 0.05
 	}
 	hie_pru_schooling_system = {
 		technology_cost = -0.10
+	}
+}
+HIE_ROT_ideas = {
+	start = {
+		ae_impact = -0.15
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = ROT
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_rot_imperial_swabia = {
+		prestige = 1
+	}
+	hie_rot_pre_planne_city = {
+		development_cost = -0.15
+	}
+	hie_rot_territoriale_politik = {
+		accept_vassalization_reasons = 15
+		vassal_forcelimit_bonus = 1
+	}
+	hie_rot_legal_ambiguity = {
+		improve_relation_modifier = 0.25
+		defensiveness = 0.15
+	}
+	hie_rot_defense_budget = {
+		land_morale = 0.15
+		land_maintenance_modifier = -0.15
+	}
+	hie_rot_swabian_reformation = {
+		global_heretic_missionary_strength = 0.02
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+	hie_rot_cultural_renaissance = {
+		idea_cost = -0.10
+	}
+}
+HIE_RVA_ideas = {
+	start = {
+		build_cost = -0.10
+		defensiveness = 0.15
+	}
+	bonus = {
+		reform_progress_growth = 0.15
+	}
+	trigger = {
+		tag = RVA
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_rva_westfalischer_hellweg = {
+		caravan_power = 0.15
+		global_tax_modifier = 0.15
+	}
+	hie_rva_our_rights_our_city = {
+		land_morale = 0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_rva_legalization_reformation = {
+		tolerance_heretic = 2
+	}
+	hie_rva_hanseatic_capital_rhine = {
+		global_trade_power = 0.15
+		merchants = 1
+	}
+	hie_rva_imperial_notoriety = {
+		prestige = 1
+	}
+	hie_rva_ruhr_industry = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_rva_reichsdeputationshauptschluss = {
+		diplomatic_annexation_cost = -0.20
 	}
 }
 HIE_SAX_ideas = {
@@ -2083,6 +4250,203 @@ HIE_SAX_ideas = {
 	}
 	hie_sax_saxon_circle = {
 		discipline = 0.05
+	}
+}
+HIE_SHL_ideas = {
+	start = {
+		defensiveness = 0.15
+		infantry_power = 0.10
+	}
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	trigger = {
+		tag = SHL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_shl_where_germans_clash = {
+		army_tradition = 0.5
+		leader_land_manuever = 1
+	}
+	hie_shl_city_builders = {
+		development_cost = -0.20
+	}
+	hie_shl_back_forth = {
+		num_accepted_cultures = 1
+	}
+	hie_shl_treaty_ribe = {
+		diplomatic_reputation = 1
+	}
+	hie_shl_reformation_germanification = {
+		culture_conversion_cost = -0.15
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+	hie_shl_codex_holmiensis = {
+		possible_policy = 1
+	}
+	hie_shl_holstein_condominium = {
+		global_autonomy = -0.02
+		all_estate_possible_privileges = 1
+	}
+}
+HIE_SLZ_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.10
+		land_maintenance_modifier = -0.15
+	}
+	bonus = {
+		land_morale = 0.10
+	}
+	trigger = {
+		tag = SLZ
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_slz_festung_hohensalzburg = {
+		defensiveness = 0.25
+	}
+	hie_slz_residenzstadt = {
+		global_autonomy = -0.03
+		all_estate_influence_modifier = -0.10
+	}
+	hie_slz_transalpine_infrastructure = {
+		build_cost = -0.10
+		caravan_power = 0.20
+	}
+	hie_slz_center_counter_reformation = {
+		global_heretic_missionary_strength = 0.02
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_slz_true_neutrality = {
+		improve_relation_modifier = 0.15
+	}
+	hie_slz_german_baroque = {
+		prestige = 1
+	}
+	hie_slz_magic_boy_trials = {
+		stability_cost_modifier = -0.15
+	}
+}
+HIE_SOR_ideas = {
+	start = {
+		cavalry_power = 0.20
+		caravan_power = 0.15
+	}
+	bonus = {
+		production_efficiency = 0.10
+	}
+	trigger = {
+		tag = SOR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_sor_spreewald_und_grenzwall = {
+		morale_damage = 0.10
+	}
+	hie_sor_lusatian_textiles = {
+		global_regiment_cost = -0.15
+		land_attrition = -0.25
+	}
+	hie_sor_protestant_refuge = {
+		development_cost = -0.10
+	}
+	hie_sor_estate_assembly = {
+		all_estate_influence_modifier = -0.10
+		stability_cost_modifier = -0.15
+	}
+	hie_sor_silver_mines = {
+		global_trade_power = 0.15
+		inflation_reduction = 0.1
+	}
+	hie_sor_lusatian_hussars = {
+		can_recruit_hussars = yes
+		cav_to_inf_ratio = 0.25
+		special_unit_forcelimit = 0.10
+	}
+	hie_sor_revival_sorbian_identity = {
+		culture_conversion_cost = -0.20
+	}
+}
+HIE_STY_ideas = {
+	start = {
+		land_morale = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		infantry_power = 0.10
+	}
+	trigger = {
+		tag = STY
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_sty_die_steiermark = {
+		prestige = 1
+	}
+	hie_sty_lower_styria = {
+		production_efficiency = 0.10
+	}
+	hie_sty_land_monasteries = {
+		development_cost = -0.10
+		church_loyalty_modifier = 0.10
+	}
+	hie_sty_georgenberger_handfeste = {
+		nobles_loyalty_modifier = 0.10
+		vassal_income = 0.33
+	}
+	hie_sty_vertrag_von_neuberg = {
+		reform_progress_growth = 0.25
+		diplomatic_upkeep = 1
+	}
+	hie_sty_university_graz = {
+		technology_cost = -0.05
+		same_religion_advisor_cost = -0.20
+	}
+	hie_sty_marchia_carantana = {
+		core_creation = -0.15
+	}
+}
+HIE_SWA_ideas = {
+	start = {
+		ae_impact = -0.15
+		build_cost = -0.15
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = SWA
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_swa_cradle_dynasties = {
+		diplomatic_reputation = 2
+		heir_chance = 1
+	}
+	hie_swa_schwabischer_stadtebund = {
+		diplomatic_upkeep = 1
+	}
+	hie_swa_landsknechte = {
+		infantry_shock = 0.15
+		yearly_army_professionalism = 0.01
+	}
+	hie_swa_reichsfreiheit = {
+		development_cost = -0.10
+	}
+	hie_swa_divided_faith_united_purpose = {
+		tolerance_heretic = 2
+		tolerance_of_heretics_capacity = 2
+	}
+	hie_swa_swabian_circle = {
+		reform_progress_growth = 0.20
+	}
+	hie_swa_swabian_industriousness = {
+		global_trade_goods_size_modifier = 0.10
 	}
 }
 HIE_SWI_ideas = {
@@ -2146,9 +4510,10 @@ HIE_TEU_ideas = {
 		global_prov_trade_power_modifier = 0.15
 	}
 	hie_teu_eastern_crusade = {
-		papal_influence = 1
-		church_power_modifier = 0.05
 		global_missionary_strength = 0.02
+		church_power_modifier = 0.05
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
 	}
 	hie_teu_knights_empire = {
 		mercenary_cost = -0.15
@@ -2160,6 +4525,1648 @@ HIE_TEU_ideas = {
 		free_leader_pool = 1
 	}
 }
+HIE_THU_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		monarch_military_power = 1
+	}
+	trigger = {
+		tag = THU
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_thu_altes_thuringen = {
+		prestige = 1
+	}
+	hie_thu_dux_sorabici_limitis_duces_thuringorum = {
+		army_tradition = 0.5
+		infantry_power = 0.10
+	}
+	hie_thu_das_land_burgen_schlosser = {
+		defensiveness = 0.30
+		leader_siege = 1
+	}
+	hie_thu_alte_stamme = {
+		reasons_to_elect = 20
+		imperial_authority = 0.10
+	}
+	hie_thu_sangerkrieg = {
+		global_institution_spread = 0.33
+	}
+	hie_thu_teutonic_ties = {
+		discipline = 0.05
+		shock_damage_received = -0.10
+	}
+	hie_thu_thuringian_succession = {
+		diplomatic_upkeep = 1
+	}
+}
+HIE_TIR_ideas = {
+	start = {
+		tolerance_own = 2
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	trigger = {
+		tag = TIR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_tir_alps_are_our_friend = {
+		development_cost = -0.10
+		land_attrition = -0.25
+	}
+	hie_tir_imperial_passes = {
+		center_of_trade_upgrade_cost = -0.20
+		diplomatic_reputation = 1
+	}
+	hie_tir_forts_valleys = {
+		garrison_size = 0.33
+		global_defender_dice_roll_bonus = 1
+	}
+	hie_tir_de_jure_flexibility = {
+		improve_relation_modifier = 0.20
+	}
+	hie_tir_tiroler_silver = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_tir_imperial_mint = {
+		monthly_gold_inflation_modifier = -0.20
+		inflation_action_cost = -0.50
+	}
+	hie_tir_kingmakers = {
+		prestige = 1
+		imperial_authority = 0.10
+	}
+}
+HIE_TRI_ideas = {
+	start = {
+		build_cost = -0.10
+		land_forcelimit_modifier = 0.15
+	}
+	bonus = {
+		global_manpower_modifier = 0.20
+	}
+	trigger = {
+		tag = TRI
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_tri_roman_infrastructure = {
+		development_cost = -0.10
+		state_maintenance_modifier = -0.20
+	}
+	hie_tri_archicancellarius_galliam = {
+		church_loyalty_modifier = 0.10
+		relation_with_same_religion = 25
+	}
+	hie_tri_concilie_trento = {
+		global_heretic_missionary_strength = 0.02
+		global_religious_conversion_resistance = 0.50
+	}
+	hie_tri_university_trier = {
+		same_culture_advisor_cost = -0.20
+	}
+	hie_tri_landwirtschaftsausstellung = {
+		caravan_power = 0.25
+	}
+	hie_tri_seamless_robe_jesus = {
+		tolerance_own = 1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_tri_bridge_between_empires = {
+		diplomats = 1
+	}
+}
+HIE_TTL_ideas = {
+	start = {
+		land_morale = 0.10
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		development_cost = -0.10
+	}	
+	trigger = {
+		tag = TTL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ttl_league_gods_house = {
+		church_loyalty_modifier = 0.10
+		global_trade_power = 0.10
+	}
+	hie_ttl_gray_league = {
+		infantry_power = 0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_ttl_league_ten_jurisdictions = {
+		reform_progress_growth = 0.15
+		burghers_loyalty_modifier = 0.10
+	}
+	hie_ttl_three_leagues = {
+		diplomatic_reputation = 1
+	}
+	hie_ttl_expanding_league = {
+		accept_vassalization_reasons = 10
+		liberty_desire_from_subject_development = -0.33
+	}
+	hie_ttl_landfrieden = {
+		global_autonomy = -0.03
+	}
+	hie_ttl_control_over_alpine_passes = {
+		caravan_power = 0.20
+	}
+}
+HIE_WES_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		army_tradition = 0.5
+	}
+	bonus = {
+		development_cost = -0.075
+	}
+	trigger = {
+		tag = WES
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_wes_mountains_deep_forests = {
+		hostile_attrition = 2
+		leader_land_shock = 1
+	}
+	hie_wes_people_not_state = {
+		global_unrest = -2
+	}
+	hie_wes_imperial_founding = {
+		improve_relation_modifier = 0.20
+	}
+	hie_wes_westphalian_way = {
+		build_cost = -0.10
+		global_prov_trade_power_modifier = 0.20
+	}
+	hie_wes_catholic_saxons = {
+		tolerance_own = 1
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 2
+	}
+	hie_wes_westphalian_system = {
+		global_autonomy = -0.05
+		diplomats = 1
+	}
+	hie_wes_old_saxony = {
+		fire_damage_received = -0.10
+	}
+}
+
+#########	GERMAN BURGRAVIATE	#########
+#########	GERMAN BURGRAVIATE	#########
+#########	GERMAN BURGRAVIATE	#########
+HIE_ANS_ideas = {
+	start = {
+		ae_impact = -0.10
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		global_autonomy = -0.05
+	}
+	trigger = {
+		tag = ANS
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ans_oberland_unterland = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_ans_franconian_circle = {
+		diplomatic_upkeep = 1
+	}
+	hie_ans_ordre_sincerite = {
+		army_tradition = 0.5
+	}
+	hie_ans_flexible_loyalty = {
+		rival_change_cost = -0.50
+		tolerance_heretic = 2
+	}
+	hie_ans_prussian_family = {
+		discipline = 0.05
+		infantry_power = 0.05
+	}
+	hie_ans_gravenreuther_stift = {
+		manpower_recovery_speed = 0.15
+	}
+	hie_ans_ansbacher_fayence_manufaktur = {
+		production_efficiency = 0.10
+	}
+}
+HIE_BYT_ideas = {
+	start = {
+		ae_impact = -0.10
+		global_manpower_modifier = 0.15
+	}
+	bonus = {
+		global_autonomy = -0.05
+	}
+	trigger = {
+		tag = BYT
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_byt_oberland_unterland = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	hie_byt_franconian_circle = {
+		diplomatic_upkeep = 1
+	}
+	hie_byt_ordre_sincerite = {
+		army_tradition = 0.5
+	}
+	hie_byt_flexible_loyalty = {
+		rival_change_cost = -0.50
+		tolerance_heretic = 2
+	}
+	hie_byt_prussian_family = {
+		discipline = 0.05
+		infantry_power = 0.05
+	}
+	hie_byt_gravenreuther_stift = {
+		manpower_recovery_speed = 0.15
+	}
+	hie_byt_ansbacher_fayence_manufaktur = {
+		production_efficiency = 0.10
+	}
+}
+
+#########	SOUTH GERMAN BAVARIAN	#########
+#########	SOUTH GERMAN BAVARIAN	#########
+#########	SOUTH GERMAN BAVARIAN	#########
+HIE_BAV_ideas = {
+	start = {
+		tolerance_own = 2
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		imperial_authority = 0.1
+	}
+	trigger = {
+		tag = BAV
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bav_lex_baiuvariorum = {
+		all_estate_loyalty_equilibrium = 0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_bav_frankish_heritage = {
+		diplomatic_reputation = 2
+	}
+	hie_bav_teilherzogtumer = {
+		vassal_income = 0.25
+		liberty_desire = -0.10
+	}
+	hie_bav_regierungsbezirke = {
+		administrative_efficiency = 0.05
+	}
+	hie_bav_reinheitsgebot = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hie_bav_bavarian_circle = {
+		monarch_diplomatic_power = 1
+		monthly_splendor = 2
+	}
+	hie_bav_imperial_rivalries = {
+		diplomats = 1
+		rival_change_cost = -0.5
+	}
+}
+HIE_ING_ideas = {
+	start = {
+		tolerance_own = 2
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		imperial_authority = 0.1
+	}
+	trigger = {
+		tag = ING
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ing_lex_baiuvariorum = {
+		all_estate_loyalty_equilibrium = 0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_ing_frankish_heritage = {
+		diplomatic_reputation = 2
+	}
+	hie_ing_teilherzogtumer = {
+		vassal_income = 0.25
+		liberty_desire = -0.10
+	}
+	hie_ing_regierungsbezirke = {
+		administrative_efficiency = 0.05
+	}
+	hie_ing_reinheitsgebot = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hie_ing_bavarian_circle = {
+		monarch_diplomatic_power = 1
+		monthly_splendor = 2
+	}
+	hie_ing_imperial_rivalries = {
+		diplomats = 1
+		rival_change_cost = -0.5
+	}
+}
+HIE_LBV_ideas = {
+	start = {
+		tolerance_own = 2
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		imperial_authority = 0.1
+	}
+	trigger = {
+		tag = LBV
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_lbv_lex_baiuvariorum = {
+		all_estate_loyalty_equilibrium = 0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_lbv_frankish_heritage = {
+		diplomatic_reputation = 2
+	}
+	hie_lbv_teilherzogtumer = {
+		vassal_income = 0.25
+		liberty_desire = -0.10
+	}
+	hie_lbv_regierungsbezirke = {
+		administrative_efficiency = 0.05
+	}
+	hie_lbv_reinheitsgebot = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hie_lbv_bavarian_circle = {
+		monarch_diplomatic_power = 1
+		monthly_splendor = 2
+	}
+	hie_lbv_imperial_rivalries = {
+		diplomats = 1
+		rival_change_cost = -0.5
+	}
+}
+HIE_UBV_ideas = {
+	start = {
+		tolerance_own = 2
+		diplomatic_upkeep = 1
+	}
+	bonus = {
+		imperial_authority = 0.1
+	}
+	trigger = {
+		tag = UBV
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ubv_lex_baiuvariorum = {
+		all_estate_loyalty_equilibrium = 0.10
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_ubv_frankish_heritage = {
+		diplomatic_reputation = 2
+	}
+	hie_ubv_teilherzogtumer = {
+		vassal_income = 0.25
+		liberty_desire = -0.10
+	}
+	hie_ubv_regierungsbezirke = {
+		administrative_efficiency = 0.05
+	}
+	hie_ubv_reinheitsgebot = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hie_ubv_bavarian_circle = {
+		monarch_diplomatic_power = 1
+		monthly_splendor = 2
+	}
+	hie_ubv_imperial_rivalries = {
+		diplomats = 1
+		rival_change_cost = -0.5
+	}
+}
+
+#########	SOUTH GERMAN MINOR BISHOPS	#########
+#########	SOUTH GERMAN MINOR BISHOPS	#########
+#########	SOUTH GERMAN MINOR BISHOPS	#########
+HIE_BAM_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = BAM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bam_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_bam_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_bam_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_bam_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_bam_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_bam_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_bam_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_LIE_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = LIE
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_lie_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_lie_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_lie_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_lie_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_lie_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_lie_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_lie_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_MAG_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = MAG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mag_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_mag_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_mag_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_mag_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_mag_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_mag_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_mag_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_MUN_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = MUN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mun_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_mun_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_mun_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_mun_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_mun_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_mun_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_mun_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_OSN_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = OSN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_osn_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_osn_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_osn_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_osn_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_osn_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_osn_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_osn_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_PSS_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = PSS
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_pss_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_pss_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_pss_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_pss_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_pss_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_pss_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_pss_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_TNT_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = TNT
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_tnt_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_tnt_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_tnt_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_tnt_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_tnt_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_tnt_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_tnt_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_VER_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = VER
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ver_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_ver_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_ver_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_ver_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_ver_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_ver_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_ver_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+HIE_WBG_ideas = {
+	start = {
+		prestige = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		diplomats = 1
+	}
+	trigger = {
+		tag = WBG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_wbg_supreme_control_clergy = {
+		church_influence_modifier = -0.10
+		church_privilege_slots = 1
+	}
+	hie_wbg_suffragan_duties = {
+		development_cost = -0.05
+		global_tax_modifier = 0.15
+	}
+	hie_wbg_foundation_church = {
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+	hie_wbg_religious_volunteers = {
+		manpower_in_true_faith_provinces = 0.20
+	}
+	hie_wbg_counter_reformation = {
+		global_heretic_missionary_strength = 0.01
+		missionaries = 1
+	}
+	hie_wbg_clerical_diplomacy = {
+		diplomatic_upkeep = 1
+	}
+	hie_wbg_peace_augsburg = {
+		tolerance_heretic = 1
+	}
+}
+
+#########	SOUTH GERMAN REGIONAL	#########
+#########	SOUTH GERMAN REGIONAL	#########
+#########	SOUTH GERMAN REGIONAL	#########
+HIE_BAD_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = BAD
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bad_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_bad_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_bad_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_bad_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_bad_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_bad_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_bad_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_MBZ_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = MBZ
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mbz_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_mbz_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_mbz_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_mbz_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_mbz_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_mbz_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_mbz_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_DWT_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = DWT
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_dwt_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_dwt_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_dwt_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_dwt_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_dwt_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_dwt_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_dwt_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_KNZ_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = KNZ
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_knz_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_knz_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_knz_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_knz_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_knz_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_knz_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_knz_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_MEM_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = MEM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mem_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_mem_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_mem_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_mem_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_mem_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_mem_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_mem_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_MLH_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = MLH
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mlh_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_mlh_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_mlh_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_mlh_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_mlh_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_mlh_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_mlh_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_REG_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = REG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_reg_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_reg_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_reg_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_reg_regierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_reg_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_reg_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_reg_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_ULM_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = ULM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ulm_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_ulm_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_ulm_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_ulm_ulmierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_ulm_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_ulm_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_ulm_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+HIE_WUR_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		diplomatic_reputation = 1
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	trigger = {
+		tag = WUR
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_wur_decapole = {
+		diplomatic_upkeep = 1
+	}
+	hie_wur_imperial_cities = {
+		development_cost = -0.10
+	}
+	hie_wur_landsknechte = {
+		infantry_shock = 0.15
+	}
+	hie_wur_wurierungsbezirke = {
+		global_tax_modifier = 0.10
+		reform_progress_growth = 0.15
+	}
+	hie_wur_lederhosen = {
+		shock_damage_received = -0.10
+	}
+	hie_wur_schlosser_festunge_und_burgen = {
+		defensiveness = 0.15
+	}
+	hie_wur_volksfeste = {
+		global_unrest = -1
+		production_efficiency = 0.10
+	}
+}
+
+#########	NORTH GERMAN REGIONAL	#########
+#########	NORTH GERMAN REGIONAL	#########
+#########	NORTH GERMAN REGIONAL	#########
+HIE_GOS_ideas = {
+	start = {
+		infantry_cost = -0.10
+		garrison_size = 0.25
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = GOS
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_gos_ostsiedlung = {
+		global_colonial_growth = 20
+		culture_conversion_cost = -0.20
+	}
+	hie_gos_saxon_heritage = {
+		army_tradition = 0.5
+	}
+	hie_gos_hansa = {
+		trade_efficiency = 0.10
+		transfer_trade_power_reasons = 0.20
+	}
+	hie_gos_eastern_northern_marks = {
+		defensiveness = 0.20
+		global_manpower_modifier = 0.15
+	}
+	hie_gos_vernacular_german = {
+		idea_cost = -0.10
+	}
+	hie_gos_integrated_firearms = {
+		fire_damage = 0.15
+	}
+	hie_gos_lessons_thirty_years_war = {
+		discipline = 0.05
+	}
+}
+HIE_LAU_ideas = {
+	start = {
+		infantry_cost = -0.10
+		garrison_size = 0.25
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = LAU
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_lau_ostsiedlung = {
+		global_colonial_growth = 20
+		culture_conversion_cost = -0.20
+	}
+	hie_lau_saxon_heritage = {
+		army_tradition = 0.5
+	}
+	hie_lau_hansa = {
+		trade_efficiency = 0.10
+		transfer_trade_power_reasons = 0.20
+	}
+	hie_lau_eastern_northern_marks = {
+		defensiveness = 0.20
+		global_manpower_modifier = 0.15
+	}
+	hie_lau_vernacular_german = {
+		idea_cost = -0.10
+	}
+	hie_lau_integrated_firearms = {
+		fire_damage = 0.15
+	}
+	hie_lau_lessons_thirty_years_war = {
+		discipline = 0.05
+	}
+}
+HIE_MKL_ideas = {
+	start = {
+		infantry_cost = -0.10
+		garrison_size = 0.25
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = MKL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mkl_ostsiedlung = {
+		global_colonial_growth = 20
+		culture_conversion_cost = -0.20
+	}
+	hie_mkl_saxon_heritage = {
+		army_tradition = 0.5
+	}
+	hie_mkl_hansa = {
+		trade_efficiency = 0.10
+		transfer_trade_power_reasons = 0.20
+	}
+	hie_mkl_eastern_northern_marks = {
+		defensiveness = 0.20
+		global_manpower_modifier = 0.15
+	}
+	hie_mkl_vernacular_german = {
+		idea_cost = -0.10
+	}
+	hie_mkl_integrated_firearms = {
+		fire_damage = 0.15
+	}
+	hie_mkl_lessons_thirty_years_war = {
+		discipline = 0.05
+	}
+}
+HIE_RUP_ideas = {
+	start = {
+		infantry_cost = -0.10
+		garrison_size = 0.25
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	trigger = {
+		tag = RUP
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_rup_ostsiedlung = {
+		global_colonial_growth = 20
+		culture_conversion_cost = -0.20
+	}
+	hie_rup_saxon_heritage = {
+		army_tradition = 0.5
+	}
+	hie_rup_hansa = {
+		trade_efficiency = 0.10
+		transfer_trade_power_reasons = 0.20
+	}
+	hie_rup_eastern_northern_marks = {
+		defensiveness = 0.20
+		global_manpower_modifier = 0.15
+	}
+	hie_rup_vernacular_german = {
+		idea_cost = -0.10
+	}
+	hie_rup_integrated_firearms = {
+		fire_damage = 0.15
+	}
+	hie_rup_lessons_thirty_years_war = {
+		discipline = 0.05
+	}
+}
+
+#########	GERMAN VON WELF	#########
+#########	GERMAN VON WELF	#########
+#########	GERMAN VON WELF	#########
+HIE_BRU_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		army_tradition = 0.5
+	}
+	bonus = {
+		development_cost = -0.075
+	}
+	trigger = {
+		tag = BRU
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_bru_true_heirs_saxony = {
+		fabricate_claims_cost = -0.25
+	}
+	hie_bru_skilled_art_marriage = {
+		diplomatic_upkeep = 1
+	}
+	hie_bru_saxon_military_culture = {
+		mil_tech_cost_modifier = -0.10
+	}
+	hie_bru_saxon_circle = {
+		accept_vassalization_reasons = 10
+		vassal_income = 0.50
+	}
+	hie_bru_saxon_hussars = {
+		can_recruit_hussars = yes
+		cavalry_flanking = 1
+	}
+	hie_bru_schwarze_legion = {
+		infantry_fire = 0.3
+		infantry_power = 0.10
+	}
+	hie_bru_realm_henry_lion = {
+		global_autonomy = -0.05
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+}
+HIE_CLB_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		army_tradition = 0.5
+	}
+	bonus = {
+		development_cost = -0.075
+	}
+	trigger = {
+		tag = CLB
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_clb_true_heirs_saxony = {
+		fabricate_claims_cost = -0.25
+	}
+	hie_clb_skilled_art_marriage = {
+		diplomatic_upkeep = 1
+	}
+	hie_clb_saxon_military_culture = {
+		mil_tech_cost_modifier = -0.10
+	}
+	hie_clb_saxon_circle = {
+		accept_vassalization_reasons = 10
+		vassal_income = 0.50
+	}
+	hie_clb_saxon_hussars = {
+		can_recruit_hussars = yes
+		cavalry_flanking = 1
+	}
+	hie_clb_schwarze_legion = {
+		infantry_fire = 0.3
+		infantry_power = 0.10
+	}
+	hie_clb_realm_henry_lion = {
+		global_autonomy = -0.05
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+}
+HIE_LUN_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		army_tradition = 0.5
+	}
+	bonus = {
+		development_cost = -0.075
+	}
+	trigger = {
+		tag = LUN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_lun_true_heirs_saxony = {
+		fabricate_claims_cost = -0.25
+	}
+	hie_lun_skilled_art_marriage = {
+		diplomatic_upkeep = 1
+	}
+	hie_lun_saxon_military_culture = {
+		mil_tech_cost_modifier = -0.10
+	}
+	hie_lun_saxon_circle = {
+		accept_vassalization_reasons = 10
+		vassal_income = 0.50
+	}
+	hie_lun_saxon_hussars = {
+		can_recruit_hussars = yes
+		cavalry_flanking = 1
+	}
+	hie_lun_schwarze_legion = {
+		infantry_fire = 0.3
+		infantry_power = 0.10
+	}
+	hie_lun_realm_henry_lion = {
+		global_autonomy = -0.05
+		devotion = 1
+		horde_unity = 1
+		legitimacy = 1
+		meritocracy = 1
+		republican_tradition = 0.3
+	}
+}
+
+#########	GERMAN POMERANIANS	#########
+#########	GERMAN POMERANIANS	#########
+#########	GERMAN POMERANIANS	#########
+HIE_POM_ideas = {
+	start = {
+		land_morale = 0.10
+		cavalry_cost = -0.15
+	}
+	bonus = {
+ 		merchants = 1
+	}
+	trigger = {
+		tag = POM
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_pom_bridge_between_germans_slavs = {
+		cavalry_shock = 0.5
+		siege_ability = 0.10
+	}
+	hie_pom_lands_house_griffin = {
+		diplomatic_upkeep = 1
+		years_to_integrate_personal_union = -20
+	}
+	hie_pom_kammin_diocese = {
+		global_missionary_strength = 0.02
+	}
+	hie_pom_duchy_slavinia = {
+		num_accepted_cultures = 2
+	}
+	hie_pom_ostsiedlung = {
+		fort_maintenance_modifier = -0.25
+		global_colonial_growth = 15
+	}
+	hie_pom_backyard_hanseatic_league = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	hie_pom_pomeranian_church = {
+		army_tradition = 0.5
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+}
+HIE_RUG_ideas = {
+	start = {
+		land_morale = 0.10
+		cavalry_cost = -0.15
+	}
+	bonus = {
+ 		merchants = 1
+	}
+	trigger = {
+		tag = RUG
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_rug_bridge_between_germans_slavs = {
+		cavalry_shock = 0.5
+		siege_ability = 0.10
+	}
+	hie_rug_lands_house_griffin = {
+		diplomatic_upkeep = 1
+		years_to_integrate_personal_union = -20
+	}
+	hie_rug_kammin_diocese = {
+		global_missionary_strength = 0.02
+	}
+	hie_rug_duchy_slavinia = {
+		num_accepted_cultures = 2
+	}
+	hie_rug_ostsiedlung = {
+		fort_maintenance_modifier = -0.25
+		global_colonial_growth = 15
+	}
+	hie_rug_backyard_hanseatic_league = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	hie_rug_pomeranian_church = {
+		army_tradition = 0.5
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+}
+HIE_STE_ideas = {
+	start = {
+		land_morale = 0.10
+		cavalry_cost = -0.15
+	}
+	bonus = {
+ 		merchants = 1
+	}
+	trigger = {
+		tag = STE
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_ste_bridge_between_germans_slavs = {
+		cavalry_shock = 0.5
+		siege_ability = 0.10
+	}
+	hie_ste_lands_house_griffin = {
+		diplomatic_upkeep = 1
+		years_to_integrate_personal_union = -20
+	}
+	hie_ste_kammin_diocese = {
+		global_missionary_strength = 0.02
+	}
+	hie_ste_duchy_slavinia = {
+		num_accepted_cultures = 2
+	}
+	hie_ste_ostsiedlung = {
+		fort_maintenance_modifier = -0.25
+		global_colonial_growth = 15
+	}
+	hie_ste_backyard_hanseatic_league = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	hie_ste_pomeranian_church = {
+		army_tradition = 0.5
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+}
+HIE_WOL_ideas = {
+	start = {
+		land_morale = 0.10
+		cavalry_cost = -0.15
+	}
+	bonus = {
+ 		merchants = 1
+	}
+	trigger = {
+		tag = WOL
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_wol_bridge_between_germans_slavs = {
+		cavalry_shock = 0.5
+		siege_ability = 0.10
+	}
+	hie_wol_lands_house_griffin = {
+		diplomatic_upkeep = 1
+		years_to_integrate_personal_union = -20
+	}
+	hie_wol_kammin_diocese = {
+		global_missionary_strength = 0.02
+	}
+	hie_wol_duchy_slavinia = {
+		num_accepted_cultures = 2
+	}
+	hie_wol_ostsiedlung = {
+		fort_maintenance_modifier = -0.25
+		global_colonial_growth = 15
+	}
+	hie_wol_backyard_hanseatic_league = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	hie_wol_pomeranian_church = {
+		army_tradition = 0.5
+		church_power_modifier = 0.25
+		monthly_fervor_increase = 0.3
+		papal_influence = 1
+	}
+}
+
+#########	IBERIA	#########
+#########	IBERIA	#########
+#########	IBERIA	#########
 HIE_ADU_ideas = {
 	start = {
 		land_morale = 0.15
@@ -2362,6 +6369,7 @@ HIE_GAL_ideas = {
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
 	free = yes
+
 	hie_gal_always_armed = {
 		shock_damage_received = -0.15
 	}
@@ -2570,7 +6578,7 @@ HIE_POR_ideas = {
 	hie_por_cartazes = {
 		global_ship_trade_power = 0.20
 	}
-	hie_por_portalan_charts = {
+	hie_por_portolan_charts = {
 		global_naval_engagement_modifier = 0.10
 	}
 }
@@ -2647,6 +6655,10 @@ HIE_SPA_ideas = {
 		hostile_attrition = 1
 	}
 }
+
+#########	INDIA	#########
+#########	INDIA	#########
+#########	INDIA	#########
 HIE_DLH_ideas = {
 	start = {
 		cavalry_power = 0.20
@@ -2808,12 +6820,12 @@ HIE_MAR_ideas = {
 	}
 	trigger = {
 		OR = {
-			tag = MAR
-			tag = BDA
+			tag = MAR	#Marathas
+			tag = BDA	#Baroda
 			AND = {
 				TAG = GWA
 				primary_culture = marathi
-			}
+			} #Sindhias of Gwalior
 		}
 		NOT = { has_country_flag = hie_use_vanilla_ideas }
 	}
@@ -2994,6 +7006,10 @@ HIE_VIJ_ideas = {
 		development_cost = -0.10
 	}
 }
+
+#########	ITALY	#########
+#########	ITALY	#########
+#########	ITALY	#########
 HIE_FER_ideas = {
 	start = {
 		land_morale = 0.10
@@ -3111,13 +7127,51 @@ HIE_ITA_ideas = {
 		production_efficiency = 0.10
 	}
 }
+HIE_LUC_ideas = {
+	start = {
+		trade_efficiency = 0.10
+		republican_tradition = 0.3
+	}
+	bonus = {
+		global_ship_trade_power = 0.20
+	}
+	trigger = {
+		tag = LUC
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_luc_capitale_marca_tuscia = {
+		development_cost = -0.10
+	}
+	hie_luc_henrici_iv_diplomata = {
+		build_cost = -0.10
+		improve_relation_modifier = 0.15
+	}
+	hie_luc_consoli_maggiori = {
+		reform_progress_growth = 0.15
+	}
+	hie_luc_cinque_porte_lucca = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	hie_luc_xii_anziani = {
+		all_estate_loyalty_equilibrium = 0.10
+	}
+	hie_luc_mura_lucca = {
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.15
+	}
+	hie_luc_universita_lucca = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+}
 HIE_MAN_ideas = {
 	start = {
 		cavalry_cost = -0.20
 		diplomats = 1
 	}
 	bonus = {
-		cavalry_power = 0.15
+		cavalry_fire = 1
 	}
 	trigger = {
 		tag = MAN
@@ -3148,6 +7202,45 @@ HIE_MAN_ideas = {
 	}
 	hie_man_corti_imperiali = {
 		diplomatic_reputation = 1
+	}
+}
+HIE_MFA_ideas = {
+	start = {
+		land_morale = 0.10
+		prestige = 1
+	}
+	bonus = {
+		governing_capacity_modifier = 0.10
+	}
+	trigger = {
+		tag = MFA
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_mfa_montferratian_viticulture = {
+		global_trade_goods_size_modifier = 0.1
+		global_unrest = -1
+	}
+	hie_mfa_leadership_fourth_crusade = {
+		manpower_in_true_faith_provinces = 0.15
+		yearly_patriarch_authority = 0.001
+		papal_influence = 1
+	}
+	hie_mfa_palaiologos_rule = {
+		legitimacy = 1
+	}
+	MFA_byzantine_claimants = {
+		province_warscore_cost = -0.1
+	}
+	hie_mfa_rolling_hills_montferrat = {
+		defensiveness = 0.15
+	}
+	hie_mfa_french_savoyard_influence = {
+		diplomats = 1
+	}
+	hie_mfa_greco_italian_heritage = {
+		development_cost = -0.10
+		advisor_cost = -0.10
 	}
 }
 HIE_MLO_ideas = {
@@ -3456,6 +7549,43 @@ HIE_SIC_ideas = {
 		galley_power = 0.15
 	}
 }
+HIE_SIE_ideas = {
+	start = {
+		reform_progress_growth = 0.15
+		republican_tradition = 0.5
+	}
+	bonus = {
+		global_trade_power = 0.15
+	}
+	trigger = {
+		tag = SIE
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_sie_lupa_sienese = {
+		land_morale = 0.10
+	}
+	hie_sie_ospedale_santa_maria_scale = {
+		manpower_recovery_speed = 0.15
+	}
+	hie_sie_palio_siena = {
+		cavalry_power = 0.15
+	}
+	hie_sie_duomo_siena = {
+		global_missionary_strength = 0.015
+		papal_influence = 1
+	}
+	hie_sie_cristallo_colle_val_elsa = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	hie_sie_monte_paschi_siena = {
+		inflation_reduction = 0.05
+		interest = -0.75
+	}
+	hie_sie_accademia_intronati = {
+		technology_cost = -0.10
+	}
+}
 HIE_SPI_ideas = {
 	start = {
 		global_autonomy = -0.05
@@ -3494,6 +7624,43 @@ HIE_SPI_ideas = {
 	}
 	hie_spi_tentativu_industriare = {
 		production_efficiency = 0.10
+	}
+}
+HIE_SZO_ideas = {
+	start = {
+		ae_impact = -0.15
+		manpower_recovery_speed = 0.20
+	}
+	bonus = {
+		province_warscore_cost = -0.15
+	}
+	trigger = {
+		tag = SZO
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_szo_discendenza_aleramica = {
+		legitimacy = 1
+		improve_relation_modifier = 0.15
+	}
+	hie_szo_vasto = {
+		discipline = 0.05
+	}
+	hie_szo_po_valley = {
+		development_cost = -0.10
+	}
+	hie_szo_marchese_statuti = {
+		all_estate_loyalty_equilibrium = 0.075
+		all_estate_influence_modifier = -0.075
+	}
+	hie_szo_santa_maria_vergine_assunta = {
+		manpower_in_true_faith_provinces = 0.15
+	}
+	hie_szo_comunita_ebraica_saluzzo = {
+		inflation_reduction = 0.05
+	}
+	hie_szo_francia_savoia = {
+		diplomatic_reputation = 1
 	}
 }
 HIE_TTS_ideas = {
@@ -3577,6 +7744,44 @@ HIE_TUS_ideas = {
 		global_institution_spread = 0.05
 	}
 }
+HIE_URB_ideas = {
+	start = {
+		land_morale = 0.10
+		defensiveness = 0.20
+	}
+	bonus = {
+		legitimacy = 1
+	}
+	trigger = {
+		tag = URB
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_urb_condotte_military = {
+		mercenary_manpower = 0.33
+		mercenary_cost = -0.10
+	}
+	hie_urb_maiolica = {
+		production_efficiency = 0.10
+	}
+	hie_urb_federico_montefeltro = {
+		mercenary_discipline = 0.05
+		army_tradition_from_battle = 0.50
+	}
+	hie_urb_rinascimento_urbinate = {
+		development_cost = -0.075
+	}
+	hie_urb_piero_francesca = {
+		same_culture_advisor_cost = -0.20
+	}
+	hie_urb_studio_biblioteca = {
+		idea_cost = -0.10
+	}
+	hie_urb_palazzo_ducale_urbino = {
+		prestige = 1
+		monthly_splendor = 2
+	}
+}
 HIE_VEN_ideas = {
 	start = {
 		galley_power = 0.25
@@ -3615,6 +7820,50 @@ HIE_VEN_ideas = {
 		leader_naval_fire = 2
 	}
 }
+HIE_VRN_ideas = {
+	start = {
+		defensiveness = 0.15
+		land_morale = 0.15
+	}
+	bonus = {
+		state_maintenance_modifier = -0.15
+	}
+	trigger = {
+		tag = VRN
+		NOT = { has_country_flag = hie_use_vanilla_ideas }
+	}
+	free = yes
+	hie_vrn_santa_maria_antica = {
+		papal_influence = 1
+		tolerance_own = 1
+	}
+	hie_vrn_scaligeri_verona = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		advisor_cost = -0.15
+	}
+	hie_vrn_signoria_veronese = {
+		trade_efficiency = 0.15
+	}
+	hie_vrn_stella_forte = {
+		core_creation = -0.15
+	}
+	hie_vrn_rinasciemnto_scaligeri = {
+		development_cost = -0.075
+		build_cost = -0.075
+	}
+	hie_vrn_epoca_scaligera = {
+		prestige = 1
+		monthly_splendor = 1
+	}
+	hie_vrn_baroni_randazzo = {
+		infantry_power = 0.10
+	}
+}
+
+#########	LEVANT	#########
+#########	LEVANT	#########
+#########	LEVANT	#########
 HIE_CYP_ideas = {
 	start = {
 		diplomats = 1
@@ -3852,6 +8101,10 @@ HIE_TRE_ideas = {
 		governing_capacity_modifier = 0.10
 	}
 }
+
+#########	LOW COUNTRIES	#########
+#########	LOW COUNTRIES	#########
+#########	LOW COUNTRIES	#########
 HIE_BRB_ideas = {
 	start = {
 		trade_efficiency = 0.10
@@ -4200,6 +8453,10 @@ HIE_NED_FLE_ideas = {
 		trade_efficiency = 0.15
 	}
 }
+
+#########	NORTH AFRICA	#########
+#########	NORTH AFRICA	#########
+#########	NORTH AFRICA	#########
 HIE_MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
@@ -4241,6 +8498,10 @@ HIE_MOR_ideas = {
 		global_autonomy = -0.05
 	}
 }
+
+#########	NORTH AMERICA	#########
+#########	NORTH AMERICA	#########
+#########	NORTH AMERICA	#########
 HIE_AZT_ideas = {
 	start = {
 		land_morale = 0.10
@@ -4318,6 +8579,10 @@ HIE_USA_ideas = {
 		prestige = 1
 	}
 }
+
+#########	PERSIA	#########
+#########	PERSIA	#########
+#########	PERSIA	#########
 HIE_PER_ideas = {
 	start = {
 		defensiveness = 0.15
@@ -4349,14 +8614,56 @@ HIE_PER_ideas = {
 		fire_damage = 0.10
 	}
 	hie_per_savaran_sapah_khorasan = {
-		cavalry_flanking = 0.33
-		cav_to_inf_ratio = 0.25
+		cavalry_flanking = 0.50
+		cav_to_inf_ratio = 0.20
 	}
 	hie_per_jazayerchi_tofangchi = {
 		discipline = 0.05
 		drill_gain_modifier = 0.25
 	}
 }
+# HIE_TIM_ideas = {
+# 	start = {
+# 		diplomatic_upkeep = 1
+# 		army_tradition = 0.5
+# 	}
+# 	bonus = {
+# 		fire_damage = 0.10
+# 	}
+# 	trigger = {
+# 		tag = TIM
+# 		NOT = { has_country_flag = hie_use_vanilla_ideas }
+# 	}
+# 	free =
+# 	hie_tim_nambardar_levy = {
+# 		global_manpower_modifier = 0.20
+# 	}
+# 	hie_tim_timurid_renaissance = {
+# 		build_cost = -0.10
+# 		idea_cost = -0.10
+# 	}
+# 	hie_tim_cagatay_cerigi = {
+# 		cavalry_power = 0.20
+# 	}
+# 	hie_tim_chagatai_literature = {
+# 		legitimacy = 1
+# 		horde_unity = 1
+# 	}
+# 	hie_tim_virtues_sharia = {
+# 		tolerance_own = 2
+# 		diplomatic_reputation = 1
+# 	}
+# 	hie_tim_rebuild_silk_road = {
+# 		global_prov_trade_power_modifier = 0.15
+# 	}
+# 	hie_tim_sahib_qiran = {
+# 		max_absolutism = 20
+#	}
+# }
+
+#########	SCANDINAVIA	#########
+#########	SCANDINAVIA	#########
+#########	SCANDINAVIA	#########
 HIE_DAN_ideas = {
 	start = {
 		galley_power = 0.15
@@ -4477,6 +8784,10 @@ HIE_SWE_ideas = {
 		global_own_trade_power = 0.20
 	}
 }
+
+#########	SOUTH AMERICA	#########
+#########	SOUTH AMERICA	#########
+#########	SOUTH AMERICA	#########
 HIE_INC_ideas = {
 	start = {
 		shock_damage_received = -0.1
@@ -4518,6 +8829,10 @@ HIE_INC_ideas = {
 		governing_capacity_modifier = 0.15
 	}
 }
+
+#########	GENERIC IDEAS	#########
+#########	GENERIC IDEAS	#########
+#########	GENERIC IDEAS	#########
 HIE_PIR_ideas = {
 	start = {
 		global_ship_cost = -0.15
@@ -4566,6 +8881,10 @@ HIE_PIR_ideas = {
 		republican_tradition = 0.50
 	}
 }
+
+#########	COLONIAL IDEAS	#########
+#########	COLONIAL IDEAS	#########
+#########	COLONIAL IDEAS	#########
 HIE_COLONIAL_BRI_ideas = {
 	start = {
 		development_cost = -0.10
@@ -4651,6 +8970,46 @@ HIE_COLONIAL_DUT_ideas = {
 		tolerance_heretic = 3
 	}
 }
+# HIE_COLONIAL_FRE_ideas = {
+#	start = {
+#		global_heathen_missionary_strength = 0.02
+#		native_assimilation = 0.50
+#	}
+#	bonus = {
+#		discipline = 0.05
+#	}
+#	trigger = {
+#		is_colonial_nation = yes
+#		culture_group = french
+#		NOT = { has_country_flag = hie_use_vanilla_ideas }
+#	}
+#	free =		#will be added at load.
+#	hie_colonial_fre_company_of_one_hundred = {
+#		global_trade_power = 0.15
+#	}
+#	hie_colonial_fre_coreur_de_bois = {
+#		colonists = 1
+#		trade_efficiency = 0.10
+#	}
+#	hie_colonial_fre_coutume_de_paris = {
+#		global_autonomy = -0.05
+#		liberty_desire = -20
+#	}
+#	hie_colonial_fre_small_wars = {
+#		shock_damage_received = -0.10
+#		land_attrition = -0.10
+#	}
+#	hie_colonial_fre_indian_alliances = {
+#		global_manpower_modifier = 0.20
+#	}
+#	hie_colonial_fre_kings_daughters = {
+#		colonist_placement_chance = 0.10
+#	}
+#	hie_colonial_fre_canadian_militia = {
+#		land_forcelimit_modifier = 0.20
+#		global_regiment_cost = -0.10
+#	}
+# }
 HIE_COLONIAL_LAT_ideas = {
 	start = {
 		navy_tradition = 1
@@ -4717,7 +9076,7 @@ HIE_COLONIAL_POR_ideas = {
 		leader_land_manuever = 1
 	}
 	hie_colonial_por_entradas = {
-		may_establish_frontier = yes
+		colonists = 1
 		auto_explore_adjacent_to_colony = yes
 	}
 	hie_colonial_por_caboclo = {
